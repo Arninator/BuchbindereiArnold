@@ -38,10 +38,10 @@ const NavBar = () => {
 const ListElement = (props) => {
   return(
     props.id == "index" ?
-      <li class="list-element"><a href={props.id + ".html"}><i class="fa fa-home"></i></a></li>
+      <li className="list-element"><a href={props.id + ".html"}><i className="fa fa-home"></i></a></li>
     : props.id == ("aktuelles" || "vita" || "kontakt") ?
-      <li class="list-element"><a href={props.id + ".html"}>{props.id.charAt(0).toUpperCase() + props.id.substring(1)}</a></li>
-    : <li class="list-element"><a href={"#" + props.id + "-section"}>{props.id.charAt(0).toUpperCase() + props.id.substring(1)}</a></li>
+      <li className="list-element"><a href={props.id + ".html"}>{props.id.charAt(0).toUpperCase() + props.id.substring(1)}</a></li>
+    : <li className="list-element"><a href={"#" + props.id + "-section"}>{props.id.charAt(0).toUpperCase() + props.id.substring(1)}</a></li>
   );
 }
 

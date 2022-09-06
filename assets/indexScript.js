@@ -9,9 +9,14 @@ class TitlePage extends React.Component {
     constructor (props) {
         super(props);
 
-        this.currentSlide = this.currentSlide.bind(this);
+        this.handleClick = this.handleClick.bind(this);
+
         this.minusSlides = this.minusSlides.bind(this);
+        this.currentSlide = this.currentSlide.bind(this);
         this.plusSlides = this.plusSlides.bind(this);
+    }
+    handleClick(e) {
+
     }
     minusSlides(e) {
 
@@ -26,7 +31,7 @@ class TitlePage extends React.Component {
         return (
           <div>
             {tabs.map(tab => {
-              return <Section id={tab}/>
+              return <Section id={tab} onClick={this.handleClick}/>
             })}
           </div>
         )
@@ -37,15 +42,15 @@ const Section = (props) => {
     <section id={props.id + "-section"} className="sections">
       <h1 className="section-header">{props.id.charAt(0).toUpperCase() + props.id.substring(1)}</h1>
       <div className="vorschau-div">
-        <a className={props.id + "-prev prev disabled"} onClick={this.minusSlides}>&#10094;</a>
+        <a className={props.id + "-prev prev disabled"} onClick={props.onClick}>&#10094;</a>
         {numbers.map(number => {
           return <Link id={props.id} number={number} />
         })}
-        <a className={props.id + "-next next"} onClick={this.plusSlides}>&#10095;</a>
+        <a className={props.id + "-next next"} onClick={props.onClick}>&#10095;</a>
       </div>
       <div className="dots-div">
         {numbers.map(number => {
-          return <Dot id={props.id} number={number} onClick={this.currentSlide} />
+          return <Dot id={props.id} number={number} onClick={props.onClick} />
         })}
       </div>
     </section>
