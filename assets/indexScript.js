@@ -43,7 +43,7 @@ const Section = (props) => {
       <div className="vorschau-div">
         <a className={props.id + "-prev prev disabled"} onClick={props.onClick}>&#10094;</a>
         {numbers.map(number => {
-          return <Link id={props.id} number={number} />
+          return <Preview id={props.id} number={number} />
         })}
         <a className={props.id + "-next next"} onClick={props.onClick}>&#10095;</a>
       </div>
@@ -55,14 +55,16 @@ const Section = (props) => {
     </section>
   )
 }
-const Link = (props) => {
+const Preview = (props) => {
   return(
-    <a id={props.id + "-button-" + props.number} className={"vorschau-button " + props.id}></a>
+    props.number <= 3 ? <a id={props.id + "-button-" + props.number} className={"vorschau-button " + props.id}></a>
+    : <a id={props.id + "-button-" + props.number} className={"vorschau-button " + props.id} style={{display: 'none'}}></a>
   )
 }
 const Dot = (props) => {
   return(
-    <div className={"dot " + props.id + "-dot active"} id={props.id + "-dot-" + props.number} onClick={props.onClick}></div>
+    props.number <= 3 ? <div className={"dot " + props.id + "-dot active"} id={props.id + "-dot-" + props.number} onClick={props.onClick}></div>
+    : <div className={"dot " + props.id + "-dot"} id={props.id + "-dot-" + props.number} onClick={props.onClick}></div>
   )
 }
 
