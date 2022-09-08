@@ -12,18 +12,17 @@ class TitlePage extends React.Component {
         this.plusSlides = this.plusSlides.bind(this);
     }
     handleClick(e) {
-      // switch (e.target.className)
       console.log(e.target.id);
       if (e.target.className == "next") {
-        this.plusSlides(e.target.className);
+        this.plusSlides(e.target.id);
       } else if (e.target.className == "prev") {
         this.minusSlides(e.target.className);
       } else if (e.target.className.substring(0, 15) == ("vorschau-button")) {
         console.log("vorschau-button");
       } else if (e.target.className.substring(0, 3) == "dot") {
         console.log("dot");
+        this.currentSlide();
       }
-
     }
     minusSlides() {
 
@@ -31,9 +30,16 @@ class TitlePage extends React.Component {
     currentSlide() {
 
     }
-    plusSlides() {
-
+    plusSlides(name) {
+      const section = name.substring(0, name.length-5);
+      let previews = document.getElementsByClassName(section);
+      const index = $("."+ section).filter(function () {
+        return $(this).css('display') != "none";
+      })[2].id.substring(section.length + 8) + 1;
+      $({"." + section + " " + index}).css('display') = 'block';
+      $({"." + section + " " + (index - 3)}).css('display') = 'none';
     }
+
     render () {
         return (
           <div>
@@ -68,7 +74,7 @@ const Section = (props) => {
 }
 const Preview = (props) => {
   return(
-    props.number <= 3 ? <a id={props.id + "-button-" + props.number} className={"vorschau-button " + props.id} onClick={props.onClick}></a>
+    props.number <= 3 ? <a id={props.id + "-button-" + props.number} className={"vorschau-button " + props.id + " " + props.number} onClick={props.onClick}></a>
     : <a id={props.id + "-button-" + props.number} className={"vorschau-button " + props.id} onClick={props.onClick} style={{display: 'none'}}></a>
   )
 }
