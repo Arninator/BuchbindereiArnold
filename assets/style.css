@@ -565,10 +565,10 @@ a:hover {
   transform: scale(1.3);
   color: darkred;
 }
-.disabled, .disabled:hover{
+/* .disabled, .disabled:hover{
   color: white;
   cursor: default;
-}
+} */
 .dots-div {
   display: flex;
   flex-direction: row;

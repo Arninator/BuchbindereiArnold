@@ -12,15 +12,26 @@ class TitlePage extends React.Component {
         this.plusSlides = this.plusSlides.bind(this);
     }
     handleClick(e) {
+      // switch (e.target.className)
+      console.log(e.target.id);
+      if (e.target.className == "next") {
+        this.plusSlides(e.target.className);
+      } else if (e.target.className == "prev") {
+        this.minusSlides(e.target.className);
+      } else if (e.target.className.substring(0, 15) == ("vorschau-button")) {
+        console.log("vorschau-button");
+      } else if (e.target.className.substring(0, 3) == "dot") {
+        console.log("dot");
+      }
 
     }
-    minusSlides(e) {
+    minusSlides() {
 
     }
-    currentSlide(e) {
+    currentSlide() {
 
     }
-    plusSlides(e) {
+    plusSlides() {
 
     }
     render () {
@@ -41,11 +52,11 @@ const Section = (props) => {
     <section id={props.id + "-section"} className="sections">
       <h1 className="section-header">{props.id.charAt(0).toUpperCase() + props.id.substring(1)}</h1>
       <div className="vorschau-div">
-        <a className={props.id + "-prev prev disabled"} onClick={props.onClick}>&#10094;</a>
+        <a id={props.id + "-prev"} className="prev" onClick={props.onClick} style={{display: 'none'}}>&#10094;</a>
         {numbers.map(number => {
-          return <Preview id={props.id} number={number} />
+          return <Preview id={props.id} number={number} onClick={props.onClick} />
         })}
-        <a className={props.id + "-next next"} onClick={props.onClick}>&#10095;</a>
+        <a id={props.id + "-next"}className="next" onClick={props.onClick}>&#10095;</a>
       </div>
       <div className="dots-div">
         {numbers.map(number => {
@@ -57,8 +68,8 @@ const Section = (props) => {
 }
 const Preview = (props) => {
   return(
-    props.number <= 3 ? <a id={props.id + "-button-" + props.number} className={"vorschau-button " + props.id}></a>
-    : <a id={props.id + "-button-" + props.number} className={"vorschau-button " + props.id} style={{display: 'none'}}></a>
+    props.number <= 3 ? <a id={props.id + "-button-" + props.number} className={"vorschau-button " + props.id} onClick={props.onClick}></a>
+    : <a id={props.id + "-button-" + props.number} className={"vorschau-button " + props.id} onClick={props.onClick} style={{display: 'none'}}></a>
   )
 }
 const Dot = (props) => {
@@ -80,3 +91,6 @@ function getTotalOfObjects(section) {
 }
 
 ReactDOM.render(<TitlePage />, document.getElementById('root'));
+// const container = document.getElementById('root');
+// const root = createRoot(container); // createRoot(container!) if you use TypeScript
+// root.render(<TitlePage />);
