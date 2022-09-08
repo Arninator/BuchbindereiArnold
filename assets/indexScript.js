@@ -1,9 +1,5 @@
 const tabs = ['bucheinbaende', 'restaurierungen', 'objekte', 'papiere', 'faltarbeiten'];
 const sectionLimits = [22, 16, 8, 16, 12];
-const numbers = [];
-for (let i=1; i <= 22; i++) {
-  numbers.push(i);
-}
 
 class TitlePage extends React.Component {
     constructor (props) {
@@ -37,7 +33,10 @@ class TitlePage extends React.Component {
         )
     }
 }
+
 const Section = (props) => {
+  const numbers = getTotalOfObjects(props.id);
+
   return(
     <section id={props.id + "-section"} className="sections">
       <h1 className="section-header">{props.id.charAt(0).toUpperCase() + props.id.substring(1)}</h1>
@@ -65,6 +64,17 @@ const Dot = (props) => {
   return(
     <div className={"dot " + props.id + "-dot active"} id={props.id + "-dot-" + props.number} onClick={props.onClick}></div>
   )
+}
+
+//
+//
+//
+function getTotalOfObjects(section) {
+  const numbers = [];
+  for (let i=1; i <= sectionLimits[tabs.indexOf(section)]; i++) {
+    numbers.push(i);
+  }
+  return numbers;
 }
 
 ReactDOM.render(<TitlePage />, document.getElementById('root'));
