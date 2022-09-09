@@ -32,12 +32,14 @@ class TitlePage extends React.Component {
     }
     plusSlides(name) {
       const section = name.substring(0, name.length-5);
-      let previews = document.getElementsByClassName(section);
+      // let previews = document.getElementsByClassName(section);
+      console.log(" sg");
       const index = $("."+ section).filter(function () {
         return $(this).css('display') != "none";
       })[2].id.substring(section.length + 8) + 1;
-      $({"." + section + " " + index}).css('display') = 'block';
-      $({"." + section + " " + (index - 3)}).css('display') = 'none';
+      console.log(index);
+      $("." + section + ", ." + index).css('background-color', 'black');
+      $("." + section + ", ." + (index - 3)).css('display', 'none');
     }
 
     render () {
