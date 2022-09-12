@@ -12,11 +12,11 @@ class TitlePage extends React.Component {
         this.plusSlides = this.plusSlides.bind(this);
     }
     handleClick(e) {
-      console.log(e.target.id);
+      console.log(e.target.className);
       if (e.target.className == "next") {
         this.plusSlides(e.target.id);
       } else if (e.target.className == "prev") {
-        this.minusSlides(e.target.className);
+        this.minusSlides(e.target.id);
       } else if (e.target.className.substring(0, 15) == ("vorschau-button")) {
         console.log("vorschau-button");
       } else if (e.target.className.substring(0, 3) == "dot") {
@@ -24,22 +24,41 @@ class TitlePage extends React.Component {
         this.currentSlide();
       }
     }
-    minusSlides() {
+    minusSlides(name) {
+      const section = name.substring(0, name.length-5);
+      const lastIndex = parseInt($("."+ section).filter(function () {
+        return $(this).css('display') != "none";
+      })[2].id.substring(section.length + 8));
+      const firstIndex = lastIndex - 3;
 
+      if (firstIndex <= 0) {
+        $("#" + section + "-prev").prop('disabled', true);
+      } else {
+        $("#" + section + "-button-" + firstIndex).css('display', 'block');
+        $("#" + section + "-button-" + lastIndex).css('display', 'none');
+        $("#" + section + "-next").prop(disabled, false);
+
+      }
     }
     currentSlide() {
 
     }
     plusSlides(name) {
       const section = name.substring(0, name.length-5);
-      // let previews = document.getElementsByClassName(section);
-      console.log(" sg");
-      const index = $("."+ section).filter(function () {
+      const lastIndex = parseInt($("."+ section).filter(function () {
         return $(this).css('display') != "none";
-      })[2].id.substring(section.length + 8) + 1;
-      console.log(index);
-      $("." + section + ", ." + index).css('background-color', 'black');
-      $("." + section + ", ." + (index - 3)).css('display', 'none');
+      })[2].id.substring(section.length + 8)) + 1;
+      const firstIndex = lastIndex - 3;
+
+      if (lastIndex > document.getElementsByClassName(section).length) {
+        $("#" + section + "-next").prop('disabled', true);
+      } else {
+        $("#" + section + "-button-" + lastIndex).css('display', 'block');
+        $("#" + section + "-button-" + firstIndex).css('display', 'none');
+        $("#" + section + "-prev").prop(disabled, false);
+
+      }
+      
     }
 
     render () {
@@ -60,11 +79,11 @@ const Section = (props) => {
     <section id={props.id + "-section"} className="sections">
       <h1 className="section-header">{props.id.charAt(0).toUpperCase() + props.id.substring(1)}</h1>
       <div className="vorschau-div">
-        <a id={props.id + "-prev"} className="prev" onClick={props.onClick} style={{display: 'none'}}>&#10094;</a>
+        <a id={props.id + "-prev"} className="prev" onClick={props.onClick} >&#10094;</a>
         {numbers.map(number => {
           return <Preview id={props.id} number={number} onClick={props.onClick} />
         })}
-        <a id={props.id + "-next"}className="next" onClick={props.onClick}>&#10095;</a>
+        <a id={props.id + "-next"} className="next" onClick={props.onClick}>&#10095;</a>
       </div>
       <div className="dots-div">
         {numbers.map(number => {
@@ -76,7 +95,7 @@ const Section = (props) => {
 }
 const Preview = (props) => {
   return(
-    props.number <= 3 ? <a id={props.id + "-button-" + props.number} className={"vorschau-button " + props.id + " " + props.number} onClick={props.onClick}></a>
+    props.number <= 3 ? <a id={props.id + "-button-" + props.number} className={"vorschau-button " + props.id} onClick={props.onClick}></a>
     : <a id={props.id + "-button-" + props.number} className={"vorschau-button " + props.id} onClick={props.onClick} style={{display: 'none'}}></a>
   )
 }
