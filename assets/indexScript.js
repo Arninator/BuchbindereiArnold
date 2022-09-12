@@ -1,5 +1,5 @@
 const tabs = ['bucheinbaende', 'restaurierungen', 'objekte', 'papiere', 'faltarbeiten'];
-const sectionLimits = [22, 16, 8, 16, 12];
+const sectionLimits = [22, 16, 8, 19, 12];
 
 class TitlePage extends React.Component {
     constructor (props) {
@@ -36,7 +36,7 @@ class TitlePage extends React.Component {
       } else {
         $("#" + section + "-button-" + firstIndex).css('display', 'block');
         $("#" + section + "-button-" + lastIndex).css('display', 'none');
-        $("#" + section + "-next").prop(disabled, false);
+        $("#" + section + "-next").prop('disabled', false);
 
       }
     }
@@ -44,6 +44,7 @@ class TitlePage extends React.Component {
 
     }
     plusSlides(name) {
+      
       const section = name.substring(0, name.length-5);
       const lastIndex = parseInt($("."+ section).filter(function () {
         return $(this).css('display') != "none";
@@ -54,11 +55,12 @@ class TitlePage extends React.Component {
         $("#" + section + "-next").prop('disabled', true);
       } else {
         $("#" + section + "-button-" + lastIndex).css('display', 'block');
+        $("#" + section + "-dot-" + lastIndex).addClass("active");
         $("#" + section + "-button-" + firstIndex).css('display', 'none');
-        $("#" + section + "-prev").prop(disabled, false);
-
+        $("#" + section + "-dot-" + firstIndex).removeClass("active");
+        console.log("fsdv");
+        $("#" + section + "-prev").prop('disabled', false);
       }
-      
     }
 
     render () {
@@ -101,7 +103,7 @@ const Preview = (props) => {
 }
 const Dot = (props) => {
   return(
-    props.number <= 3 ? <div className={"dot " + props.id + "-dot active"} id={props.id + "-dot-" + props.number} onClick={props.onClick}></div>
+    props.number <= 3 ? <div id={props.id + "-dot-" + props.number} className={"dot " + props.id + "-dot active"} onClick={props.onClick}></div>
     : <div className={"dot " + props.id + "-dot"} id={props.id + "-dot-" + props.number} onClick={props.onClick}></div>
   )
 }
