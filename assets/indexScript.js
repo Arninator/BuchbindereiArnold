@@ -12,16 +12,15 @@ class TitlePage extends React.Component {
         this.plusSlides = this.plusSlides.bind(this);
     }
     handleClick(e) {
-      console.log(e.target.className);
+      // console.log(e.target.className);
       if (e.target.className == "next") {
         this.plusSlides(e.target.id);
       } else if (e.target.className == "prev") {
         this.minusSlides(e.target.id);
-      } else if (e.target.className.substring(0, 15) == ("vorschau-button")) {
-        console.log("vorschau-button");
+      // } else if (e.target.className.substring(0, 15) == ("vorschau-button")) {
+      //   console.log("vorschau-button");
       } else if (e.target.className.substring(0, 3) == "dot") {
-        console.log("dot");
-        this.currentSlide();
+        this.currentSlide(e.target);
       }
     }
     minusSlides(name) {
@@ -35,13 +34,57 @@ class TitlePage extends React.Component {
         $("#" + section + "-prev").prop('disabled', true);
       } else {
         $("#" + section + "-button-" + firstIndex).css('display', 'block');
+        $("#" + section + "-dot-" + firstIndex).addClass("active");
         $("#" + section + "-button-" + lastIndex).css('display', 'none');
+        $("#" + section + "-dot-" + lastIndex).removeClass("active");
         $("#" + section + "-next").prop('disabled', false);
-
       }
     }
-    currentSlide() {
+    currentSlide(object) {
+      const section = object.id.substring(0, object.id.indexOf("-"));
+      const index = parseInt(object.id.substring(section.length + 5));
 
+      if ((index + 1) > document.getElementsByClassName(section + "-dot").length) {
+        $("." + section + "-dot").removeClass("active");
+        $("#" + section + "-dot-" + index).addClass("active");
+        $("#" + section + "-dot-" + (index - 1)).addClass("active");
+        $("#" + section + "-dot-" + (index - 2)).addClass("active");
+
+        $("." + section).css("display", "none");
+        $("#" + section + "-button-" + index).css("display", "block");
+        $("#" + section + "-button-" + (index - 1)).css("display", "block");
+        $("#" + section + "-button-" + (index - 2)).css("display", "block");
+
+        $("#" + section + "-next").prop("disabled", true);
+
+      } else if ((index - 1) < 1) {
+
+        $("." + section + "-dot").removeClass("active");
+        $("#" + section + "-dot-" + index).addClass("active");
+        $("#" + section + "-dot-" + (index + 1)).addClass("active");
+        $("#" + section + "-dot-" + (index + 2)).addClass("active");
+
+        console.log($("#" + section + "-dot-" + (index + 2)).css("display"));
+
+        $("." + section).css("display", "none");
+        $("#" + section + "-button-" + index).css("display", "block");
+        $("#" + section + "-button-" + (index + 1)).css("display", "block");
+        $("#" + section + "-button-" + (index + 2)).css("display", "block");
+
+        $("#" + section + "-prev").prop("disabled", true);
+
+      } else {
+
+        $("." + section + "-dot").removeClass("active");
+        $("#" + section + "-dot-" + index).addClass("active");
+        $("#" + section + "-dot-" + (index + 1)).addClass("active");
+        $("#" + section + "-dot-" + (index - 1)).addClass("active");
+
+        $("." + section).css("display", "none");
+        $("#" + section + "-button-" + index).css("display", "block");
+        $("#" + section + "-button-" + (index + 1)).css("display", "block");
+        $("#" + section + "-button-" + (index - 1)).css("display", "block");
+      }
     }
     plusSlides(name) {
       
@@ -58,7 +101,6 @@ class TitlePage extends React.Component {
         $("#" + section + "-dot-" + lastIndex).addClass("active");
         $("#" + section + "-button-" + firstIndex).css('display', 'none');
         $("#" + section + "-dot-" + firstIndex).removeClass("active");
-        console.log("fsdv");
         $("#" + section + "-prev").prop('disabled', false);
       }
     }
@@ -97,8 +139,8 @@ const Section = (props) => {
 }
 const Preview = (props) => {
   return(
-    props.number <= 3 ? <a id={props.id + "-button-" + props.number} className={"vorschau-button " + props.id} onClick={props.onClick}></a>
-    : <a id={props.id + "-button-" + props.number} className={"vorschau-button " + props.id} onClick={props.onClick} style={{display: 'none'}}></a>
+    props.number <= 3 ? <a id={props.id + "-button-" + props.number} className={"vorschau-button " + props.id} onClick={props.onClick} href={props.id + ".html"}></a>
+    : <a id={props.id + "-button-" + props.number} className={"vorschau-button " + props.id} onClick={props.onClick}  href={props.id + ".html"} style={{display: 'none'}}></a>
   )
 }
 const Dot = (props) => {
