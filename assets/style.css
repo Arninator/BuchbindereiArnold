@@ -440,14 +440,15 @@ a:hover {
   margin: auto 5vw;
 
   cursor: pointer;
-  transition: 0.5s ease;
 }
 
 .vorschau-button:hover {
+  transition: 0.5s ease;
   transform: scale(1.1);
 }
 
 .vorschau-button:active {
+  transition: none;
   transform: scale(0.9);
 }
 

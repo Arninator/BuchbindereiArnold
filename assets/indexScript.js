@@ -11,6 +11,9 @@ class TitlePage extends React.Component {
         this.currentSlide = this.currentSlide.bind(this);
         this.plusSlides = this.plusSlides.bind(this);
     }
+    componentDidMount() {
+      $(".prev").prop('disabled', true);
+    }
     handleClick(e) {
 
       if (e.target.className == "next") {
