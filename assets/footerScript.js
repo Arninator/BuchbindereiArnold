@@ -19,7 +19,7 @@ class Footer extends React.Component {
 }
 const ListElement = (props) => {
     return(
-        <li key={props.key}>
+        <li className="list-element" key={props.key}>
             <a className="datenschutz-links" href={props.name + ".html"}>{props.name}</a>
         </li>
     ) 
