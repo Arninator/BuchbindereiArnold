@@ -3,15 +3,13 @@ const tabs = ['index', 'bucheinbaende', 'restaurierungen', 'objekte', 'papiere',
 class Menu extends React.Component {
   constructor(props) {
     super(props);
-
-    // this.openMenu() = this.openMenu.bind(this);
   }
   render () {
     return (
-      <div id="menu-container">
+      <header id="menu-container">
         <Logo />
         <NavBar />
-      </div>
+      </header>
     )
   }
 }
