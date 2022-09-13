@@ -12,13 +12,11 @@ class TitlePage extends React.Component {
         this.plusSlides = this.plusSlides.bind(this);
     }
     handleClick(e) {
-      // console.log(e.target.className);
+
       if (e.target.className == "next") {
         this.plusSlides(e.target.id);
       } else if (e.target.className == "prev") {
         this.minusSlides(e.target.id);
-      // } else if (e.target.className.substring(0, 15) == ("vorschau-button")) {
-      //   console.log("vorschau-button");
       } else if (e.target.className.substring(0, 3) == "dot") {
         this.currentSlide(e.target);
       }
@@ -30,13 +28,26 @@ class TitlePage extends React.Component {
       })[2].id.substring(section.length + 8));
       const firstIndex = lastIndex - 3;
 
-      if (firstIndex <= 0) {
+      if (firstIndex < 1) {
         $("#" + section + "-prev").prop('disabled', true);
-      } else {
+
+      } else if (firstIndex == 1) {
+
+        $("#" + section + "-prev").prop('disabled', true);
+
         $("#" + section + "-button-" + firstIndex).css('display', 'block');
         $("#" + section + "-dot-" + firstIndex).addClass("active");
         $("#" + section + "-button-" + lastIndex).css('display', 'none');
         $("#" + section + "-dot-" + lastIndex).removeClass("active");
+
+        $("#" + section + "-next").prop('disabled', false);
+
+      }else {
+        $("#" + section + "-button-" + firstIndex).css('display', 'block');
+        $("#" + section + "-dot-" + firstIndex).addClass("active");
+        $("#" + section + "-button-" + lastIndex).css('display', 'none');
+        $("#" + section + "-dot-" + lastIndex).removeClass("active");
+
         $("#" + section + "-next").prop('disabled', false);
       }
     }
@@ -56,9 +67,7 @@ class TitlePage extends React.Component {
         $("#" + section + "-button-" + (index - 2)).css("display", "block");
 
         $("#" + section + "-next").prop("disabled", true);
-        $("#" + section + "-next").prop("color", "white");
-        $("#" + section + "-next").prop("cursor", "default");
-        console.log("bakjsbl");
+        $("#" + section + "-prev").prop("disabled", false);
 
       } else if ((index - 1) < 1) {
 
@@ -67,16 +76,13 @@ class TitlePage extends React.Component {
         $("#" + section + "-dot-" + (index + 1)).addClass("active");
         $("#" + section + "-dot-" + (index + 2)).addClass("active");
 
-        console.log($("#" + section + "-dot-" + (index + 2)).css("display"));
-
         $("." + section).css("display", "none");
         $("#" + section + "-button-" + index).css("display", "block");
         $("#" + section + "-button-" + (index + 1)).css("display", "block");
         $("#" + section + "-button-" + (index + 2)).css("display", "block");
 
         $("#" + section + "-prev").prop("disabled", true);
-        $("#" + section + "-prev").css("color", "white");
-        $("#" + section + "-prev").css("cursor", "default");
+        $("#" + section + "-next").prop("disabled", false);
 
       } else {
 
@@ -89,6 +95,16 @@ class TitlePage extends React.Component {
         $("#" + section + "-button-" + index).css("display", "block");
         $("#" + section + "-button-" + (index + 1)).css("display", "block");
         $("#" + section + "-button-" + (index - 1)).css("display", "block");
+
+        $("#" + section + "-prev").prop("disabled", false);
+        $("#" + section + "-next").prop("disabled", false);
+
+        if ((index + 1) == document.getElementsByClassName(section + "-dot").length) {
+          $("#" + section + "-next").prop("disabled", true);
+        }
+        if ((index - 1) == 1) {
+          $("#" + section + "-prev").prop("disabled", true);
+        }
       }
     }
     plusSlides(name) {
@@ -101,11 +117,25 @@ class TitlePage extends React.Component {
 
       if (lastIndex > document.getElementsByClassName(section).length) {
         $("#" + section + "-next").prop('disabled', true);
-      } else {
+        $("#" + section + "-prev").prop('disabled', false);
+
+      } else if (lastIndex == document.getElementsByClassName(section).length) {
+
+        $("#" + section + "-next").prop('disabled', true);
+        $("#" + section + "-prev").prop('disabled', false);
+
         $("#" + section + "-button-" + lastIndex).css('display', 'block');
         $("#" + section + "-dot-" + lastIndex).addClass("active");
         $("#" + section + "-button-" + firstIndex).css('display', 'none');
         $("#" + section + "-dot-" + firstIndex).removeClass("active");
+        
+      }else {
+
+        $("#" + section + "-button-" + lastIndex).css('display', 'block');
+        $("#" + section + "-dot-" + lastIndex).addClass("active");
+        $("#" + section + "-button-" + firstIndex).css('display', 'none');
+        $("#" + section + "-dot-" + firstIndex).removeClass("active");
+        
         $("#" + section + "-prev").prop('disabled', false);
       }
     }
@@ -128,11 +158,11 @@ const Section = (props) => {
     <section id={props.id + "-section"} className="sections">
       <h1 className="section-header">{props.id.charAt(0).toUpperCase() + props.id.substring(1)}</h1>
       <div className="vorschau-div">
-        <a id={props.id + "-prev"} className="prev" onClick={props.onClick} >&#10094;</a>
+        <button id={props.id + "-prev"} className="prev" onClick={props.onClick}>&#10094;</button>
         {numbers.map(number => {
           return <Preview id={props.id} number={number} onClick={props.onClick} />
         })}
-        <a id={props.id + "-next"} className="next" onClick={props.onClick}>&#10095;</a>
+        <button id={props.id + "-next"} className="next" onClick={props.onClick}>&#10095;</button>
       </div>
       <div className="dots-div">
         {numbers.map(number => {
@@ -167,6 +197,3 @@ function getTotalOfObjects(section) {
 }
 
 ReactDOM.render(<TitlePage />, document.getElementById('root'));
-// const container = document.getElementById('root');
-// const root = createRoot(container); // createRoot(container!) if you use TypeScript
-// root.render(<TitlePage />);

@@ -539,11 +539,14 @@ a:hover {
 #faltarbeiten-button-1, #faltarbeiten-button-2, #faltarbeiten-button-3 {
   display: block;
 }
+
 .next, .prev {  
   width: auto;
   padding: 16px;
   
   color: grey;
+  background-color: transparent;
+  border: none;
   
   font-size: 18px;
   font-weight: 100;
@@ -556,10 +559,11 @@ a:hover {
   transform: scale(1.3);
   color: darkred;
 }
-/* .disabled, .disabled:hover{
-  color: white;
+.prev:disabled, .next:disabled {
+  color: transparent;
   cursor: default;
-} */
+}
+
 .dots-div {
   display: flex;
   flex-direction: row;
