@@ -10,7 +10,7 @@ class Footer extends React.Component {
                 <p className="copyright-p">Copyright © 2013-2022 Buchbinderei Anett Arnold</p>
                 <ul>
                     {links.map(link => {
-                        return <ListElement name={link}/>
+                        return <ListElement name={link} key={link}/>
                     })}
                 </ul>
             </footer>
@@ -19,7 +19,7 @@ class Footer extends React.Component {
 }
 const ListElement = (props) => {
     return(
-        <li>
+        <li key={props.key}>
             <a className="datenschutz-links" href={props.name + ".html"}>{props.name}</a>
         </li>
     ) 
