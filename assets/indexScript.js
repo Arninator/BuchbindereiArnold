@@ -158,6 +158,7 @@ function getTotalOfObjects(section) {
   for (let i=1; i <= sectionLimits[tabs.indexOf(section)]; i++) {
     numbers.push(i);
   }
+  console.log("baBl");
   return numbers;
 }
 
