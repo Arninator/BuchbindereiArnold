@@ -56,6 +56,9 @@ class TitlePage extends React.Component {
         $("#" + section + "-button-" + (index - 2)).css("display", "block");
 
         $("#" + section + "-next").prop("disabled", true);
+        $("#" + section + "-next").prop("color", "white");
+        $("#" + section + "-next").prop("cursor", "default");
+        console.log("bakjsbl");
 
       } else if ((index - 1) < 1) {
 
@@ -72,6 +75,8 @@ class TitlePage extends React.Component {
         $("#" + section + "-button-" + (index + 2)).css("display", "block");
 
         $("#" + section + "-prev").prop("disabled", true);
+        $("#" + section + "-prev").css("color", "white");
+        $("#" + section + "-prev").css("cursor", "default");
 
       } else {
 
@@ -158,7 +163,6 @@ function getTotalOfObjects(section) {
   for (let i=1; i <= sectionLimits[tabs.indexOf(section)]; i++) {
     numbers.push(i);
   }
-  console.log("baBl");
   return numbers;
 }
 
