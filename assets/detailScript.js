@@ -1,5 +1,9 @@
-const tabs = ['bucheinbaende', 'restaurierungen', 'objekte', 'papiere', 'faltarbeiten'];
-const sectionLimits = [22, 16, 8, 19, 12];
+$.getJSON("../assets/content.json", function(json) {
+    console.log(JSON.stringify(json)); // this will show the info it in firebug console
+});
+$(
+    console.log()
+)
 
 class DetailPage extends React.Component {
     constructor(props) {
@@ -7,18 +11,17 @@ class DetailPage extends React.Component {
     }
 
     render () {
+
+        
+
         return(
             <section className="detail-section">
-                {sectionLimits[0].map(number => {
-                    return <Dots />
-                })}
-                <Preview />
+                <div>BLABKAA</div>
             </section>
         )
     }
 }
 const Dots = () => {
-    return(
-        <
-    )
 }
+
+ReactDOM.render(<DetailPage />, document.getElementById("detail-page"));
