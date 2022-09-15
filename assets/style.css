@@ -452,28 +452,28 @@ a:hover {
   transform: scale(0.9);
 }
 
-#bucheinbaende-button-1, #bucheinbaende-dot-1 { background-image: var(--bucheinbaende-1);}
-#bucheinbaende-button-2, #bucheinbaende-dot-2 { background-image: var(--bucheinbaende-2);}
-#bucheinbaende-button-3, #bucheinbaende-dot-3 { background-image: var(--bucheinbaende-3);}
-#bucheinbaende-button-4, #bucheinbaende-dot-4 { background-image: var(--bucheinbaende-4);}
-#bucheinbaende-button-5, #bucheinbaende-dot-5 { background-image: var(--bucheinbaende-5);}
-#bucheinbaende-button-6, #bucheinbaende-dot-6 { background-image: var(--bucheinbaende-6);}
-#bucheinbaende-button-7, #bucheinbaende-dot-7 { background-image: var(--bucheinbaende-7);}
-#bucheinbaende-button-8, #bucheinbaende-dot-8 { background-image: var(--bucheinbaende-8);}
-#bucheinbaende-button-9, #bucheinbaende-dot-9 { background-image: var(--bucheinbaende-9);}
-#bucheinbaende-button-10, #bucheinbaende-dot-10 { background-image: var(--bucheinbaende-10);}
-#bucheinbaende-button-11, #bucheinbaende-dot-11 { background-image: var(--bucheinbaende-11);}
-#bucheinbaende-button-12, #bucheinbaende-dot-12 { background-image: var(--bucheinbaende-12);}
-#bucheinbaende-button-13, #bucheinbaende-dot-13 { background-image: var(--bucheinbaende-13);}
-#bucheinbaende-button-14, #bucheinbaende-dot-14 { background-image: var(--bucheinbaende-14);}
-#bucheinbaende-button-15, #bucheinbaende-dot-15 { background-image: var(--bucheinbaende-15);}
-#bucheinbaende-button-16, #bucheinbaende-dot-16 { background-image: var(--bucheinbaende-16);}
-#bucheinbaende-button-17, #bucheinbaende-dot-17 { background-image: var(--bucheinbaende-17);}
-#bucheinbaende-button-18, #bucheinbaende-dot-18 { background-image: var(--bucheinbaende-18);}
-#bucheinbaende-button-19, #bucheinbaende-dot-19 { background-image: var(--bucheinbaende-19);}
-#bucheinbaende-button-20, #bucheinbaende-dot-20 { background-image: var(--bucheinbaende-20);}
-#bucheinbaende-button-21, #bucheinbaende-dot-21 { background-image: var(--bucheinbaende-21);}
-#bucheinbaende-button-22, #bucheinbaende-dot-22 { background-image: var(--bucheinbaende-22);}
+#bucheinbaende-button-1, #bucheinbaende-1, #bucheinbaende-dot-1 { background-image: var(--bucheinbaende-1);}
+#bucheinbaende-button-2, #bucheinbaende-2, #bucheinbaende-dot-2 { background-image: var(--bucheinbaende-2);}
+#bucheinbaende-button-3, #bucheinbaende-3, #bucheinbaende-dot-3 { background-image: var(--bucheinbaende-3);}
+#bucheinbaende-button-4, #bucheinbaende-4, #bucheinbaende-dot-4 { background-image: var(--bucheinbaende-4);}
+#bucheinbaende-button-5, #bucheinbaende-5, #bucheinbaende-dot-5 { background-image: var(--bucheinbaende-5);}
+#bucheinbaende-button-6, #bucheinbaende-6, #bucheinbaende-dot-6 { background-image: var(--bucheinbaende-6);}
+#bucheinbaende-button-7, #bucheinbaende-7, #bucheinbaende-dot-7 { background-image: var(--bucheinbaende-7);}
+#bucheinbaende-button-8, #bucheinbaende-8, #bucheinbaende-dot-8 { background-image: var(--bucheinbaende-8);}
+#bucheinbaende-button-9, #bucheinbaende-9, #bucheinbaende-dot-9 { background-image: var(--bucheinbaende-9);}
+#bucheinbaende-button-10, #bucheinbaende-10, #bucheinbaende-dot-10 { background-image: var(--bucheinbaende-10);}
+#bucheinbaende-button-11, #bucheinbaende-11, #bucheinbaende-dot-11 { background-image: var(--bucheinbaende-11);}
+#bucheinbaende-button-12, #bucheinbaende-12, #bucheinbaende-dot-12 { background-image: var(--bucheinbaende-12);}
+#bucheinbaende-button-13, #bucheinbaende-13, #bucheinbaende-dot-13 { background-image: var(--bucheinbaende-13);}
+#bucheinbaende-button-14, #bucheinbaende-14, #bucheinbaende-dot-14 { background-image: var(--bucheinbaende-14);}
+#bucheinbaende-button-15, #bucheinbaende-15, #bucheinbaende-dot-15 { background-image: var(--bucheinbaende-15);}
+#bucheinbaende-button-16, #bucheinbaende-16, #bucheinbaende-dot-16 { background-image: var(--bucheinbaende-16);}
+#bucheinbaende-button-17, #bucheinbaende-17, #bucheinbaende-dot-17 { background-image: var(--bucheinbaende-17);}
+#bucheinbaende-button-18, #bucheinbaende-18, #bucheinbaende-dot-18 { background-image: var(--bucheinbaende-18);}
+#bucheinbaende-button-19, #bucheinbaende-19, #bucheinbaende-dot-19 { background-image: var(--bucheinbaende-19);}
+#bucheinbaende-button-20, #bucheinbaende-20, #bucheinbaende-dot-20 { background-image: var(--bucheinbaende-20);}
+#bucheinbaende-button-21, #bucheinbaende-21, #bucheinbaende-dot-21 { background-image: var(--bucheinbaende-21);}
+#bucheinbaende-button-22, #bucheinbaende-22, #bucheinbaende-dot-22 { background-image: var(--bucheinbaende-22);}
 
 #restaurierungen-button-1, #restaurierungen-dot-1 { background-image: var(--restaurierungen-1);}
 #restaurierungen-button-2, #restaurierungen-dot-2 { background-image: var(--restaurierungen-2);}
@@ -588,7 +588,47 @@ a:hover {
   transform: scale(1.5);
   opacity: 1;
 }
-
+/* 
+  DETAIL_PAGES
+ */
+ .detail-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  max-height: 100vh;
+}
+.shortcuts-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 6vh;
+  padding: 3vh 2vw;
+  height: 90%;
+}
+.shortcuts {
+  cursor: pointer;
+  height: 5vh;
+  width: 5vh;
+  margin: 4px 4px;
+  background-color: darkred;
+  background-size: 400%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+.shortcuts:hover {
+  background-size: cover;
+}
+.shortcuts:active {
+  transform: scale(0.8);
+}
+/* 
+  FOOTER
+ */
 footer {
   display: flex;
   flex-direction: row;
