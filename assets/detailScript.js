@@ -1,9 +1,4 @@
-$.getJSON("../assets/content.json", function(json) {
-    console.log(JSON.stringify(json)); // this will show the info it in firebug console
-});
-$(
-    console.log()
-)
+import {Data} from "content.json"
 
 class DetailPage extends React.Component {
     constructor(props) {
@@ -11,12 +6,11 @@ class DetailPage extends React.Component {
     }
 
     render () {
-
-        
-
+        console.log("blas")
+        console.log(JSON.stringify(Data));
         return(
             <section className="detail-section">
-                <div>BLABKAA</div>
+                <div>BLaA</div>
             </section>
         )
     }
