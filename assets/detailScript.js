@@ -10,14 +10,19 @@ class DetailPage extends React.Component {
     render () {
         return(
             <section className="detail-section">
-                {data["bucheinbaende"].map(obj => {
-                    return <div>{obj.name}</div>
-                })}
+                <div className="shortcuts-div">
+                    {data["bucheinbaende"].map(obj => {
+                        return <Dot id={obj.name} className="shortcuts" />
+                    })}
+                </div>
             </section>
         )
     }
 }
-const Dots = () => {
+const Dot = (props) => {
+    return(
+        <div id={props.id} className={props.className}></div>
+    )
 }
 
 ReactDOM.render(<DetailPage />, document.getElementById("detail-page"));
