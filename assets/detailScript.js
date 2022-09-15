@@ -7,6 +7,8 @@ class DetailPage extends React.Component {
         this.state = {
             data: ""
         }
+
+        const [data, setData] = useState([]);
     }
     componentWillMount() {
         var data;
@@ -14,13 +16,13 @@ class DetailPage extends React.Component {
         fetch('../assets/content.json')
         .then((response) => response.json())
         .then((findresponse) => {
-            this.setState({
-                data: findresponse
-        })
-            data = findresponse;
+        //     this.setState({
+        //         data: findresponse
+        // })
+            setData(findresponse);
+            // data = findresponse;
             // console.log(JSON.stringify(data));
             console.log("WILL: " + JSON.stringify(this.state.data));
-            return findresponse;
         })
         
         console.log(JSON.stringify(data));
@@ -31,7 +33,7 @@ class DetailPage extends React.Component {
     render () {
         return(
             <section className="detail-section">
-                <div>BLA</div>
+                <div><pre>{JSON.stringify(data, null, 2)}</pre></div>
             </section>
         )
     }
