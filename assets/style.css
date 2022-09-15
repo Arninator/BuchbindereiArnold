@@ -605,27 +605,38 @@ a:hover {
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin-top: 6vh;
+  
+  margin-top: 50px;
   padding: 3vh 2vw;
   height: 90%;
 }
 .shortcuts {
-  cursor: pointer;
   height: 5vh;
   width: 5vh;
   margin: 4px 4px;
-  background-color: darkred;
-  background-size: 400%;
+  
+  background-size: 300%;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 50%;
+  
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 .shortcuts:hover {
-  background-size: cover;
+  animation-name: background-transform;
+  animation-timing-function: ease;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+@keyframes background-transform {
+  0% {background-size: 300%;}
+  100% {background-size: 100%;}
 }
 .shortcuts:active {
   transform: scale(0.8);
 }
+
 /* 
   FOOTER
  */
