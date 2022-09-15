@@ -1,4 +1,4 @@
-let data = [];
+let data;
 
 class DetailPage extends React.Component {
     constructor(props) {
