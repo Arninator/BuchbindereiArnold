@@ -379,67 +379,84 @@ const data = {
   "objekte": [
       {
       name: "objekte-1", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: [
+        "../objekte/Kartonage.jpg",
+        "../objekte/Kartonage 1.jpg",
+        "../objekte/Kartonage 2.jpg"],
+      title: ["Bau einer Kartonage nach historischem Vorbild"],
+      subtitle: [],
+      description: ["Bau des Körpers aus Pappe, Kanteneinfassung mit gelbem Oasen-Ziegenleder, äußerer Bezug aus handgefertigtem Buntpapier (GISELA&nbsp;RESCHKE, Hamburg), Auftragsarbeit 2016"],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "objekte-2", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: [
+        "../objekte/Papiertheater Engelbrecht.jpg",
+        "../objekte/Papiertheater Engelbrecht 1.jpg",
+        "../objekte/Papiertheater Engelbrecht 2.jpg"],
+      title: ["Bau eines Papiertheaters"],
+      subtitle: ["„Die Freimaurer-Loge“, ca. 1750, Original-Tafeln von MARTIN&nbsp;ENGELBRECHT (1684-1756)"],
+      description: ["Kanten mit blauem Oasen-Ziegenleder eingefasst, Bezugspapiere (GISELA&nbsp;RESCHKE, Hamburg), 2016, Privatbesitz"],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "objekte-3", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: [
+        "../objekte/Schubladen 1.jpg",
+        "../objekte/Schubladen.jpg",
+        "../objekte/Schubladen 2.jpg"],
+      title: ["Restaurierung eines Schubladenschrankes"],
+      subtitle: [],
+      description: ["Auftragsarbeit aus dem Jahre 2014"],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "objekte-4", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: [
+        "../objekte/Anett_Arnold_Behaelter_Dose_1 Kopie.jpg",
+        "../objekte/Anett_Arnold_Behaelter_Dose_1.jpg",
+        "../objekte/Anett_Arnold_Behaelter_Dose_2 Kopie.jpg"],
+      title: ["Behälter für ein Salbölgefäß"],
+      subtitle: [],
+      description: ["Auftragsarbeit für Pastor NILS&nbsp;CHRISTIANSEN (Hamburg), 2014"],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "objekte-5", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: ["../objekte/Anett_Arnold_Objekt_Schale.jpg"],
+      title: ["Schale aus Kozo"],
+      subtitle: [],
+      description: ["Schale farbig bearbeitet, Relief mit Blattsilber belegt. Größe: Durchmesser 19,5 cm, Höhe 10 cm, 2013"],
+      foto: ["Foto: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "objekte-6", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: ["../objekte/Suminagashi_Schachtel.jpg"],
+      title: ["Stülpdeckelkasten"],
+      subtitle: [],
+      description: ["Kasten bezogen mit Suminagashi-Papier (GISELA&nbsp;RESCHKE, Hamburg). Format: 19 cm x 27 cm x 3,5 cm, 2009, Privatbesitz"],
+      foto: ["Foto: HENRIK&nbsp;POHL"]
       },
       {
       name: "objekte-7", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: ["../objekte/Zuckergemmenschachtel.jpg"],
+      title: ["Faltschachtel"],
+      subtitle: ["ehemals Faltschachteln für Zuckergemmen - nach historischem Vorbild gefertigt"],
+      description: ["Schachtel bezogen mit Kleisterpapier von GISELA&nbsp;RESCHKE, 2012, gefalteter Teil aus farbigem Japanpapier. Format: 5 cm x 5 cm x 2 cm, 2012, Privatbesitz"],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "objekte-8", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: [
+        "../objekte/Taufschale 1.jpg",
+        "../objekte/Taufschale 2.jpg",
+        "../objekte/Taufschale 3.jpg",
+        "../objekte/Taufschale 4.jpg",
+        "../objekte/Taufschale 5.jpg"],
+      title: ["Behältnis für Taufutensilien"],
+      subtitle: [],
+      description: ["Behältnis bezogen mit Oasenziegenleder, gepolstert, Magnetverschluss. Auftragsarbeit für Pastor NILS CHRISTIANSEN (Hamburg), 2016"],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       }],
   "papiere": [
       {
