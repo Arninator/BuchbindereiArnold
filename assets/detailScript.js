@@ -20,7 +20,8 @@ class DetailPage extends React.Component {
                 </div>
                 <div className="grossansicht-div">
                     {data["bucheinbaende"].map(obj => {
-                        return <Img id={obj.name} src={obj.url} description={obj.description}/>
+                        console.log(obj.urls[0])
+                        return <Img id={obj.name} src={obj.urls[0]} description={obj.description}/>
                     })}
                 </div>
             </section>
@@ -37,7 +38,7 @@ const Img = (props) => {
         <figure className="figure">
             <div className="image-div">
                 <a className="prev" >&#10094;</a>
-                <img id={props.id} src={props.src} alt={props.description} />
+                <img id={props.id} src={props.src} alt={"ALT: " + props.description} />
                 <a className="next" >&#10095;</a>
             </div>
             <figcaption>
