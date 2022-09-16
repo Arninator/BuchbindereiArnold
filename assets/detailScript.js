@@ -1,4 +1,6 @@
 let data;
+let currentIndex;
+let currentSection;
 
 class DetailPage extends React.Component {
     constructor(props) {
@@ -6,6 +8,10 @@ class DetailPage extends React.Component {
     }
     componentWillMount() {
         data = JSON.parse(sessionStorage.getItem("data"));
+        currentIndex = parseInt(sessionStorage.getItem("currentIndex"));
+        currentSection = sessionStorage.getItem("currentSection");
+
+        console.log(currentIndex + currentSection);
     }
     componentDidMount() {
         $(".prev").prop('disabled', true);
@@ -20,8 +26,7 @@ class DetailPage extends React.Component {
                 </div>
                 <div className="grossansicht-div">
                     {data["bucheinbaende"].map(obj => {
-                        console.log(obj.urls[0])
-                        return <Img id={obj.name} src={obj.urls[0]} description={obj.description}/>
+                        return <Img id={obj.name} src={obj.urls} description={obj.description} title={obj.title} subtitle={obj.subtitle} foto={obj.foto}/>
                     })}
                 </div>
             </section>
@@ -34,16 +39,28 @@ const Dot = (props) => {
     )
 }
 const Img = (props) => {
+    const currentImg = currentSection + "-" + currentIndex;
+
     return(
         <figure className="figure">
             <div className="image-div">
-                <a className="prev" >&#10094;</a>
-                <img id={props.id} src={props.src} alt={"ALT: " + props.description} />
-                <a className="next" >&#10095;</a>
+                <a className="prev" style={props.id != currentImg ? {display: 'none'} : {}}>&#10094;</a>
+                {props.src.map((url, index) => {
+                    console.log(props.id);
+                    return <img id={props.id} src={url} alt={props.description[index]} style={props.id != currentImg ? {display: 'none'} : {}} />
+                })}
+                <a className="next" style={props.id != currentImg ? {display: 'none'} : {}}>&#10095;</a>
             </div>
-            <figcaption>
-                {props.description}
-            </figcaption>
+            {props.description.map((description, index) => {
+                return(
+                    <figcaption style={props.id != currentImg ? {display: 'none'} : {}}>
+                        <h5>{props.title[index]}</h5>
+                        <h6>{props.subtitle[index]}</h6>
+                        <p>{description}<br></br><br></br><span>{props.foto[index]}</span></p>
+                    </figcaption>
+                )                    
+            })}
+            
         </figure>
     )
 }

@@ -474,6 +474,11 @@ class TitlePage extends React.Component {
         this.minusSlides(e.target.id);
       } else if (e.target.className.substring(0, 3) == "dot") {
         this.currentSlide(e.target);
+      } else {
+        const section = e.target.classList[1];
+        const index = e.target.id.substring(section.length + 8);
+        sessionStorage.setItem("currentSection", section);
+        sessionStorage.setItem("currentIndex", index);
       }
     }
     minusSlides(name) {
