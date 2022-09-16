@@ -596,6 +596,7 @@ a:hover {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  
   height: 100vh;
   max-height: 100vh;
 }
