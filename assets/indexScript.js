@@ -461,252 +461,280 @@ const data = {
   "papiere": [
       {
       name: "papiere-1", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: [
+        "../papiere/Papier 1.jpg",
+        "../papiere/Papier 7.jpg"],
+      title: ["Handgeschöpftes Papier"],
+      subtitle: [],
+      description: ["ie gerissenen Papierstreifen wurden während des Gautsch-Vorganges eingelegt.<br>Größe: 60 x 48 cm"],
+      foto: ["Fotos: AXEL&nbsp;NORDMEIER"]
       },
       {
       name: "papiere-2", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: ["../papiere/Kleister 1.jpg"],
+      title: ["Kleisterpapier"],
+      subtitle: [],
+      description: ["Größe: 100 x 70 cm"],
+      foto: ["Foto: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "papiere-3", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: ["../papiere/Papier 4.jpg"],
+      title: ["Handgeschöpftes Papier"],
+      subtitle: [],
+      description: ["Die Papierstreifen wurden während des Gautsch-Vorganges eingelegt.<br>Größe: 60 x 48 cm"],
+      foto: ["Foto: AXEL&nbsp;NORDMEIER"]
+      
       },
       {
       name: "papiere-4", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: ["../papiere/Spachtel 2.jpg"],
+      title: ["Spachtelpapier"],
+      subtitle: [],
+      description: ["Größe: 70 x 50 cm"],
+      foto: ["Foto: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "papiere-5", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: ["../papiere/Papier 5.jpg"],
+      title: ["Handgeschöpftes Papier"],
+      subtitle: [],
+      description: ["Die gerissenen Papierstreifen (Makulatur) wurden während des Gautsch-Vorganges eingelegt.<br>Größe: 60 x 44 cm"],
+      foto: ["Foto: AXEL&nbsp;NORDMEIER"]
       },
       {
       name: "papiere-6", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: ["../papiere/Kleister 3.jpg"],
+      title: ["Kleisterpapier"],
+      subtitle: [],
+      description: ["Größe: 62 x 48 cm"],
+      foto: ["Foto: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "papiere-7", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: ["../papiere/Papier 11.jpg"],
+      title: ["Handgeschöpftes Papier"],
+      subtitle: [],
+      description: ["Die schwarzen und weißen Papierstreifen wurden während des Gautsch-Vorganges eingelegt.<br>Größe: 60 x 48 cm"],
+      foto: ["Foto: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "papiere-8", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: [
+        "../papiere/Spachtel 3a.jpg",
+        "../papiere/Spachtel 3b.jpg"],
+      title: ["Spachtelpapier"],
+      subtitle: [],
+      description: ["Größe: 100 x 70 cm"],
+      foto: ["Foto: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "papiere-9", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: ["../papiere/Papier 8.jpg"],
+      title: ["Handgeschöpftes Papier"],
+      subtitle: [],
+      description: ["Größe: 80 x 60 cm"],
+      foto: ["Foto: AXEL&nbsp;NORDMEIER"]
       },
       {
       name: "papiere-10", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: ["../papiere/Spachtel 4.jpg"],
+      title: ["Spachtelpapier"],
+      subtitle: [],
+      description: ["Größe: 44 x 31cm"],
+      foto: ["Foto: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "papiere-11", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: ["../papiere/Kleister 2.jpg"],
+      title: ["Kleisterpapier"],
+      subtitle: [],
+      description: ["Größe: 70 x 50 cm"],
+      foto: ["Foto: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "papiere-12", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: ["../papiere/Papier 9.jpg"],
+      title: ["Handgeschöpftes Papier"],
+      subtitle: [],
+      description: ["Die weißen Papierstreifen wurden während des Gautsch-Vorganges eingelegt.<br>Größe: 60 x 45 cm"],
+      foto: ["Foto: AXEL&nbsp;NORDMEIER"]
       },
       {
       name: "papiere-13", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: ["../papiere/Kleister 4.jpg"],
+      title: ["Kleisterpapier"],
+      subtitle: [],
+      description: ["Größe: 62 x 48cm"],
+      foto: ["Foto: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "papiere-14", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: ["../papiere/Papier 6.jpg"],
+      title: ["Handgeschöpftes Papier"],
+      subtitle: [],
+      description: ["Die weißen Papierstreifen wurden während des Gautsch-Vorganges eingelegt.<br>Größe: 50 x 42 cm"],
+      foto: ["Foto: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "papiere-15", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: ["../papiere/Papier 2.jpg"],
+      title: ["Handgeschöpftes Papier"],
+      subtitle: [],
+      description: ["Größe: 80 x 60 cm"],
+      foto: ["Foto: AXEL&nbsp;NORDMEIER"]
       },
       {
       name: "papiere-16", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: ["../papiere/Spachtel 6.jpg"],
+      title: ["Spachtelpapier"],
+      subtitle: [],
+      description: ["Größe: 86 x 48 cm"],
+      foto: ["Foto: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "papiere-17", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: ["../papiere/Papier 10.jpg"],
+      title: ["Handgeschöpftes Papier"],
+      subtitle: [],
+      description: ["Die Papierstreifen wurden während des Gautsch-Vorganges eingelegt, nach dem Trocknungsprozess wurde das Blatt farbig überwalzt.<br>Größe: 50 x 42 cm"],
+      foto: ["Foto: AXEL&nbsp;NORDMEIER"]
       },
       {
       name: "papiere-18", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: ["../papiere/Papier 3.jpg"],
+      title: ["Handgeschöpftes Papier"],
+      subtitle: [],
+      description: ["Die schwarzen Papierstreifen wurden während des Gautsch-Vorganges eingelegt.<br>Größe: 60 x 48 cm"],
+      foto: ["Foto: AXEL&nbsp;NORDMEIER"]
       },
       {
       name: "papiere-19", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: ["../papiere/Spachtel 1.jpg"],
+      title: ["Spachtelpapier"],
+      subtitle: [],
+      description: ["Größe: 70 x 50 cm"],
+      foto: ["Foto: ANETT&nbso;ARNOLD"]
       }],
   "faltarbeiten": [
       {
       name: "faltarbeiten-1", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: [
+        "../faltarbeiten/Faltung1.jpg",
+        "../faltarbeiten/image1318.jpg"],
+      title: ["Faltarbeiten"],
+      subtitle: [],
+      description: ["geometrische Faltungen als Beitrag zur Offenen Werkstatt 2012. Verwendung von handgeschöpftem, weißem Papier."],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "faltarbeiten-2", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: [
+        "../faltarbeiten/FaltungE.jpg",
+        "../faltarbeiten/Faltung6.jpg"],
+      title: ["Faltarbeiten"],
+      subtitle: [],
+      description: ["geometrische Faltungen als Beitrag zur Offenen Werkstatt 2012. Verwendung von handgeschöpftem, weißem Papier."],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "faltarbeiten-3", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: [
+        "../faltarbeiten/Faltung8.jpg",
+        "../faltarbeiten/Faltung5.jpg"],
+      title: ["Faltarbeiten"],
+      subtitle: [],
+      description: ["geometrische Faltungen als Beitrag zur Offenen Werkstatt 2012. Verwendung von handgeschöpftem, weißem Papier."],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "faltarbeiten-4", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: [
+        "../faltarbeiten/FaltungA.jpg",
+        "../faltarbeiten/Faltung4.jpg"],
+      title: ["Faltarbeiten"],
+      subtitle: [],
+      description: ["geometrische Faltungen als Beitrag zur Offenen Werkstatt 2012. Verwendung von handgeschöpftem, weißem Papier."],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "faltarbeiten-5", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: [
+        "../faltarbeiten/image1324.jpg",
+        "../faltarbeiten/image1323.jpg"],
+      title: ["Faltarbeiten"],
+      subtitle: [],
+      description: ["geometrische Faltungen als Beitrag zur Offenen Werkstatt 2012. Verwendung von handgeschöpftem, weißem Papier."],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "faltarbeiten-6", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: [
+        "../faltarbeiten/FaltungD.jpg",
+        "../faltarbeiten/image1328.jpg",
+        "../faltarbeiten/Faltung11a.jpg"],
+      title: ["Faltarbeiten"],
+      subtitle: [],
+      description: ["geometrische Faltungen als Beitrag zur Offenen Werkstatt 2012. Verwendung von handgeschöpftem, weißem Papier."],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "faltarbeiten-7", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: ["../faltarbeiten/FaltungB.jpg"],
+      title: ["Faltarbeiten"],
+      subtitle: [],
+      description: ["geometrische Faltungen als Beitrag zur Offenen Werkstatt 2012. Verwendung von handgeschöpftem, weißem Papier."],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "faltarbeiten-8", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: [
+        "../faltarbeiten/image1333.jpg",
+        "../faltarbeiten/Faltung2.jpg"],
+      title: ["Faltarbeiten"],
+      subtitle: [],
+      description: ["geometrische Faltungen als Beitrag zur Offenen Werkstatt 2012. Verwendung von handgeschöpftem, weißem Papier."],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "faltarbeiten-9", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: [
+        "../faltarbeiten/image1336.jpg",
+        "../faltarbeiten/Faltung3.jpg"],
+      title: ["Faltarbeiten"],
+      subtitle: [],
+      description: ["geometrische Faltungen als Beitrag zur Offenen Werkstatt 2012. Verwendung von handgeschöpftem, weißem Papier."],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "faltarbeiten-10", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: [
+        "../faltarbeiten/Faltung9b.jpg",
+        "../faltarbeiten/Faltung9a.jpg"],
+      title: ["Faltarbeiten"],
+      subtitle: [],
+      description: ["geometrische Faltungen als Beitrag zur Offenen Werkstatt 2012. Verwendung von handgeschöpftem, weißem Papier."],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "faltarbeiten-11", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: [
+        "../faltarbeiten/image1342.jpg",
+        "../faltarbeiten/image1341.jpg"],
+      title: ["Faltarbeiten"],
+      subtitle: [],
+      description: ["geometrische Faltungen als Beitrag zur Offenen Werkstatt 2012. Verwendung von handgeschöpftem, weißem Papier."],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "faltarbeiten-12", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: [
+        "../faltarbeiten/Faltung7.jpg",
+        "../faltarbeiten/FaltungC.jpg"],
+      title: ["Faltarbeiten"],
+      subtitle: [],
+      description: ["geometrische Faltungen als Beitrag zur Offenen Werkstatt 2012. Verwendung von handgeschöpftem, weißem Papier."],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       }]
     };
 const tabs = ['bucheinbaende', 'restaurierungen', 'objekte', 'papiere', 'faltarbeiten'];
