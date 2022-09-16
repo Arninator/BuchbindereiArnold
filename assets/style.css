@@ -638,8 +638,9 @@ a:hover {
   transform: scale(0.8);
 }
 .grossansicht-div {
-  min-height: 100vh;
-  margin: auto;
+  height: 100vh;
+  max-height: 100vh;
+  margin-top: 50px;
   width: 100%;
 }
 figure {
@@ -676,14 +677,15 @@ figcaption {
   margin: 0;
 }
 .description {
-  font-weight: 100;
+  font-weight: 200;
 }
 .nonbreaking {
   font-size: 16px;
   white-space: nowrap;
 }
 span {
-  font-size: 16px;
+  font-size: 10px;
+  font-weight: 200;
 }
 /* 
   FOOTER

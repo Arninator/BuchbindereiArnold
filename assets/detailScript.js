@@ -45,17 +45,17 @@ const Img = (props) => {
     const currentImg = currentSection + "-" + currentIndex;
 
     return(
-        <figure className="figure">
+        <figure className="figure" style={props.id != currentImg ? {display: 'none'} : {}}>
             <div className="image-div">
-                <button className="prev" style={props.id != currentImg ? {display: 'none'} : {}}>&#10094;</button>
+                <button className="prev">&#10094;</button>
                 {props.src.map((url, index) => {
-                    return <img id={props.id} src={url} alt={props.description[index]} style={props.id != currentImg || index != 0 ? {display: 'none'} : {}} />
+                    return <img id={props.id} src={url} alt={props.description[index]} style={index != 0 ? {display: 'none'} : {}} />
                 })}
-                <button className="next" style={props.id != currentImg ? {display: 'none'} : {}}>&#10095;</button>
+                <button className="next">&#10095;</button>
             </div>
             {props.description.map((description, index) => {
                 return(
-                    <figcaption style={props.id != currentImg || index != 0 ? {display: 'none'} : {}}>
+                    <figcaption style={index != 0 ? {display: 'none'} : {}}>
                         <h5 className="title" dangerouslySetInnerHTML={{__html:  props.title[index]}}></h5>
                         <h6 className="subtitle" dangerouslySetInnerHTML={{__html:  props.subtitle[index]}}></h6>
                         <p className="description" dangerouslySetInnerHTML={{__html:  description + "<br><br><span>" + props.foto[index] + "</span>"}}></p>
