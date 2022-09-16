@@ -256,107 +256,125 @@ const data = {
       },
       {
       name: "restaurierungen-4", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: ["../restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: ["Reise-Falt-Landkarten"],
+      subtitle: ["Ungarn, Böhmen, Schlesien, Mähren, Östereich, Bayern"],
+      description: ["Gestochen von JOHANN&nbsp;GEORG&nbsp;SCHREIBERN, Leipzig, 1676-1750, gefaltet in einem Reiseetui"],
+      foto: ["Foto: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "restaurierungen-5", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: ["../restaurierungen/Burgundici vorher nachher.jpg"],
+      title: ["Zeiller, Martin: Topographia Circuli Burgundici: Das ist, Beschreibung deß Burgundisch- und Niederländischen Craises."],
+      subtitle: ["Caspar Merian, Franckfurt am Mayn, 1654"],
+      description: ["Pergamentband mit stark geschrumpfter Pergamentdecke, herausgerissener Buchblock &rarr; Einfügen der losen Seiten, Nachheften loser Lagen, Lösen alter, nicht fachgerechter Verklebungen, Reinigen der Pergamentdecke und mehrmaliges Auskaschieren, um die Deformierung der Deckel zu beseitigen. Auftragsarbeit aus dem Jahr 2018"],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "restaurierungen-6", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: ["../restaurierungen/938_23 vorher nachher breit.jpg"],
+      title: ["Pöhls, M.: Darstellung des gemeinen deutschen und des Hamburgischen Handelsrechts für Juristen und Kaufleute. 4. Band: Assecuranzrecht."],
+      subtitle: ["Verlag Hoffmann und Campe, Hamburg, 1832"],
+      description: ["Halblederband, selbst gefertigtes Buntpapier, Lederkapital, Handvergoldungen auf dem Rücken in Anlehnung an die alte Decke. Einband im Stil der Zeit für die Commerzbibliothek Hamburg, 2021"],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "restaurierungen-7", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: ["../restaurierungen/S 468 vorher nachher breit.jpg"],
+      title: ["Admiralitätsordnung und andere Seerechte"],
+      subtitle: ["Handschrift, undatiert"],
+      description: ["Flexibler Pergamentband mit Stehkanten und Bindebändern. Pergamentband nur gesteckt, klebstofffrei, zum schonenden Umgang mit dem Archivgut. Restaurierung für die Commerzbibliothek Hamburg, 2021"],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "restaurierungen-8", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: ["../restaurierungen/Gerichtsordnung Celle vorher nachher breit 2.jpg"],
+      title: ["Hagemann, Dr. Theodor: Die Ordnung des Königlichen Ober-Appellations-Gerichts zu Celle."],
+      subtitle: ["Hahnsche Hofbuchhandlung, Hannover, 1819"],
+      description: ["Pappband, Bezug mit Kleisterpapier (nach historischem Vorbild gefertigt), Goldlinien auf dem Rücken, Verwendung des alten Titelschildes. Auftragsarbeit aus dem Jahr 2016"],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "restaurierungen-9", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: [
+        "../restaurierungen/Venetia vorher nachher breit.jpg",
+        "../restaurierungen/Venetia nachher im Buch.jpg"],
+      title: ["Zeiller, Martin: Itinerarium Italiae Nov Antiquae: Oder, Raiß-Beschreibung durch Italien.<br>Restaurierung von Graphiken, hier das Blatt VENETIA"],
+      subtitle: ["Matthaeus Merian, Franckfurt am Mayn, 1640"],
+      description: ["Stark beschädigte Pläne und Karten mit alten Verklebungen (z.T. TESA) &rarr; Reinigung der Blätter, nicht fachgerechte Verklebungen im Wasserbad lösen, Reparatur der Karten mit Japanpapier, geglättete Karten in den Buchblock einfügen. Auftragsarbeit 2017"],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "restaurierungen-10", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: [
+        "../restaurierungen/Halle vorher nachher breit.jpg",
+        "../restaurierungen/Halle nachher innen breit.jpg"],
+      title: ["Halle, Johann Samuel: Giftpflanzen."],
+      subtitle: ["Berlin, 1785"],
+      description: ["Lederband. Auftragsarbeit aus dem Jahr 2020"],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "restaurierungen-11", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: ["../restaurierungen/Löseke vorher nachher breit.jpg"],
+      title: ["Löseke, D. Joh. Ludwig Leberecht: Materia medica oder Abhandlung von den auserlesenen Arzneymitteln."],
+      subtitle: ["Berlin und Stettin, 1773"],
+      description: ["Pappband, Bezug mit Kiebitzpapier (nach historischem Vorbild gefertigt), Titelschild. Auftragsarbeit aus dem Jahr 202"],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "restaurierungen-12", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: [
+        "../restaurierungen/Rom vorher nachher.jpg",
+        "../restaurierungen/Rom vorher.jpg",
+        "../restaurierungen/Rom nachher.jpg",
+        "../restaurierungen/Rom nachher im Buch.jpg"],
+      title: ["Zeiller, Martin: Itinerarium Italiae Nov Antiquae: Oder, Raiß-Beschreibung durch Italien.<br>Restaurierung von Graphiken, hier das Blatt ROM"],
+      subtitle: ["Matthaeus Merian, Franckfurt am Mayn, 1640"],
+      description: ["Stark beschädigte Pläne und Karten mit alten Verklebungen (z.T. TESA) &rarr; Reinigung der Blätter, nicht fachgerechte Verklebungen im Wasserbad lösen, Reparatur der Karten mit Japanpapier, geglättete Karten in den Buchblock einfügen. Auftragsarbeit 2017"],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "restaurierungen-13", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: [
+        "../restaurierungen/Sammelband vorher nachher 2 breit.jpg",
+        "../restaurierungen/Sammelband vorher nachher 3 breit.jpg",
+        "../restaurierungen/Sammelband vorher nachher 4 breit.jpg",
+        "../restaurierungen/Sammelband vorher nachher 1.jpg"],
+      title: ["Sammelband um 1600"],
+      subtitle: [],
+      description: ["Stark beschädigter und verschmutzter Pergamentband mit ausgerissenem Buchblock &rarr; Umfangreiche Papierrestaurierung, Reinigung der Seiten, Ergänzung der Fehlstellen im Pergament, Verlängerung der Pergamenteinschläge (Japanpapier), Erneuerung der Bindebänder. Auftragsarbeit aus dem Jahr 2018"],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "restaurierungen-14", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: [
+        "../restaurierungen/S 810 vorher nachher außen breit.jpg",
+        "../restaurierungen/S 810 vorher nachher innen breit.jpg"],
+      title: ["Peinliche Anklage des Rechten Fiscalis in criminalibus c[on]tra Johan Noble Schiffer des zu Cuxhaven verbrannten Schifs."],
+      subtitle: ["Handschrift, 1717"],
+      description: ["Halblederband, selbst gefertigtes Buntpapier, handgestochenes Kapital. Einband im Stil der Zeit für die Commerzbibliothek Hamburg, 2021"],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "restaurierungen-15", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: [
+        "../restaurierungen/Schließen vorher nachher.jpg",
+        "../restaurierungen/Schließen vorher nachher breit.jpg"],
+      title: ["Ergänzung von Silber-Schließen"],
+      subtitle: [],
+      description: ["Auftragsarbeit aus dem Jahr 2020"],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
       {
       name: "restaurierungen-16", 
-      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
-      title: [""],
-      subtitle: [""],
-      description: [""],
-      foto: [""]
+      urls: [
+        "../restaurierungen/S 815 vorher nachher außen breit.jpg",
+        "../restaurierungen/S 815 vorher nachher innen breit.jpg"],
+      title: ["Anmerckungen über die hamburgische Gerichts-Ordnungen de Annis 1622, 1632 und 1645. Cum Annotationibus Beati Consulis Anderson margini adjectis, ex ejus authentico."],
+      subtitle: ["Handschrift, 1739"],
+      description: ["Pappband, selbst gefertigtes Buntpapier, Lederkapital. Einband im Stil der Zeit für die Commerzbibliothek Hamburg, 2021"],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       }],
   "objekte": [
       {
