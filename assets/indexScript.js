@@ -220,228 +220,458 @@ const data = {
       }],
 
   "restaurierungen": [
-      {name: "restaurierungen-1", 
-      url: "../imgs/restaurierungen/Album um 1700 vorher nachher 1.jpg",
-      description: ""
+      {
+      name: "restaurierungen-1", 
+      urls: [
+        "../restaurierungen/Album um 1700 vorher nachher 1 breit.jpg",
+        "../restaurierungen/Album um 1700 vorher nachher 2 breit.jpg",
+        "../restaurierungen/Album um 1700 vorher nachher 3 breit.jpg"],
+      title: ["Poesie- / Erinnerungsalbum um 1700"],
+      subtitle: [],
+      description: ["Ganzlederband, Wiederverwendung aller historischen Materialien, Sicherung der Brokatpapiere. Auftragsarbeit aus dem Jahr 2017"],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
-      {name: "restaurierungen-2", 
-      url: "../imgs/restaurierungen/Parlophon vorher nachher.jpg",
-      description: ""
+      {
+      name: "restaurierungen-2", 
+      urls: [
+        "../restaurierungen/Parlophon vorher nachher breit.jpg",
+        "../restaurierungen/Masters Voice vorher nachher breit.jpg",
+        "../restaurierungen/Kuhlenkampff vorher nachher breit.jpg",
+        "../restaurierungen/Telefunken vorher nachher breit.jpg"],
+      title: ["Restaurierung alter Schallplattenhüllen"],
+      subtitle: [],
+      description: ["Wässern und Glätten der Papierhüllen, Schließen der Risse mit Japanpapier. Auftragsarbeit 2021"],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
-      {name: "restaurierungen-3", 
-      url: "../imgs/restaurierungen/Laurembergii vorher nachher 1.jpg",
-      description: ""
+      {
+      name: "restaurierungen-3", 
+      urls: [
+        "../restaurierungen/Laurembergii vorher nachher 1 breit.jpg",
+        "../restaurierungen/Laurembergii vorher nachher 2 breit.jpg",
+        "../restaurierungen/Laurembergii vorher nachher 3 breit.jpg"],
+      title: ["Petri Laurembergii Rostochiensis: Apparatus Plantarius Primus: Tributus in duos libros. I. De Plantis Bulbosis. II. De Plantis Tuberosis."],
+      subtitle: ["Matthäus Merianus, Francofurti ad Moenum, 1632"],
+      description: ["Pergamentband mit ausgerissenem Buchblock, Schäden am Papier und Einband &rarr; Umfangreiche Papierrestaurierung, neue Vorsatzpapiere aus Hadernpapier, handgestochene Kapitale, Ergänzung der Fehlstellen in der Pergamentdecke, Reinigung und Stabilisierung der Pergamentdecke. Auftragsarbeit aus dem Jahr 2018"],
+      foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       },
-      {name: "restaurierungen-4", 
-      url: "../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg",
-      description: ""
+      {
+      name: "restaurierungen-4", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "restaurierungen-5", 
-      url: "../imgs/restaurierungen/Burgundici vorher nachher.jpg",
-      description: ""
+      {
+      name: "restaurierungen-5", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "restaurierungen-6", 
-      url: "../imgs/restaurierungen/938_23 vorher nachher.jpg",
-      description: ""
+      {
+      name: "restaurierungen-6", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "restaurierungen-7", 
-      url: "../imgs/restaurierungen/S 468 vorher nachher.jpg",
-      description: ""
+      {
+      name: "restaurierungen-7", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "restaurierungen-8", 
-      url: "../imgs/restaurierungen/Gerichtsordnung Celle vorher nachher.jpg",
-      description: ""
+      {
+      name: "restaurierungen-8", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "restaurierungen-9", 
-      url: "../imgs/restaurierungen/Venetia vorher nachher.jpg",
-      description: ""
+      {
+      name: "restaurierungen-9", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "restaurierungen-10", 
-      url: "../imgs/restaurierungen/Halle vorher nachher.jpg",
-      description: ""
+      {
+      name: "restaurierungen-10", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "restaurierungen-11", 
-      url: "../imgs/restaurierungen/Löseke vorher nachher.jpg",
-      description: ""
+      {
+      name: "restaurierungen-11", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "restaurierungen-12", 
-      url: "../imgs/restaurierungen/Rom vorher nachher.jpg",
-      description: ""
+      {
+      name: "restaurierungen-12", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "restaurierungen-13", 
-      url: "../imgs/restaurierungen/Sammelband vorher nachher 2.jpg",
-      description: ""
+      {
+      name: "restaurierungen-13", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "restaurierungen-14", 
-      url: "../imgs/restaurierungen/S 810 vorher nachher außen.jpg",
-      description: ""
+      {
+      name: "restaurierungen-14", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "restaurierungen-15", 
-      url: "../imgs/restaurierungen/Schließen vorher nachher.jpg",
-      description: ""
+      {
+      name: "restaurierungen-15", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "restaurierungen-16", 
-      url: "../imgs/restaurierungen/S 815 vorher nachher außen.jpg",
-      description: ""
+      {
+      name: "restaurierungen-16", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       }],
   "objekte": [
-      {name: "objekte-1", 
-      url: "../imgs/objekte/Kartonage 2.jpg",
-      description: ""
+      {
+      name: "objekte-1", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "objekte-2", 
-      url: "../imgs/objekte/Papiertheater Engelbrecht 1.jpg",
-      description: ""
+      {
+      name: "objekte-2", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "objekte-3", 
-      url: "../imgs/objekte/Schubladen 2.jpg",
-      description: ""
+      {
+      name: "objekte-3", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "objekte-4", 
-      url: "../imgs/objekte/Anett_Arnold_Behaelter_Dose_1 Kopie.jpg",
-      description: ""
+      {
+      name: "objekte-4", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "objekte-5", 
-      url: "../imgs/objekte/Anett_Arnold_Objekt_Schale.jpg",
-      description: ""
+      {
+      name: "objekte-5", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "objekte-6", 
-      url: "../imgs/objekte/Suminagashi_Schachtel.jpg",
-      description: ""
+      {
+      name: "objekte-6", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "objekte-7", 
-      url: "../imgs/objekte/Zuckergemmenschachtel.jpg",
-      description: ""
+      {
+      name: "objekte-7", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "objekte-8", 
-      url: "../imgs/objekte/Taufschale 4.jpg",
-      description: ""
+      {
+      name: "objekte-8", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       }],
   "papiere": [
-      {name: "papiere-1", 
-      url: "../imgs/papiere/Papier 1.jpg",
-      description: ""
+      {
+      name: "papiere-1", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "papiere-2", 
-      url: "../imgs/papiere/Kleister 1.jpg",
-      description: ""
+      {
+      name: "papiere-2", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "papiere-3", 
-      url: "../imgs/papiere/Papier 4.jpg",
-      description: ""
+      {
+      name: "papiere-3", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "papiere-4", 
-      url: "../imgs/papiere/Spachtel 2.jpg",
-      description: ""
+      {
+      name: "papiere-4", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "papiere-5", 
-      url: "../imgs/papiere/Papier 5.jpg",
-      description: ""
+      {
+      name: "papiere-5", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "papiere-6", 
-      url: "../imgs/papiere/Kleister 3.jpg",
-      description: ""
+      {
+      name: "papiere-6", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "papiere-7", 
-      url: "../imgs/papiere/Papier 11.jpg",
-      description: ""
+      {
+      name: "papiere-7", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "papiere-8", 
-      url: "../imgs/papiere/Spachtel 3a.jpg",
-      description: ""
+      {
+      name: "papiere-8", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "papiere-9", 
-      url: "../imgs/papiere/Papier 8.jpg",
-      description: ""
+      {
+      name: "papiere-9", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "papiere-10", 
-      url: "../imgs/papiere/Spachtel 4.jpg",
-      description: ""
+      {
+      name: "papiere-10", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "papiere-11", 
-      url: "../imgs/papiere/Kleister 2.jpg",
-      description: ""
+      {
+      name: "papiere-11", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "papiere-12", 
-      url: "../imgs/papiere/Papier 9.jpg",
-      description: ""
+      {
+      name: "papiere-12", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "papiere-13", 
-      url: "../imgs/papiere/Kleister 4.jpg",
-      description: ""
+      {
+      name: "papiere-13", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "papiere-14", 
-      url: "../imgs/papiere/Papier 6.jpg",
-      description: ""
+      {
+      name: "papiere-14", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "papiere-15", 
-      url: "../imgs/papiere/Papier 2.jpg",
-      description: ""
+      {
+      name: "papiere-15", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "papiere-16", 
-      url: "../imgs/papiere/Spachtel 6.jpg",
-      description: ""
+      {
+      name: "papiere-16", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "papiere-17", 
-      url: "../imgs/papiere/Papier 10.jpg",
-      description: ""
+      {
+      name: "papiere-17", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "papiere-18", 
-      url: "../imgs/papiere/Papier 3.jpg",
-      description: ""
+      {
+      name: "papiere-18", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "papiere-19", 
-      url: "../imgs/papiere/Spachtel 1.jpg",
-      description: ""
+      {
+      name: "papiere-19", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       }],
   "faltarbeiten": [
-      {name: "faltarbeiten-1", 
-      url: "../imgs/faltarbeiten/Faltung1.jpg",
-      description: ""
+      {
+      name: "faltarbeiten-1", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "faltarbeiten-2", 
-      url: "../imgs/faltarbeiten/FaltungE.jpg",
-      description: ""
+      {
+      name: "faltarbeiten-2", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "faltarbeiten-3", 
-      url: "../imgs/faltarbeiten/Faltung8.jpg",
-      description: ""
+      {
+      name: "faltarbeiten-3", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "faltarbeiten-4", 
-      url: "../imgs/faltarbeiten/FaltungA.jpg",
-      description: ""
+      {
+      name: "faltarbeiten-4", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "faltarbeiten-5", 
-      url: "../imgs/faltarbeiten/image1324.jpg",
-      description: ""
+      {
+      name: "faltarbeiten-5", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "faltarbeiten-6", 
-      url: "../imgs/faltarbeiten/FaltungD.jpg",
-      description: ""
+      {
+      name: "faltarbeiten-6", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "faltarbeiten-7", 
-      url: "../imgs/faltarbeiten/FaltungB.jpg",
-      description: ""
+      {
+      name: "faltarbeiten-7", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "faltarbeiten-8", 
-      url: "../imgs/faltarbeiten/image1333.jpg",
-      description: ""
+      {
+      name: "faltarbeiten-8", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "faltarbeiten-9", 
-      url: "../imgs/faltarbeiten/image1336.jpg",
-      description: ""
+      {
+      name: "faltarbeiten-9", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "faltarbeiten-10", 
-      url: "../imgs/faltarbeiten/Faltung9b.jpg",
-      description: ""
+      {
+      name: "faltarbeiten-10", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "faltarbeiten-11", 
-      url: "../imgs/faltarbeiten/image1342.jpg",
-      description: ""
+      {
+      name: "faltarbeiten-11", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       },
-      {name: "faltarbeiten-12", 
-      url: "../imgs/faltarbeiten/Faltung7.jpg",
-      description: ""
+      {
+      name: "faltarbeiten-12", 
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      title: [""],
+      subtitle: [""],
+      description: [""],
+      foto: [""]
       }]
     };
 const tabs = ['bucheinbaende', 'restaurierungen', 'objekte', 'papiere', 'faltarbeiten'];
