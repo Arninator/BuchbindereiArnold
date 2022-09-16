@@ -1,16 +1,30 @@
 const data = {
   "bucheinbaende": [
-      {name: "bucheinbaende-1", 
-       url: "../imgs/bucheinbaende/Flemming_Satt gelebt_2 .jpg",
-       description: ""
+      {name: "bucheinbaende-1",
+       urls: [
+        "../imgs/bucheinbaende/Flemming_Satt gelebt_2 .jpg",
+        "../bucheinbaende/Flemming_Satt gelebt_1.jpg"],
+       title: ["Paul Fleming: Ich habe satt gelebt - Gedichte"],
+       subtitle: ["herausgegeben von THOMAS&nbsp;ROSENLÖCHER&emsp;Insel Verlag Frankfurt am Main und Leipzig, 2009"],
+       description: ["Edelpappband, Bezugspapier und Vorsätze gespachtelt und in einem Stück verarbeitet, Kopf-Naturschnitt, dunkelrotes Lederkapital, graublauer Kartonschuber. Format: 12,5 cm x 18,5 cm; 2013, Privatbesitz"],
+       foto: "Fotos: ANETT&nbsp;ARNOLD"
       }, 
       {name: "bucheinbaende-2", 
-       url: "../imgs/bucheinbaende/Rilke_Wie soll ich_1.jpg",
-       description: ""
+       urls: ["../imgs/bucheinbaende/Rilke_Wie soll ich_1.jpg"],
+       title: ["Rainer Maria Rilke: Wie soll ich meine Seele halten - Liebesgedichte"],
+       subtitle: ["Sonderausgabe 2012&emsp;Insel Verlag Frankfurt am Main und Leipzig, 1994"],
+       description: ["Edelpappband, Bezugspapier handgewalzt von ANNETTE&nbsp;VOGEL, 2011, Kapitalverstärkung aus schwarzem Oasenziegenleder an Kopf und Fuß, dunkelgrüne Vorsätze aus INGRES-Papier, 3-seitiger Naturschnitt, rotes Lederkapital, schwarzer Kartonschuber. Format: 12,3 cm x 18,4 cm; 2013, Privatbesitz"],
+       foto: "Foto: ANETT&nbsp;ARNOLD"
       }, 
       {name: "bucheinbaende-3", 
-       url: "../imgs/bucheinbaende/Magische Nacht_3 Kopie.jpg",
-       description: ""
+       urls: [
+        "../imgs/bucheinbaende/Magische Nacht_3 Kopie.jpg",
+        "../imgs/bucheinbaende/Magische Nacht_1 Kopie.jpg",
+        "../imgs/bucheinbaende/Magische Nacht_2 Kopie.jpg"],
+       title: ["Werner Bergengruen: Magische Nacht - Liebesgedichte"],
+       subtitle: ["herausgegeben von CHARLOTTE&nbsp;BERGENGRUEN&emsp;Verlag der Arche in Zürich, 1978"],
+       description: ["Leporello, Deckel aus handgeschöpftem Papier mit eingelegten Streifen, farbig gestaltet und handgewalzt von ANNETTE&nbsp;VOGEL, 2012, Heftung mit einem farbigen Zwirn, Goldprägung auf dem Vorderdeckel, Papercase aus dunkelblauem Karton. Format: 10,8 cm x 19,2 cm, 2013, Privatbesitz"],
+       foto: "Fotos: ANETT&nbsp;ARNOLD"
       }, 
       {name: "bucheinbaende-4", 
        url: "../imgs/bucheinbaende/Faes_Paris_2.jpg",
@@ -333,7 +347,6 @@ class TitlePage extends React.Component {
     }
     componentDidMount() {
       $(".prev").prop('disabled', true);
-      
     }
     handleClick(e) {
 
