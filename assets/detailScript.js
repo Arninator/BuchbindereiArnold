@@ -12,9 +12,13 @@ class DetailPage extends React.Component {
         data = JSON.parse(sessionStorage.getItem("data"));
         currentIndex = parseInt(sessionStorage.getItem("currentIndex"));
         currentSection = sessionStorage.getItem("currentSection");
+
+        console.log(sessionStorage.getItem("currentSection"));
+        console.log(sessionStorage.getItem("currentIndex"));
     }
     componentDidMount() {
         $(".prev").prop('disabled', true);
+        
     }
     handleClick() {
 
@@ -57,7 +61,7 @@ const Img = (props) => {
                 return(
                     <figcaption style={index != 0 ? {display: 'none'} : {}}>
                         <h5 className="title" dangerouslySetInnerHTML={{__html:  props.title[index]}}></h5>
-                        <h6 className="subtitle" dangerouslySetInnerHTML={{__html:  props.subtitle[index]}}></h6>
+                        <h6 className="subtitle" dangerouslySetInnerHTML={{__html:  props.subtitle.length != 0 ? props.subtitle[index] : ""}}></h6>
                         <p className="description" dangerouslySetInnerHTML={{__html:  description + "<br><br><span>" + props.foto[index] + "</span>"}}></p>
                     </figcaption>
                 )                    
