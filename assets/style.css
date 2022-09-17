@@ -475,64 +475,63 @@ a:hover {
 #bucheinbaende-button-21, #bucheinbaende-21, #bucheinbaende-dot-21 { background-image: var(--bucheinbaende-21);}
 #bucheinbaende-button-22, #bucheinbaende-22, #bucheinbaende-dot-22 { background-image: var(--bucheinbaende-22);}
 
-#restaurierungen-button-1, #restaurierungen-dot-1 { background-image: var(--restaurierungen-1);}
-#restaurierungen-button-2, #restaurierungen-dot-2 { background-image: var(--restaurierungen-2);}
-#restaurierungen-button-3, #restaurierungen-dot-3 { background-image: var(--restaurierungen-3);}
-#restaurierungen-button-4, #restaurierungen-dot-4 { background-image: var(--restaurierungen-4);}
-#restaurierungen-button-5, #restaurierungen-dot-5 { background-image: var(--restaurierungen-5);}
-#restaurierungen-button-6, #restaurierungen-dot-6 { background-image: var(--restaurierungen-6);}
-#restaurierungen-button-7, #restaurierungen-dot-7 { background-image: var(--restaurierungen-7);}
-#restaurierungen-button-8, #restaurierungen-dot-8 { background-image: var(--restaurierungen-8);}
-#restaurierungen-button-9, #restaurierungen-dot-9 { background-image: var(--restaurierungen-9);}
-#restaurierungen-button-10, #restaurierungen-dot-10 { background-image: var(--restaurierungen-10);}
-#restaurierungen-button-11, #restaurierungen-dot-11 { background-image: var(--restaurierungen-11);}
-#restaurierungen-button-12, #restaurierungen-dot-12 { background-image: var(--restaurierungen-12);}
-#restaurierungen-button-13, #restaurierungen-dot-13 { background-image: var(--restaurierungen-13);}
-#restaurierungen-button-14, #restaurierungen-dot-14 { background-image: var(--restaurierungen-14);}
-#restaurierungen-button-15, #restaurierungen-dot-15 { background-image: var(--restaurierungen-15);}
-#restaurierungen-button-16, #restaurierungen-dot-16 { background-image: var(--restaurierungen-16);}
+#restaurierungen-button-1, #restaurierungen-1, #restaurierungen-dot-1 { background-image: var(--restaurierungen-1);}
+#restaurierungen-button-2, #restaurierungen-2, #restaurierungen-dot-2 { background-image: var(--restaurierungen-2);}
+#restaurierungen-button-3, #restaurierungen-3, #restaurierungen-dot-3 { background-image: var(--restaurierungen-3);}
+#restaurierungen-button-4, #restaurierungen-4, #restaurierungen-dot-4 { background-image: var(--restaurierungen-4);}
+#restaurierungen-button-5, #restaurierungen-5, #restaurierungen-dot-5 { background-image: var(--restaurierungen-5);}
+#restaurierungen-button-6, #restaurierungen-6, #restaurierungen-dot-6 { background-image: var(--restaurierungen-6);}
+#restaurierungen-button-7, #restaurierungen-7, #restaurierungen-dot-7 { background-image: var(--restaurierungen-7);}
+#restaurierungen-button-8, #restaurierungen-8, #restaurierungen-dot-9 { background-image: var(--restaurierungen-9);}
+#restaurierungen-button-10, #restaurierungen-9, #restaurierungen-dot-10 { background-image: var(--restaurierungen-10);}
+#restaurierungen-button-11, #restaurierungen-10, #restaurierungen-dot-11 { background-image: var(--restaurierungen-11);}
+#restaurierungen-button-12, #restaurierungen-11, #restaurierungen-dot-12 { background-image: var(--restaurierungen-12);}
+#restaurierungen-button-13, #restaurierungen-12, #restaurierungen-dot-13 { background-image: var(--restaurierungen-13);}
+#restaurierungen-button-14, #restaurierungen-13, #restaurierungen-dot-14 { background-image: var(--restaurierungen-14);}
+#restaurierungen-button-15, #restaurierungen-14, #restaurierungen-dot-15 { background-image: var(--restaurierungen-15);}
+#restaurierungen-button-16, #restaurierungen-15, #restaurierungen-dot-16 { background-image: var(--restaurierungen-16);}
 
-#objekte-button-1, #objekte-dot-1 { background-image: var(--objekte-1);}
-#objekte-button-2, #objekte-dot-2 { background-image: var(--objekte-2);}
-#objekte-button-3, #objekte-dot-3 { background-image: var(--objekte-3);}
-#objekte-button-4, #objekte-dot-4 { background-image: var(--objekte-4);}
-#objekte-button-5, #objekte-dot-5 { background-image: var(--objekte-5);}
-#objekte-button-6, #objekte-dot-6 { background-image: var(--objekte-6);}
-#objekte-button-7, #objekte-dot-7 { background-image: var(--objekte-7);}
-#objekte-button-8, #objekte-dot-8 { background-image: var(--objekte-8);}
+#objekte-button-1, #objekte-1, #objekte-dot-1 { background-image: var(--objekte-1);}
+#objekte-button-2, #objekte-2, #objekte-dot-2 { background-image: var(--objekte-2);}
+#objekte-button-3, #objekte-3, #objekte-dot-3 { background-image: var(--objekte-3);}
+#objekte-button-4, #objekte-4, #objekte-dot-4 { background-image: var(--objekte-4);}
+#objekte-button-5, #objekte-5, #objekte-dot-5 { background-image: var(--objekte-5);}
+#objekte-button-6, #objekte-6, #objekte-dot-6 { background-image: var(--objekte-6);}
+#objekte-button-7, #objekte-7, #objekte-dot-7 { background-image: var(--objekte-7);}
+#objekte-button-8, #objekte-8, #objekte-dot-8 { background-image: var(--objekte-8);}
 
-#papiere-button-1, #papiere-dot-1 { background-image: var(--papiere-1);}
-#papiere-button-2, #papiere-dot-2 { background-image: var(--papiere-2);}
-#papiere-button-3, #papiere-dot-3 { background-image: var(--papiere-3);}
-#papiere-button-4, #papiere-dot-4 { background-image: var(--papiere-4);}
-#papiere-button-5, #papiere-dot-5 { background-image: var(--papiere-5);}
-#papiere-button-6, #papiere-dot-6 { background-image: var(--papiere-6);}
-#papiere-button-7, #papiere-dot-7 { background-image: var(--papiere-7);}
-#papiere-button-8, #papiere-dot-8 { background-image: var(--papiere-8);}
-#papiere-button-9, #papiere-dot-9 { background-image: var(--papiere-9);}
-#papiere-button-10, #papiere-dot-10 { background-image: var(--papiere-10);}
-#papiere-button-11, #papiere-dot-11 { background-image: var(--papiere-11);}
-#papiere-button-12, #papiere-dot-12 { background-image: var(--papiere-12);}
-#papiere-button-13, #papiere-dot-13 { background-image: var(--papiere-13);}
-#papiere-button-14, #papiere-dot-14 { background-image: var(--papiere-14);}
-#papiere-button-15, #papiere-dot-15 { background-image: var(--papiere-15);}
-#papiere-button-16, #papiere-dot-16 { background-image: var(--papiere-16);}
-#papiere-button-17, #papiere-dot-17 { background-image: var(--papiere-17);}
-#papiere-button-18, #papiere-dot-18 { background-image: var(--papiere-18);}
-#papiere-button-19, #papiere-dot-19 { background-image: var(--papiere-19);}
+#papiere-button-1, #papiere-1, #papiere-dot-1 { background-image: var(--papiere-1);}
+#papiere-button-2, #papiere-2, #papiere-dot-2 { background-image: var(--papiere-2);}
+#papiere-button-3, #papiere-3, #papiere-dot-3 { background-image: var(--papiere-3);}
+#papiere-button-4, #papiere-4, #papiere-dot-4 { background-image: var(--papiere-4);}
+#papiere-button-5, #papiere-5, #papiere-dot-5 { background-image: var(--papiere-5);}
+#papiere-button-6, #papiere-6, #papiere-dot-6 { background-image: var(--papiere-6);}
+#papiere-button-7, #papiere-7, #papiere-dot-7 { background-image: var(--papiere-7);}
+#papiere-button-8, #papiere-8, #papiere-dot-8 { background-image: var(--papiere-8);}
+#papiere-button-9, #papiere-9, #papiere-dot-9 { background-image: var(--papiere-9);}
+#papiere-button-10, #papiere-10, #papiere-dot-10 { background-image: var(--papiere-10);}
+#papiere-button-11, #papiere-11, #papiere-dot-11 { background-image: var(--papiere-11);}
+#papiere-button-12, #papiere-12, #papiere-dot-12 { background-image: var(--papiere-12);}
+#papiere-button-13, #papiere-13, #papiere-dot-13 { background-image: var(--papiere-13);}
+#papiere-button-14, #papiere-14, #papiere-dot-14 { background-image: var(--papiere-14);}
+#papiere-button-15, #papiere-15, #papiere-dot-15 { background-image: var(--papiere-15);}
+#papiere-button-16, #papiere-16, #papiere-dot-16 { background-image: var(--papiere-16);}
+#papiere-button-17, #papiere-17, #papiere-dot-17 { background-image: var(--papiere-17);}
+#papiere-button-18, #papiere-18, #papiere-dot-18 { background-image: var(--papiere-18);}
+#papiere-button-19, #papiere-19, #papiere-dot-19 { background-image: var(--papiere-19);}
 
-#faltarbeiten-button-1, #faltarbeiten-dot-1 { background-image: var(--faltarbeiten-1);}
-#faltarbeiten-button-2, #faltarbeiten-dot-2 { background-image: var(--faltarbeiten-2);}
-#faltarbeiten-button-3, #faltarbeiten-dot-3 { background-image: var(--faltarbeiten-3);}
-#faltarbeiten-button-4, #faltarbeiten-dot-4 { background-image: var(--faltarbeiten-4);}
-#faltarbeiten-button-5, #faltarbeiten-dot-5 { background-image: var(--faltarbeiten-5);}
-#faltarbeiten-button-6, #faltarbeiten-dot-6 { background-image: var(--faltarbeiten-6);}
-#faltarbeiten-button-7, #faltarbeiten-dot-7 { background-image: var(--faltarbeiten-7);}
-#faltarbeiten-button-8, #faltarbeiten-dot-8 { background-image: var(--faltarbeiten-8);}
-#faltarbeiten-button-9, #faltarbeiten-dot-9 { background-image: var(--faltarbeiten-9);}
-#faltarbeiten-button-10, #faltarbeiten-dot-10 { background-image: var(--faltarbeiten-10);}
-#faltarbeiten-button-11, #faltarbeiten-dot-11 { background-image: var(--faltarbeiten-11);}
-#faltarbeiten-button-12, #faltarbeiten-dot-12 { background-image: var(--faltarbeiten-12);}
+#faltarbeiten-button-1, #faltarbeiten-1, #faltarbeiten-dot-1 { background-image: var(--faltarbeiten-1);}
+#faltarbeiten-button-2, #faltarbeiten-2, #faltarbeiten-dot-2 { background-image: var(--faltarbeiten-2);}
+#faltarbeiten-button-3, #faltarbeiten-3, #faltarbeiten-dot-3 { background-image: var(--faltarbeiten-3);}
+#faltarbeiten-button-4, #faltarbeiten-4, #faltarbeiten-dot-4 { background-image: var(--faltarbeiten-4);}
+#faltarbeiten-button-5, #faltarbeiten-5, #faltarbeiten-dot-5 { background-image: var(--faltarbeiten-5);}
+#faltarbeiten-button-6, #faltarbeiten-6, #faltarbeiten-dot-6 { background-image: var(--faltarbeiten-6);}
+#faltarbeiten-button-7, #faltarbeiten-7, #faltarbeiten-dot-7 { background-image: var(--faltarbeiten-7);}
+#faltarbeiten-button-8, #faltarbeiten-8, #faltarbeiten-dot-8 { background-image: var(--faltarbeiten-8);}
+#faltarbeiten-button-9, #faltarbeiten-9, #faltarbeiten-dot-9 { background-image: var(--faltarbeiten-9);}
+#faltarbeiten-button-10, #faltarbeiten-10, #faltarbeiten-dot-10 { background-image: var(--faltarbeiten-10);}
+#faltarbeiten-button-11, #faltarbeiten-11, #faltarbeiten-dot-11 { background-image: var(--faltarbeiten-11);}
+#faltarbeiten-button-12, #faltarbeiten-12, #faltarbeiten-dot-12 { background-image: var(--faltarbeiten-12);}
 
 #bucheinbaende-button-1, #bucheinbaende-button-2, #bucheinbaende-button-3,
 #restaurierungen-button-1, #restaurierungen-button-2, #restaurierungen-button-3,
