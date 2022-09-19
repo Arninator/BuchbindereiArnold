@@ -6,7 +6,6 @@ class DetailPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            section: "",
             index: ""
         }
 
@@ -18,27 +17,33 @@ class DetailPage extends React.Component {
         currentSection = sessionStorage.getItem("currentSection");
 
         this.setState({
-            section: {currentSection},
-            index: {currentIndex}
+            index: currentIndex
         })
     }
     componentDidMount() {
-        if (data[currentSection][currentIndex].urls.length < 2) {
+        if (data[currentSection][currentIndex - 1].urls.length < 2) {
             $(".prev").prop('disabled', true);
             $(".next").prop('disabled', true);
+        } else {
+            $(".prev").prop('disabled', false);
+            $(".next").prop('disabled', false);
+        }
+    }
+    componentDidUpdate() {
+        if (data[currentSection][currentIndex - 1].urls.length < 2) {
+            $(".prev").prop('disabled', true);
+            $(".next").prop('disabled', true);
+        } else {
+            $(".prev").prop('disabled', false);
+            $(".next").prop('disabled', false);
         }
     }
     handleClick(e) {
         if (e.target.className == ("shortcuts")) {
-            // console.log(currentSection + "-" + currentIndex);
-            // document.getElementById(currentSection + "-" + currentIndex).style.display = "none";
 
-            // currentIndex = e.target.id.substring(currentSection.length + 1); 
-            // // sessionStorage.setItem("currentIndex", currentIndex);
-
-            // document.getElementById(currentSection + "-" + currentIndex).style.display = "block";
+            currentIndex = e.target.id.substring(currentSection.length + 10);
             this.setState({
-                index: {currentIndex}
+                index: currentIndex
             })
         }
     }

@@ -533,14 +533,6 @@ a:hover {
 #faltarbeiten-button-10, #faltarbeiten-10, #shortcut-faltarbeiten-10, #faltarbeiten-dot-10 { background-image: var(--faltarbeiten-10);}
 #faltarbeiten-button-11, #faltarbeiten-11, #shortcut-faltarbeiten-11, #faltarbeiten-dot-11 { background-image: var(--faltarbeiten-11);}
 #faltarbeiten-button-12, #faltarbeiten-12, #shortcut-faltarbeiten-12, #faltarbeiten-dot-12 { background-image: var(--faltarbeiten-12);}
-/* 
-#bucheinbaende-button-1, #bucheinbaende-button-2, #bucheinbaende-button-3,
-#restaurierungen-button-1, #restaurierungen-button-2, #restaurierungen-button-3,
-#objekte-button-1, #objekte-button-2, #objekte-button-3,
-#papiere-button-1, #papiere-button-2, #papiere-button-3,
-#faltarbeiten-button-1, #faltarbeiten-button-2, #faltarbeiten-button-3 {
-  display: block;
-} */
 
 .next, .prev {  
   width: auto;
