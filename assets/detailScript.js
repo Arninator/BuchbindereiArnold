@@ -5,6 +5,10 @@ let currentSection;
 class DetailPage extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            section: "",
+            index: ""
+        }
 
         this.handleClick = this.handleClick.bind(this);
     }
@@ -13,15 +17,30 @@ class DetailPage extends React.Component {
         currentIndex = parseInt(sessionStorage.getItem("currentIndex"));
         currentSection = sessionStorage.getItem("currentSection");
 
-        console.log(sessionStorage.getItem("currentSection"));
-        console.log(sessionStorage.getItem("currentIndex"));
+        this.setState({
+            section: {currentSection},
+            index: {currentIndex}
+        })
     }
     componentDidMount() {
-        $(".prev").prop('disabled', true);
-        
+        if (data[currentSection][currentIndex].urls.length < 2) {
+            $(".prev").prop('disabled', true);
+            $(".next").prop('disabled', true);
+        }
     }
-    handleClick() {
+    handleClick(e) {
+        if (e.target.className == ("shortcuts")) {
+            // console.log(currentSection + "-" + currentIndex);
+            // document.getElementById(currentSection + "-" + currentIndex).style.display = "none";
 
+            // currentIndex = e.target.id.substring(currentSection.length + 1); 
+            // // sessionStorage.setItem("currentIndex", currentIndex);
+
+            // document.getElementById(currentSection + "-" + currentIndex).style.display = "block";
+            this.setState({
+                index: {currentIndex}
+            })
+        }
     }
     render () {
         return(
@@ -42,7 +61,7 @@ class DetailPage extends React.Component {
 }
 const Shortcuts = (props) => {
     return(
-        <div id={props.id} className={props.className} onClick={props.onClick}></div>
+        <div id={"shortcut-" + props.id} className={props.className} onClick={props.onClick}></div>
     )
 }
 const Img = (props) => {
@@ -53,7 +72,6 @@ const Img = (props) => {
             <div className="image-div">
                 <button className="prev">&#10094;</button>
                 {props.src.map((url, index) => {
-                    console.log(url);
                     return <img id={props.id} src={url} alt={props.description[index]} style={index != 0 ? {display: 'none'} : {}} />
                 })}
                 <button className="next">&#10095;</button>
