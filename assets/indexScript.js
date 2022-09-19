@@ -758,6 +758,8 @@ class TitlePage extends React.Component {
     }
     componentDidMount() {
       $(".prev").prop('disabled', true);
+
+      sessionStorage.setItem("currentSection", "index");
     }
     handleClick(e) {
 

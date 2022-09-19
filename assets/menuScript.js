@@ -3,6 +3,15 @@ const tabs = ['index', 'bucheinbaende', 'restaurierungen', 'objekte', 'papiere',
 class Menu extends React.Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      activeTab: ""
+    }
+  }
+  componentDidMount() {
+    this.setState({
+      activeTab: sessionStorage.getItem("currentSection")
+    })
   }
   render () {
     return (
