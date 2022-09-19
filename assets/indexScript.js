@@ -223,9 +223,9 @@ const data = {
       {
       name: "restaurierungen-1", 
       urls: [
-        "../restaurierungen/Album um 1700 vorher nachher 1 breit.jpg",
-        "../restaurierungen/Album um 1700 vorher nachher 2 breit.jpg",
-        "../restaurierungen/Album um 1700 vorher nachher 3 breit.jpg"],
+        "../imgs/restaurierungen/Album um 1700 vorher nachher 1 breit.jpg",
+        "../imgs/restaurierungen/Album um 1700 vorher nachher 2 breit.jpg",
+        "../imgs/restaurierungen/Album um 1700 vorher nachher 3 breit.jpg"],
       title: ["Poesie- / Erinnerungsalbum um 1700"],
       subtitle: [],
       description: ["Ganzlederband, Wiederverwendung aller historischen Materialien, Sicherung der Brokatpapiere. Auftragsarbeit aus dem Jahr 2017"],
@@ -234,10 +234,10 @@ const data = {
       {
       name: "restaurierungen-2", 
       urls: [
-        "../restaurierungen/Parlophon vorher nachher breit.jpg",
-        "../restaurierungen/Masters Voice vorher nachher breit.jpg",
-        "../restaurierungen/Kuhlenkampff vorher nachher breit.jpg",
-        "../restaurierungen/Telefunken vorher nachher breit.jpg"],
+        "../imgs/restaurierungen/Parlophon vorher nachher breit.jpg",
+        "../imgs/restaurierungen/Masters Voice vorher nachher breit.jpg",
+        "../imgs/restaurierungen/Kuhlenkampff vorher nachher breit.jpg",
+        "../imgs/restaurierungen/Telefunken vorher nachher breit.jpg"],
       title: ["Restaurierung alter Schallplattenhüllen"],
       subtitle: [],
       description: ["Wässern und Glätten der Papierhüllen, Schließen der Risse mit Japanpapier. Auftragsarbeit 2021"],
@@ -246,9 +246,9 @@ const data = {
       {
       name: "restaurierungen-3", 
       urls: [
-        "../restaurierungen/Laurembergii vorher nachher 1 breit.jpg",
-        "../restaurierungen/Laurembergii vorher nachher 2 breit.jpg",
-        "../restaurierungen/Laurembergii vorher nachher 3 breit.jpg"],
+        "../imgs/restaurierungen/Laurembergii vorher nachher 1 breit.jpg",
+        "../imgs/restaurierungen/Laurembergii vorher nachher 2 breit.jpg",
+        "../imgs/restaurierungen/Laurembergii vorher nachher 3 breit.jpg"],
       title: ["Petri Laurembergii Rostochiensis: Apparatus Plantarius Primus: Tributus in duos libros. I. De Plantis Bulbosis. II. De Plantis Tuberosis."],
       subtitle: ["Matthäus Merianus, Francofurti ad Moenum, 1632"],
       description: ["Pergamentband mit ausgerissenem Buchblock, Schäden am Papier und Einband &rarr; Umfangreiche Papierrestaurierung, neue Vorsatzpapiere aus Hadernpapier, handgestochene Kapitale, Ergänzung der Fehlstellen in der Pergamentdecke, Reinigung und Stabilisierung der Pergamentdecke. Auftragsarbeit aus dem Jahr 2018"],
@@ -256,7 +256,7 @@ const data = {
       },
       {
       name: "restaurierungen-4", 
-      urls: ["../restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      urls: ["/imgs../restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
       title: ["Reise-Falt-Landkarten"],
       subtitle: ["Ungarn, Böhmen, Schlesien, Mähren, Östereich, Bayern"],
       description: ["Gestochen von JOHANN&nbsp;GEORG&nbsp;SCHREIBERN, Leipzig, 1676-1750, gefaltet in einem Reiseetui"],
@@ -264,7 +264,7 @@ const data = {
       },
       {
       name: "restaurierungen-5", 
-      urls: ["../restaurierungen/Burgundici vorher nachher.jpg"],
+      urls: ["../imgs/restaurierungen/Burgundici vorher nachher.jpg"],
       title: ["Zeiller, Martin: Topographia Circuli Burgundici: Das ist, Beschreibung deß Burgundisch- und Niederländischen Craises."],
       subtitle: ["Caspar Merian, Franckfurt am Mayn, 1654"],
       description: ["Pergamentband mit stark geschrumpfter Pergamentdecke, herausgerissener Buchblock &rarr; Einfügen der losen Seiten, Nachheften loser Lagen, Lösen alter, nicht fachgerechter Verklebungen, Reinigen der Pergamentdecke und mehrmaliges Auskaschieren, um die Deformierung der Deckel zu beseitigen. Auftragsarbeit aus dem Jahr 2018"],
@@ -272,7 +272,7 @@ const data = {
       },
       {
       name: "restaurierungen-6", 
-      urls: ["../restaurierungen/938_23 vorher nachher breit.jpg"],
+      urls: ["../imgs/restaurierungen/938_23 vorher nachher breit.jpg"],
       title: ["Pöhls, M.: Darstellung des gemeinen deutschen und des Hamburgischen Handelsrechts für Juristen und Kaufleute. 4. Band: Assecuranzrecht."],
       subtitle: ["Verlag Hoffmann und Campe, Hamburg, 1832"],
       description: ["Halblederband, selbst gefertigtes Buntpapier, Lederkapital, Handvergoldungen auf dem Rücken in Anlehnung an die alte Decke. Einband im Stil der Zeit für die Commerzbibliothek Hamburg, 2021"],
@@ -280,7 +280,7 @@ const data = {
       },
       {
       name: "restaurierungen-7", 
-      urls: ["../restaurierungen/S 468 vorher nachher breit.jpg"],
+      urls: ["../imgs/restaurierungen/S 468 vorher nachher breit.jpg"],
       title: ["Admiralitätsordnung und andere Seerechte"],
       subtitle: ["Handschrift, undatiert"],
       description: ["Flexibler Pergamentband mit Stehkanten und Bindebändern. Pergamentband nur gesteckt, klebstofffrei, zum schonenden Umgang mit dem Archivgut. Restaurierung für die Commerzbibliothek Hamburg, 2021"],
@@ -288,7 +288,7 @@ const data = {
       },
       {
       name: "restaurierungen-8", 
-      urls: ["../restaurierungen/Gerichtsordnung Celle vorher nachher breit 2.jpg"],
+      urls: ["../imgs/restaurierungen/Gerichtsordnung Celle vorher nachher breit 2.jpg"],
       title: ["Hagemann, Dr. Theodor: Die Ordnung des Königlichen Ober-Appellations-Gerichts zu Celle."],
       subtitle: ["Hahnsche Hofbuchhandlung, Hannover, 1819"],
       description: ["Pappband, Bezug mit Kleisterpapier (nach historischem Vorbild gefertigt), Goldlinien auf dem Rücken, Verwendung des alten Titelschildes. Auftragsarbeit aus dem Jahr 2016"],
@@ -297,8 +297,8 @@ const data = {
       {
       name: "restaurierungen-9", 
       urls: [
-        "../restaurierungen/Venetia vorher nachher breit.jpg",
-        "../restaurierungen/Venetia nachher im Buch.jpg"],
+        "../imgs/restaurierungen/Venetia vorher nachher breit.jpg",
+        "../imgs/restaurierungen/Venetia nachher im Buch.jpg"],
       title: ["Zeiller, Martin: Itinerarium Italiae Nov Antiquae: Oder, Raiß-Beschreibung durch Italien.<br>Restaurierung von Graphiken, hier das Blatt VENETIA"],
       subtitle: ["Matthaeus Merian, Franckfurt am Mayn, 1640"],
       description: ["Stark beschädigte Pläne und Karten mit alten Verklebungen (z.T. TESA) &rarr; Reinigung der Blätter, nicht fachgerechte Verklebungen im Wasserbad lösen, Reparatur der Karten mit Japanpapier, geglättete Karten in den Buchblock einfügen. Auftragsarbeit 2017"],
@@ -307,8 +307,8 @@ const data = {
       {
       name: "restaurierungen-10", 
       urls: [
-        "../restaurierungen/Halle vorher nachher breit.jpg",
-        "../restaurierungen/Halle nachher innen breit.jpg"],
+        "../imgs/restaurierungen/Halle vorher nachher breit.jpg",
+        "../imgs/restaurierungen/Halle nachher innen breit.jpg"],
       title: ["Halle, Johann Samuel: Giftpflanzen."],
       subtitle: ["Berlin, 1785"],
       description: ["Lederband. Auftragsarbeit aus dem Jahr 2020"],
@@ -316,7 +316,7 @@ const data = {
       },
       {
       name: "restaurierungen-11", 
-      urls: ["../restaurierungen/Löseke vorher nachher breit.jpg"],
+      urls: ["../imgs/restaurierungen/Löseke vorher nachher breit.jpg"],
       title: ["Löseke, D. Joh. Ludwig Leberecht: Materia medica oder Abhandlung von den auserlesenen Arzneymitteln."],
       subtitle: ["Berlin und Stettin, 1773"],
       description: ["Pappband, Bezug mit Kiebitzpapier (nach historischem Vorbild gefertigt), Titelschild. Auftragsarbeit aus dem Jahr 202"],
@@ -325,10 +325,10 @@ const data = {
       {
       name: "restaurierungen-12", 
       urls: [
-        "../restaurierungen/Rom vorher nachher.jpg",
-        "../restaurierungen/Rom vorher.jpg",
-        "../restaurierungen/Rom nachher.jpg",
-        "../restaurierungen/Rom nachher im Buch.jpg"],
+        "../imgs/restaurierungen/Rom vorher nachher.jpg",
+        "../imgs/restaurierungen/Rom vorher.jpg",
+        "../imgs/restaurierungen/Rom nachher.jpg",
+        "../imgs/restaurierungen/Rom nachher im Buch.jpg"],
       title: ["Zeiller, Martin: Itinerarium Italiae Nov Antiquae: Oder, Raiß-Beschreibung durch Italien.<br>Restaurierung von Graphiken, hier das Blatt ROM"],
       subtitle: ["Matthaeus Merian, Franckfurt am Mayn, 1640"],
       description: ["Stark beschädigte Pläne und Karten mit alten Verklebungen (z.T. TESA) &rarr; Reinigung der Blätter, nicht fachgerechte Verklebungen im Wasserbad lösen, Reparatur der Karten mit Japanpapier, geglättete Karten in den Buchblock einfügen. Auftragsarbeit 2017"],
@@ -337,10 +337,10 @@ const data = {
       {
       name: "restaurierungen-13", 
       urls: [
-        "../restaurierungen/Sammelband vorher nachher 2 breit.jpg",
-        "../restaurierungen/Sammelband vorher nachher 3 breit.jpg",
-        "../restaurierungen/Sammelband vorher nachher 4 breit.jpg",
-        "../restaurierungen/Sammelband vorher nachher 1.jpg"],
+        "../imgs/restaurierungen/Sammelband vorher nachher 2 breit.jpg",
+        "../imgs/restaurierungen/Sammelband vorher nachher 3 breit.jpg",
+        "../imgs/restaurierungen/Sammelband vorher nachher 4 breit.jpg",
+        "../imgs/restaurierungen/Sammelband vorher nachher 1.jpg"],
       title: ["Sammelband um 1600"],
       subtitle: [],
       description: ["Stark beschädigter und verschmutzter Pergamentband mit ausgerissenem Buchblock &rarr; Umfangreiche Papierrestaurierung, Reinigung der Seiten, Ergänzung der Fehlstellen im Pergament, Verlängerung der Pergamenteinschläge (Japanpapier), Erneuerung der Bindebänder. Auftragsarbeit aus dem Jahr 2018"],
@@ -349,8 +349,8 @@ const data = {
       {
       name: "restaurierungen-14", 
       urls: [
-        "../restaurierungen/S 810 vorher nachher außen breit.jpg",
-        "../restaurierungen/S 810 vorher nachher innen breit.jpg"],
+        "../imgs/restaurierungen/S 810 vorher nachher außen breit.jpg",
+        "../imgs/restaurierungen/S 810 vorher nachher innen breit.jpg"],
       title: ["Peinliche Anklage des Rechten Fiscalis in criminalibus c[on]tra Johan Noble Schiffer des zu Cuxhaven verbrannten Schifs."],
       subtitle: ["Handschrift, 1717"],
       description: ["Halblederband, selbst gefertigtes Buntpapier, handgestochenes Kapital. Einband im Stil der Zeit für die Commerzbibliothek Hamburg, 2021"],
@@ -359,8 +359,8 @@ const data = {
       {
       name: "restaurierungen-15", 
       urls: [
-        "../restaurierungen/Schließen vorher nachher.jpg",
-        "../restaurierungen/Schließen vorher nachher breit.jpg"],
+        "../imgs/restaurierungen/Schließen vorher nachher.jpg",
+        "../imgs/restaurierungen/Schließen vorher nachher breit.jpg"],
       title: ["Ergänzung von Silber-Schließen"],
       subtitle: [],
       description: ["Auftragsarbeit aus dem Jahr 2020"],
@@ -369,8 +369,8 @@ const data = {
       {
       name: "restaurierungen-16", 
       urls: [
-        "../restaurierungen/S 815 vorher nachher außen breit.jpg",
-        "../restaurierungen/S 815 vorher nachher innen breit.jpg"],
+        "../imgs/restaurierungen/S 815 vorher nachher außen breit.jpg",
+        "../imgs/restaurierungen/S 815 vorher nachher innen breit.jpg"],
       title: ["Anmerckungen über die hamburgische Gerichts-Ordnungen de Annis 1622, 1632 und 1645. Cum Annotationibus Beati Consulis Anderson margini adjectis, ex ejus authentico."],
       subtitle: ["Handschrift, 1739"],
       description: ["Pappband, selbst gefertigtes Buntpapier, Lederkapital. Einband im Stil der Zeit für die Commerzbibliothek Hamburg, 2021"],
@@ -380,9 +380,9 @@ const data = {
       {
       name: "objekte-1", 
       urls: [
-        "../objekte/Kartonage.jpg",
-        "../objekte/Kartonage 1.jpg",
-        "../objekte/Kartonage 2.jpg"],
+        "../imgs/objekte/Kartonage.jpg",
+        "../imgs/objekte/Kartonage 1.jpg",
+        "../imgs/objekte/Kartonage 2.jpg"],
       title: ["Bau einer Kartonage nach historischem Vorbild"],
       subtitle: [],
       description: ["Bau des Körpers aus Pappe, Kanteneinfassung mit gelbem Oasen-Ziegenleder, äußerer Bezug aus handgefertigtem Buntpapier (GISELA&nbsp;RESCHKE, Hamburg), Auftragsarbeit 2016"],
@@ -391,9 +391,9 @@ const data = {
       {
       name: "objekte-2", 
       urls: [
-        "../objekte/Papiertheater Engelbrecht.jpg",
-        "../objekte/Papiertheater Engelbrecht 1.jpg",
-        "../objekte/Papiertheater Engelbrecht 2.jpg"],
+        "../imgs/objekte/Papiertheater Engelbrecht.jpg",
+        "../imgs/objekte/Papiertheater Engelbrecht 1.jpg",
+        "../imgs/objekte/Papiertheater Engelbrecht 2.jpg"],
       title: ["Bau eines Papiertheaters"],
       subtitle: ["„Die Freimaurer-Loge“, ca. 1750, Original-Tafeln von MARTIN&nbsp;ENGELBRECHT (1684-1756)"],
       description: ["Kanten mit blauem Oasen-Ziegenleder eingefasst, Bezugspapiere (GISELA&nbsp;RESCHKE, Hamburg), 2016, Privatbesitz"],
@@ -402,9 +402,9 @@ const data = {
       {
       name: "objekte-3", 
       urls: [
-        "../objekte/Schubladen 1.jpg",
-        "../objekte/Schubladen.jpg",
-        "../objekte/Schubladen 2.jpg"],
+        "../imgs/objekte/Schubladen 1.jpg",
+        "../imgs/objekte/Schubladen.jpg",
+        "../imgs/objekte/Schubladen 2.jpg"],
       title: ["Restaurierung eines Schubladenschrankes"],
       subtitle: [],
       description: ["Auftragsarbeit aus dem Jahre 2014"],
@@ -413,9 +413,9 @@ const data = {
       {
       name: "objekte-4", 
       urls: [
-        "../objekte/Anett_Arnold_Behaelter_Dose_1 Kopie.jpg",
-        "../objekte/Anett_Arnold_Behaelter_Dose_1.jpg",
-        "../objekte/Anett_Arnold_Behaelter_Dose_2 Kopie.jpg"],
+        "../imgs/objekte/Anett_Arnold_Behaelter_Dose_1 Kopie.jpg",
+        "../imgs/objekte/Anett_Arnold_Behaelter_Dose_1.jpg",
+        "../imgs/objekte/Anett_Arnold_Behaelter_Dose_2 Kopie.jpg"],
       title: ["Behälter für ein Salbölgefäß"],
       subtitle: [],
       description: ["Auftragsarbeit für Pastor NILS&nbsp;CHRISTIANSEN (Hamburg), 2014"],
@@ -423,7 +423,7 @@ const data = {
       },
       {
       name: "objekte-5", 
-      urls: ["../objekte/Anett_Arnold_Objekt_Schale.jpg"],
+      urls: ["../imgs/objekte/Anett_Arnold_Objekt_Schale.jpg"],
       title: ["Schale aus Kozo"],
       subtitle: [],
       description: ["Schale farbig bearbeitet, Relief mit Blattsilber belegt. Größe: Durchmesser 19,5 cm, Höhe 10 cm, 2013"],
@@ -431,7 +431,7 @@ const data = {
       },
       {
       name: "objekte-6", 
-      urls: ["../objekte/Suminagashi_Schachtel.jpg"],
+      urls: ["../imgs/objekte/Suminagashi_Schachtel.jpg"],
       title: ["Stülpdeckelkasten"],
       subtitle: [],
       description: ["Kasten bezogen mit Suminagashi-Papier (GISELA&nbsp;RESCHKE, Hamburg). Format: 19 cm x 27 cm x 3,5 cm, 2009, Privatbesitz"],
@@ -439,7 +439,7 @@ const data = {
       },
       {
       name: "objekte-7", 
-      urls: ["../objekte/Zuckergemmenschachtel.jpg"],
+      urls: ["../imgs/objekte/Zuckergemmenschachtel.jpg"],
       title: ["Faltschachtel"],
       subtitle: ["ehemals Faltschachteln für Zuckergemmen - nach historischem Vorbild gefertigt"],
       description: ["Schachtel bezogen mit Kleisterpapier von GISELA&nbsp;RESCHKE, 2012, gefalteter Teil aus farbigem Japanpapier. Format: 5 cm x 5 cm x 2 cm, 2012, Privatbesitz"],
@@ -448,11 +448,11 @@ const data = {
       {
       name: "objekte-8", 
       urls: [
-        "../objekte/Taufschale 1.jpg",
-        "../objekte/Taufschale 2.jpg",
-        "../objekte/Taufschale 3.jpg",
-        "../objekte/Taufschale 4.jpg",
-        "../objekte/Taufschale 5.jpg"],
+        "../imgs/objekte/Taufschale 1.jpg",
+        "../imgs/objekte/Taufschale 2.jpg",
+        "../imgs/objekte/Taufschale 3.jpg",
+        "../imgs/objekte/Taufschale 4.jpg",
+        "../imgs/objekte/Taufschale 5.jpg"],
       title: ["Behältnis für Taufutensilien"],
       subtitle: [],
       description: ["Behältnis bezogen mit Oasenziegenleder, gepolstert, Magnetverschluss. Auftragsarbeit für Pastor NILS CHRISTIANSEN (Hamburg), 2016"],
@@ -462,8 +462,8 @@ const data = {
       {
       name: "papiere-1", 
       urls: [
-        "../papiere/Papier 1.jpg",
-        "../papiere/Papier 7.jpg"],
+        "../imgs/papiere/Papier 1.jpg",
+        "../imgs/papiere/Papier 7.jpg"],
       title: ["Handgeschöpftes Papier"],
       subtitle: [],
       description: ["ie gerissenen Papierstreifen wurden während des Gautsch-Vorganges eingelegt.<br>Größe: 60 x 48 cm"],
@@ -471,7 +471,7 @@ const data = {
       },
       {
       name: "papiere-2", 
-      urls: ["../papiere/Kleister 1.jpg"],
+      urls: ["../imgs/papiere/Kleister 1.jpg"],
       title: ["Kleisterpapier"],
       subtitle: [],
       description: ["Größe: 100 x 70 cm"],
@@ -479,7 +479,7 @@ const data = {
       },
       {
       name: "papiere-3", 
-      urls: ["../papiere/Papier 4.jpg"],
+      urls: ["../imgs/papiere/Papier 4.jpg"],
       title: ["Handgeschöpftes Papier"],
       subtitle: [],
       description: ["Die Papierstreifen wurden während des Gautsch-Vorganges eingelegt.<br>Größe: 60 x 48 cm"],
@@ -488,7 +488,7 @@ const data = {
       },
       {
       name: "papiere-4", 
-      urls: ["../papiere/Spachtel 2.jpg"],
+      urls: ["../imgs/papiere/Spachtel 2.jpg"],
       title: ["Spachtelpapier"],
       subtitle: [],
       description: ["Größe: 70 x 50 cm"],
@@ -496,7 +496,7 @@ const data = {
       },
       {
       name: "papiere-5", 
-      urls: ["../papiere/Papier 5.jpg"],
+      urls: ["../imgs/papiere/Papier 5.jpg"],
       title: ["Handgeschöpftes Papier"],
       subtitle: [],
       description: ["Die gerissenen Papierstreifen (Makulatur) wurden während des Gautsch-Vorganges eingelegt.<br>Größe: 60 x 44 cm"],
@@ -504,7 +504,7 @@ const data = {
       },
       {
       name: "papiere-6", 
-      urls: ["../papiere/Kleister 3.jpg"],
+      urls: ["../imgs/papiere/Kleister 3.jpg"],
       title: ["Kleisterpapier"],
       subtitle: [],
       description: ["Größe: 62 x 48 cm"],
@@ -512,7 +512,7 @@ const data = {
       },
       {
       name: "papiere-7", 
-      urls: ["../papiere/Papier 11.jpg"],
+      urls: ["../imgs/papiere/Papier 11.jpg"],
       title: ["Handgeschöpftes Papier"],
       subtitle: [],
       description: ["Die schwarzen und weißen Papierstreifen wurden während des Gautsch-Vorganges eingelegt.<br>Größe: 60 x 48 cm"],
@@ -521,8 +521,8 @@ const data = {
       {
       name: "papiere-8", 
       urls: [
-        "../papiere/Spachtel 3a.jpg",
-        "../papiere/Spachtel 3b.jpg"],
+        "../imgs/papiere/Spachtel 3a.jpg",
+        "../imgs/papiere/Spachtel 3b.jpg"],
       title: ["Spachtelpapier"],
       subtitle: [],
       description: ["Größe: 100 x 70 cm"],
@@ -530,7 +530,7 @@ const data = {
       },
       {
       name: "papiere-9", 
-      urls: ["../papiere/Papier 8.jpg"],
+      urls: ["../imgs/papiere/Papier 8.jpg"],
       title: ["Handgeschöpftes Papier"],
       subtitle: [],
       description: ["Größe: 80 x 60 cm"],
@@ -538,7 +538,7 @@ const data = {
       },
       {
       name: "papiere-10", 
-      urls: ["../papiere/Spachtel 4.jpg"],
+      urls: ["../imgs/papiere/Spachtel 4.jpg"],
       title: ["Spachtelpapier"],
       subtitle: [],
       description: ["Größe: 44 x 31cm"],
@@ -546,7 +546,7 @@ const data = {
       },
       {
       name: "papiere-11", 
-      urls: ["../papiere/Kleister 2.jpg"],
+      urls: ["../imgs/papiere/Kleister 2.jpg"],
       title: ["Kleisterpapier"],
       subtitle: [],
       description: ["Größe: 70 x 50 cm"],
@@ -554,7 +554,7 @@ const data = {
       },
       {
       name: "papiere-12", 
-      urls: ["../papiere/Papier 9.jpg"],
+      urls: ["../imgs/papiere/Papier 9.jpg"],
       title: ["Handgeschöpftes Papier"],
       subtitle: [],
       description: ["Die weißen Papierstreifen wurden während des Gautsch-Vorganges eingelegt.<br>Größe: 60 x 45 cm"],
@@ -562,7 +562,7 @@ const data = {
       },
       {
       name: "papiere-13", 
-      urls: ["../papiere/Kleister 4.jpg"],
+      urls: ["../imgs/papiere/Kleister 4.jpg"],
       title: ["Kleisterpapier"],
       subtitle: [],
       description: ["Größe: 62 x 48cm"],
@@ -570,7 +570,7 @@ const data = {
       },
       {
       name: "papiere-14", 
-      urls: ["../papiere/Papier 6.jpg"],
+      urls: ["../imgs/papiere/Papier 6.jpg"],
       title: ["Handgeschöpftes Papier"],
       subtitle: [],
       description: ["Die weißen Papierstreifen wurden während des Gautsch-Vorganges eingelegt.<br>Größe: 50 x 42 cm"],
@@ -578,7 +578,7 @@ const data = {
       },
       {
       name: "papiere-15", 
-      urls: ["../papiere/Papier 2.jpg"],
+      urls: ["../imgs/papiere/Papier 2.jpg"],
       title: ["Handgeschöpftes Papier"],
       subtitle: [],
       description: ["Größe: 80 x 60 cm"],
@@ -586,7 +586,7 @@ const data = {
       },
       {
       name: "papiere-16", 
-      urls: ["../papiere/Spachtel 6.jpg"],
+      urls: ["../imgs/papiere/Spachtel 6.jpg"],
       title: ["Spachtelpapier"],
       subtitle: [],
       description: ["Größe: 86 x 48 cm"],
@@ -594,7 +594,7 @@ const data = {
       },
       {
       name: "papiere-17", 
-      urls: ["../papiere/Papier 10.jpg"],
+      urls: ["../imgs/papiere/Papier 10.jpg"],
       title: ["Handgeschöpftes Papier"],
       subtitle: [],
       description: ["Die Papierstreifen wurden während des Gautsch-Vorganges eingelegt, nach dem Trocknungsprozess wurde das Blatt farbig überwalzt.<br>Größe: 50 x 42 cm"],
@@ -602,7 +602,7 @@ const data = {
       },
       {
       name: "papiere-18", 
-      urls: ["../papiere/Papier 3.jpg"],
+      urls: ["../imgs/papiere/Papier 3.jpg"],
       title: ["Handgeschöpftes Papier"],
       subtitle: [],
       description: ["Die schwarzen Papierstreifen wurden während des Gautsch-Vorganges eingelegt.<br>Größe: 60 x 48 cm"],
@@ -610,7 +610,7 @@ const data = {
       },
       {
       name: "papiere-19", 
-      urls: ["../papiere/Spachtel 1.jpg"],
+      urls: ["../imgs/papiere/Spachtel 1.jpg"],
       title: ["Spachtelpapier"],
       subtitle: [],
       description: ["Größe: 70 x 50 cm"],
@@ -620,8 +620,8 @@ const data = {
       {
       name: "faltarbeiten-1", 
       urls: [
-        "../faltarbeiten/Faltung1.jpg",
-        "../faltarbeiten/image1318.jpg"],
+        "../imgs/faltarbeiten/Faltung1.jpg",
+        "../imgs/faltarbeiten/image1318.jpg"],
       title: ["Faltarbeiten"],
       subtitle: [],
       description: ["geometrische Faltungen als Beitrag zur Offenen Werkstatt 2012. Verwendung von handgeschöpftem, weißem Papier."],
@@ -630,8 +630,8 @@ const data = {
       {
       name: "faltarbeiten-2", 
       urls: [
-        "../faltarbeiten/FaltungE.jpg",
-        "../faltarbeiten/Faltung6.jpg"],
+        "../imgs/faltarbeiten/FaltungE.jpg",
+        "../imgs/faltarbeiten/Faltung6.jpg"],
       title: ["Faltarbeiten"],
       subtitle: [],
       description: ["geometrische Faltungen als Beitrag zur Offenen Werkstatt 2012. Verwendung von handgeschöpftem, weißem Papier."],
@@ -640,8 +640,8 @@ const data = {
       {
       name: "faltarbeiten-3", 
       urls: [
-        "../faltarbeiten/Faltung8.jpg",
-        "../faltarbeiten/Faltung5.jpg"],
+        "../imgs/faltarbeiten/Faltung8.jpg",
+        "../imgs/faltarbeiten/Faltung5.jpg"],
       title: ["Faltarbeiten"],
       subtitle: [],
       description: ["geometrische Faltungen als Beitrag zur Offenen Werkstatt 2012. Verwendung von handgeschöpftem, weißem Papier."],
@@ -650,8 +650,8 @@ const data = {
       {
       name: "faltarbeiten-4", 
       urls: [
-        "../faltarbeiten/FaltungA.jpg",
-        "../faltarbeiten/Faltung4.jpg"],
+        "../imgs/faltarbeiten/FaltungA.jpg",
+        "../imgs/faltarbeiten/Faltung4.jpg"],
       title: ["Faltarbeiten"],
       subtitle: [],
       description: ["geometrische Faltungen als Beitrag zur Offenen Werkstatt 2012. Verwendung von handgeschöpftem, weißem Papier."],
@@ -660,8 +660,8 @@ const data = {
       {
       name: "faltarbeiten-5", 
       urls: [
-        "../faltarbeiten/image1324.jpg",
-        "../faltarbeiten/image1323.jpg"],
+        "../imgs/faltarbeiten/image1324.jpg",
+        "../imgs/faltarbeiten/image1323.jpg"],
       title: ["Faltarbeiten"],
       subtitle: [],
       description: ["geometrische Faltungen als Beitrag zur Offenen Werkstatt 2012. Verwendung von handgeschöpftem, weißem Papier."],
@@ -670,9 +670,9 @@ const data = {
       {
       name: "faltarbeiten-6", 
       urls: [
-        "../faltarbeiten/FaltungD.jpg",
-        "../faltarbeiten/image1328.jpg",
-        "../faltarbeiten/Faltung11a.jpg"],
+        "../imgs/faltarbeiten/FaltungD.jpg",
+        "../imgs/faltarbeiten/image1328.jpg",
+        "../imgs/faltarbeiten/Faltung11a.jpg"],
       title: ["Faltarbeiten"],
       subtitle: [],
       description: ["geometrische Faltungen als Beitrag zur Offenen Werkstatt 2012. Verwendung von handgeschöpftem, weißem Papier."],
@@ -680,7 +680,7 @@ const data = {
       },
       {
       name: "faltarbeiten-7", 
-      urls: ["../faltarbeiten/FaltungB.jpg"],
+      urls: ["../imgs/faltarbeiten/FaltungB.jpg"],
       title: ["Faltarbeiten"],
       subtitle: [],
       description: ["geometrische Faltungen als Beitrag zur Offenen Werkstatt 2012. Verwendung von handgeschöpftem, weißem Papier."],
@@ -689,8 +689,8 @@ const data = {
       {
       name: "faltarbeiten-8", 
       urls: [
-        "../faltarbeiten/image1333.jpg",
-        "../faltarbeiten/Faltung2.jpg"],
+        "../imgs/faltarbeiten/image1333.jpg",
+        "../imgs/faltarbeiten/Faltung2.jpg"],
       title: ["Faltarbeiten"],
       subtitle: [],
       description: ["geometrische Faltungen als Beitrag zur Offenen Werkstatt 2012. Verwendung von handgeschöpftem, weißem Papier."],
@@ -699,8 +699,8 @@ const data = {
       {
       name: "faltarbeiten-9", 
       urls: [
-        "../faltarbeiten/image1336.jpg",
-        "../faltarbeiten/Faltung3.jpg"],
+        "../imgs/faltarbeiten/image1336.jpg",
+        "../imgs/faltarbeiten/Faltung3.jpg"],
       title: ["Faltarbeiten"],
       subtitle: [],
       description: ["geometrische Faltungen als Beitrag zur Offenen Werkstatt 2012. Verwendung von handgeschöpftem, weißem Papier."],
@@ -709,8 +709,8 @@ const data = {
       {
       name: "faltarbeiten-10", 
       urls: [
-        "../faltarbeiten/Faltung9b.jpg",
-        "../faltarbeiten/Faltung9a.jpg"],
+        "../imgs/faltarbeiten/Faltung9b.jpg",
+        "../imgs/faltarbeiten/Faltung9a.jpg"],
       title: ["Faltarbeiten"],
       subtitle: [],
       description: ["geometrische Faltungen als Beitrag zur Offenen Werkstatt 2012. Verwendung von handgeschöpftem, weißem Papier."],
@@ -719,8 +719,8 @@ const data = {
       {
       name: "faltarbeiten-11", 
       urls: [
-        "../faltarbeiten/image1342.jpg",
-        "../faltarbeiten/image1341.jpg"],
+        "../imgs/faltarbeiten/image1342.jpg",
+        "../imgs/faltarbeiten/image1341.jpg"],
       title: ["Faltarbeiten"],
       subtitle: [],
       description: ["geometrische Faltungen als Beitrag zur Offenen Werkstatt 2012. Verwendung von handgeschöpftem, weißem Papier."],
@@ -729,8 +729,8 @@ const data = {
       {
       name: "faltarbeiten-12", 
       urls: [
-        "../faltarbeiten/Faltung7.jpg",
-        "../faltarbeiten/FaltungC.jpg"],
+        "../imgs/faltarbeiten/Faltung7.jpg",
+        "../imgs/faltarbeiten/FaltungC.jpg"],
       title: ["Faltarbeiten"],
       subtitle: [],
       description: ["geometrische Faltungen als Beitrag zur Offenen Werkstatt 2012. Verwendung von handgeschöpftem, weißem Papier."],
