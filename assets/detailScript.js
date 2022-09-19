@@ -6,7 +6,8 @@ class DetailPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            index: ""
+            index: "",
+            subIndex: ""
         }
 
         this.handleClick = this.handleClick.bind(this);
@@ -17,7 +18,8 @@ class DetailPage extends React.Component {
         currentSection = sessionStorage.getItem("currentSection");
 
         this.setState({
-            index: currentIndex
+            index: currentIndex,
+            subIndex: 0
         })
     }
     componentDidMount() {
@@ -39,11 +41,22 @@ class DetailPage extends React.Component {
         }
     }
     handleClick(e) {
-        if (e.target.className == ("shortcuts")) {
-
+        if (e.target.className == "shortcuts") {
             currentIndex = e.target.id.substring(currentSection.length + 10);
             this.setState({
-                index: currentIndex
+                index: currentIndex,
+                subIndex: 0
+            })
+        } else if (e.target.className == "prev") {
+            const subIndex = this.state.subIndex < 1 ? data[currentSection][currentIndex - 1].urls.length - 1 : this.state.subIndex - 1;
+            console.log(subIndex);
+            this.setState({
+                subIndex: subIndex
+            })
+        } else if (e.target.className == "next") {
+            const subIndex = this.state.subIndex > data[currentSection][currentIndex - 1].urls.length - 2 ? 0 : this.state.subIndex + 1;
+            this.setState({
+                subIndex: subIndex
             })
         }
     }
@@ -57,7 +70,7 @@ class DetailPage extends React.Component {
                 </div>
                 <div className="grossansicht-div">
                     {data[currentSection].map(obj => {
-                        return <Img id={obj.name} src={obj.urls} description={obj.description} title={obj.title} subtitle={obj.subtitle} foto={obj.foto}/>
+                        return <Img id={obj.name} src={obj.urls} description={obj.description} title={obj.title} subtitle={obj.subtitle} foto={obj.foto} onClick={this.handleClick} subIndex={this.state.subIndex}/>
                     })}
                 </div>
             </section>
@@ -75,17 +88,18 @@ const Img = (props) => {
     return(
         <figure className="figure" style={props.id != currentImg ? {display: 'none'} : {}}>
             <div className="image-div">
-                <button className="prev">&#10094;</button>
+                <button className="prev" onClick={props.onClick}>&#10094;</button>
                 {props.src.map((url, index) => {
-                    return <img id={props.id} src={url} alt={props.description[index]} style={index != 0 ? {display: 'none'} : {}} />
+                    return <img id={props.id} src={url} alt={props.description[index]} style={index != props.subIndex ? {display: 'none'} : {}} />
                 })}
-                <button className="next">&#10095;</button>
+                <button className="next" onClick={props.onClick}>&#10095;</button>
             </div>
             {props.description.map((description, index) => {
+                const subIndex = props.subIndex > props.description.length - 1 ? props.description.length - 1 : props.subIndex;
                 return(
-                    <figcaption style={index != 0 ? {display: 'none'} : {}}>
+                    <figcaption style={index != subIndex ? {display: 'none'} : {}}>
                         <h5 className="title" dangerouslySetInnerHTML={{__html:  props.title[index]}}></h5>
-                        <h6 className="subtitle" dangerouslySetInnerHTML={{__html:  props.subtitle.length != 0 ? props.subtitle[index] : ""}}></h6>
+                        <h6 className="subtitle" dangerouslySetInnerHTML={{__html:  props.subtitle[index]}}></h6>
                         <p className="description" dangerouslySetInnerHTML={{__html:  description + "<br><br><span>" + props.foto[index] + "</span>"}}></p>
                     </figcaption>
                 )                    
