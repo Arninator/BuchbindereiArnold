@@ -22,24 +22,6 @@ class DetailPage extends React.Component {
             subIndex: 0
         })
     }
-    componentDidMount() {
-        if (data[currentSection][currentIndex - 1].urls.length < 2) {
-            $(".prev").prop('disabled', true);
-            $(".next").prop('disabled', true);
-        } else {
-            $(".prev").prop('disabled', false);
-            $(".next").prop('disabled', false);
-        }
-    }
-    componentDidUpdate() {
-        if (data[currentSection][currentIndex - 1].urls.length < 2) {
-            $(".prev").prop('disabled', true);
-            $(".next").prop('disabled', true);
-        } else {
-            $(".prev").prop('disabled', false);
-            $(".next").prop('disabled', false);
-        }
-    }
     handleClick(e) {
         if (e.target.className == "shortcuts") {
             currentIndex = e.target.id.substring(currentSection.length + 10);
@@ -88,11 +70,11 @@ const Img = (props) => {
     return(
         <figure className="figure" style={props.id != currentImg ? {display: 'none'} : {}}>
             <div className="image-div">
-                <button className="prev" onClick={props.onClick}>&#10094;</button>
+                <button className="prev" onClick={props.onClick} style={1 == props.src.length ? {display: 'none'} : {}}>&#10094;</button>
                 {props.src.map((url, index) => {
                     return <img id={props.id} src={url} alt={props.description[index]} style={index != props.subIndex ? {display: 'none'} : {}} />
                 })}
-                <button className="next" onClick={props.onClick}>&#10095;</button>
+                <button className="next" onClick={props.onClick} style={1 == props.src.length ? {display: 'none'} : {}}>&#10095;</button>
             </div>
             {props.description.map((description, index) => {
                 const subIndex = props.subIndex > props.description.length - 1 ? props.description.length - 1 : props.subIndex;
