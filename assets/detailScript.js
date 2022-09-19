@@ -53,6 +53,7 @@ const Img = (props) => {
             <div className="image-div">
                 <button className="prev">&#10094;</button>
                 {props.src.map((url, index) => {
+                    console.log(url);
                     return <img id={props.id} src={url} alt={props.description[index]} style={index != 0 ? {display: 'none'} : {}} />
                 })}
                 <button className="next">&#10095;</button>
