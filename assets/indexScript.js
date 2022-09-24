@@ -4,7 +4,7 @@ const data = {
       name: "bucheinbaende-1",
       urls: [
         "../imgs/bucheinbaende/Flemming_Satt gelebt_2 .jpg",
-        "../bucheinbaende/Flemming_Satt gelebt_1.jpg"],
+        "../imgs/bucheinbaende/Flemming_Satt gelebt_1.jpg"],
       title: ["Paul Fleming: Ich habe satt gelebt - Gedichte"],
       subtitle: ["herausgegeben von THOMAS&nbsp;ROSENLÖCHER&emsp;Insel Verlag Frankfurt am Main und Leipzig, 2009"],
       description: ["Edelpappband, Bezugspapier und Vorsätze gespachtelt und in einem Stück verarbeitet, Kopf-Naturschnitt, dunkelrotes Lederkapital, graublauer Kartonschuber. Format: 12,5 cm x 18,5 cm; 2013, Privatbesitz"],
