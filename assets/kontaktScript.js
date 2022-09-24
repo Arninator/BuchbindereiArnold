@@ -4,7 +4,7 @@ class Kontakt extends React.Component {
     }
     render() {
         return(
-            <section>
+            <section id="kontakt-section">
                 <div class="kontakt-div">
 
                     <h1>Kontakt</h1>
@@ -19,26 +19,26 @@ class Kontakt extends React.Component {
                     <h4>Öffnungszeiten</h4>
 
                     <div class="oeffnungszeiten-div">
-                    <div class="tage">
-                        <p>Montag:</p>
-                        <p>Dienstag:</p>
-                        <p>Mittwoch:</p>
-                        <p>Donnerstag:</p>
-                        <p>Freitag:</p>
-                        <p>Samstag:</p>
-                        <p>Sonntag:</p>
-                        <p>und gerne nach Vereinbarung.</p>
-                    </div>
+                        <div class="tage">
+                            <p>Montag:</p>
+                            <p>Dienstag:</p>
+                            <p>Mittwoch:</p>
+                            <p>Donnerstag:</p>
+                            <p>Freitag:</p>
+                            <p>Samstag:</p>
+                            <p>Sonntag:</p>
+                            <p>und gerne nach Vereinbarung.</p>
+                        </div>
 
-                    <div class="zeiten">
-                        <p>geschlossen</p>
-                        <p>10:00 - 17:00</p>
-                        <p>10:00 - 17:00</p>
-                        <p>10:00 - 17:00</p>
-                        <p>10:00 - 17:00</p>
-                        <p>geschlossen</p>
-                        <p>geschlossen</p>
-                    </div>
+                        <div class="zeiten">
+                            <p>geschlossen</p>
+                            <p>10:00 - 17:00</p>
+                            <p>10:00 - 17:00</p>
+                            <p>10:00 - 17:00</p>
+                            <p>10:00 - 17:00</p>
+                            <p>geschlossen</p>
+                            <p>geschlossen</p>
+                        </div>
                     </div>
                 </div>
 

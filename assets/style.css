@@ -690,6 +690,39 @@ span {
 /*
   KONTAKT
 */
+#kontakt-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  min-height: 100vh;
+  max-height: 100vh;
+}
+.kontakt-div h1 {
+  font-size: 6vh;
+  font-weight: 400;
+  margin-top: 0;
+}
+.kontakt-div h3 {
+  font-size: 3vh;
+  font-weight: 200;
+}
+.kontakt-div h4 {
+  font-size: 2vh;
+  font-weight: 300;
+}
+.kontakt-div p {
+  margin: 0;
+}
+.oeffnungszeiten-div {
+  display: flex;
+  flex-direction: row;
+}
+iframe {
+  width: 40vw;
+  height: 52vh;
+}
 /* 
   FOOTER
  */
