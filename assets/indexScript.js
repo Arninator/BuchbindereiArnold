@@ -911,7 +911,7 @@ const Section = (props) => {
 
   return(
     <section id={props.id + "-section"} className="sections">
-      <h1 className="section-header">{props.id.charAt(0).toUpperCase() + props.id.substring(1)}</h1>
+      <h1 className="section-header">{props.id != "bucheinbaende" ? props.id.charAt(0).toUpperCase() + props.id.substring(1) : "Bucheinbände"}</h1>
       <div className="vorschau-div">
         <button id={props.id + "-prev"} className="prev" onClick={props.onClick}>&#10094;</button>
         {numbers.map(number => {

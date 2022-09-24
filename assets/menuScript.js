@@ -58,7 +58,7 @@ const ListElement = (props) => {
       <li className="list-element" id={props.id} key={props.key}><a href={props.id + ".html"}><i className="fa fa-home"></i></a></li>
     : props.id == ("aktuelles" || "vita" || "kontakt") ?
       <li className="list-element" id={props.id} key={props.key}><a href={props.id + ".html"}>{props.id.charAt(0).toUpperCase() + props.id.substring(1)}</a></li>
-    : <li className="list-element" id={props.id} key={props.key}><a href={"#" + props.id + "-section"}>{props.id.charAt(0).toUpperCase() + props.id.substring(1)}</a></li>
+    : <li className="list-element" id={props.id} key={props.key}><a href={"index.html#" + props.id + "-section"}>{props.id != "bucheinbaende" ? props.id.charAt(0).toUpperCase() + props.id.substring(1) : "Bucheinbände"}</a></li>
   );
 }
 
