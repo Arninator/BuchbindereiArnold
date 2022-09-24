@@ -13,6 +13,16 @@ class Menu extends React.Component {
       activeTab: sessionStorage.getItem("currentSection")
     })
   }
+  componentDidUpdate() {
+    if (this.state.activeTab != "index") {
+
+      let tab = document.getElementById(this.state.activeTab);
+      tab.style.borderBottom = "1px solid white";
+      tab.style.borderRight = "1px solid grey";
+      tab.style.borderLeft = "1px solid grey";
+      tab.firstChild.style.color = "darkred";
+    }
+  }
   render () {
     return (
       <header id="menu-container">
@@ -45,10 +55,10 @@ const NavBar = () => {
 const ListElement = (props) => {
   return(
     props.id == "index" ?
-      <li className="list-element" key={props.key}><a href={props.id + ".html"}><i className="fa fa-home"></i></a></li>
+      <li className="list-element" id={props.id} key={props.key}><a href={props.id + ".html"}><i className="fa fa-home"></i></a></li>
     : props.id == ("aktuelles" || "vita" || "kontakt") ?
-      <li className="list-element" key={props.key}><a href={props.id + ".html"}>{props.id.charAt(0).toUpperCase() + props.id.substring(1)}</a></li>
-    : <li className="list-element" key={props.key}><a href={"#" + props.id + "-section"}>{props.id.charAt(0).toUpperCase() + props.id.substring(1)}</a></li>
+      <li className="list-element" id={props.id} key={props.key}><a href={props.id + ".html"}>{props.id.charAt(0).toUpperCase() + props.id.substring(1)}</a></li>
+    : <li className="list-element" id={props.id} key={props.key}><a href={"#" + props.id + "-section"}>{props.id.charAt(0).toUpperCase() + props.id.substring(1)}</a></li>
   );
 }
 
