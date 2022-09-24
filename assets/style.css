@@ -699,11 +699,8 @@ footer {
   margin-top: 2vh;
 }
 footer ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  display: inherit;
 }
 .datenschutz-links {
-  margin: 2vw auto;
+  margin: auto 2vw;
 }
