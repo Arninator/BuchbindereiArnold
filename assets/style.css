@@ -688,32 +688,49 @@ span {
   font-weight: 200;
 }
 /*
-  KONTAKT
+  KONTAKT // VITA // AKTUELLES
 */
-#kontakt-section {
+.extras-section {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
 
-  min-height: 100vh;
-  max-height: 100vh;
+  min-height: 80vh;
+  padding-top: 20vh;
 }
-.kontakt-div h1 {
+#impressum-section {
+  flex-direction: column;
+  align-items: center;
+}
+.extras-div h1 {
   font-size: 6vh;
   font-weight: 400;
   margin-top: 0;
 }
-.kontakt-div h3 {
+.extras-div h3 {
   font-size: 3vh;
   font-weight: 200;
 }
-.kontakt-div h4 {
+.extras-div h4 {
   font-size: 2vh;
   font-weight: 300;
 }
-.kontakt-div p {
+.extras-div h5 {
+  font-size: 2vh;
+  font-weight: 400;
+}
+.extras-div h6 {
+  margin-bottom: 1vh;
+
+  font-size: 18px;
+  font-weight: 300;
+}
+.extras-div p {
   margin: 0;
+}
+.break{
+  margin: 2vh auto;
 }
 .oeffnungszeiten-div {
   display: flex;
@@ -722,6 +739,21 @@ span {
 iframe {
   width: 40vw;
   height: 52vh;
+}
+#iframe-video {
+  width: 90vw;
+  max-width: 890px;
+  height: 60vh;
+  max-height: 500px;
+}
+.impressum_datenschutz {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.impressum, .datenschutz {
+  width: 33vw;
 }
 /* 
   FOOTER
