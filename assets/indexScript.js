@@ -737,14 +737,13 @@ const data = {
       foto: ["Fotos: ANETT&nbsp;ARNOLD"]
       }]
     };
+// import data from "../assets/data.json";
+
 const tabs = ['bucheinbaende', 'restaurierungen', 'objekte', 'papiere', 'faltarbeiten'];
 const sectionLimits = [22, 16, 8, 19, 12];
 
 sessionStorage.setItem("data", JSON.stringify(data));
 sessionStorage.setItem("categories", JSON.stringify(tabs));
-
-// var obj = (sessionStorage.getItem("data"));
-// console.log("OBJ" + JSON.parse(obj)["bucheinbaende"][0].name);
 
 class TitlePage extends React.Component {
     constructor (props) {
@@ -759,7 +758,7 @@ class TitlePage extends React.Component {
     componentDidMount() {
       $(".prev").prop('disabled', true);
 
-      console.log(sessionStorage.getItem("currentSection"));
+      // console.log(sessionStorage.getItem("currentSection"));
 
       if (tabs.indexOf(sessionStorage.getItem("currentSection")) != -1) {
         document.getElementById(sessionStorage.getItem("currentSection") + "-section").scrollIntoView();
