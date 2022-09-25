@@ -9,17 +9,28 @@ class Menu extends React.Component {
   componentDidMount() {
     let activeTab = sessionStorage.getItem("currentSection");
 
-    if (activeTab != "index" && activeTab != "datenschutz" && activeTab != "impressum" && document.getElementById("root") == null) {
+    if (activeTab != "index" && activeTab != "datenschutz" && activeTab != "impressum" && !window.location.pathname.includes("index.html")) {
 
       let tab = document.getElementById(activeTab);
       tab.style.borderBottom = "1px solid white";
       tab.style.borderRight = "1px solid grey";
       tab.style.borderLeft = "1px solid grey";
       tab.firstChild.style.color = "darkred";
+
+    } else if (window.location.pathname.includes("index.html")) {
+      tabs.slice(1,6).map(section => {
+        document.getElementById(section).children[0].setAttribute("href", "#" + section + "-section");
+      })
     }
   }
   handleClick(e) {
-    sessionStorage.setItem("currentSection", e.target.parentElement.id);
+    
+    if (window.location.pathname.includes("index.html") && tabs.slice(1, 6).indexOf(e.target.parentElement.id) != -1) {
+      document.getElementById(e.target.parentElement.id + "-section").scrollIntoView();
+      sessionStorage.setItem("currentSection", "index");
+    } else {
+      sessionStorage.setItem("currentSection", e.target.parentElement.id);
+    }
   }
   render () {
     return (
