@@ -7,7 +7,7 @@ class Menu extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
   componentDidMount() {
-    let activeTab = sessionStorage.getItem("currentSection");
+    let activeTab = window.location.pathname.includes(sessionStorage.getItem("currentSection")) ? sessionStorage.getItem("currentSection") : window.location.pathname.substring(window.location.pathname.lastIndexOf("/") + 1 , window.location.pathname.length - 5);
 
     if (activeTab != "index" && activeTab != "datenschutz" && activeTab != "impressum" && !window.location.pathname.includes("index.html")) {
 
@@ -24,7 +24,7 @@ class Menu extends React.Component {
     }
   }
   handleClick(e) {
-    
+
     if (window.location.pathname.includes("index.html") && tabs.slice(1, 6).indexOf(e.target.parentElement.id) != -1) {
       document.getElementById(e.target.parentElement.id + "-section").scrollIntoView();
       sessionStorage.setItem("currentSection", "index");
