@@ -759,7 +759,13 @@ class TitlePage extends React.Component {
     componentDidMount() {
       $(".prev").prop('disabled', true);
 
-      sessionStorage.setItem("currentSection", "index");
+      console.log(sessionStorage.getItem("currentSection"));
+
+      if (tabs.indexOf(sessionStorage.getItem("currentSection")) != -1) {
+        document.getElementById(sessionStorage.getItem("currentSection") + "-section").scrollIntoView();
+      } else {
+        sessionStorage.setItem("currentSection", "index");
+      }
     }
     handleClick(e) {
 

@@ -23,23 +23,25 @@ class DetailPage extends React.Component {
         })
     }
     handleClick(e) {
-        if (e.target.className == "shortcuts") {
-            currentIndex = e.target.id.substring(currentSection.length + 10);
-            this.setState({
-                index: currentIndex,
-                subIndex: 0
-            })
-        } else if (e.target.className == "prev") {
-            const subIndex = this.state.subIndex < 1 ? data[currentSection][currentIndex - 1].urls.length - 1 : this.state.subIndex - 1;
-            console.log(subIndex);
-            this.setState({
-                subIndex: subIndex
-            })
-        } else if (e.target.className == "next") {
-            const subIndex = this.state.subIndex > data[currentSection][currentIndex - 1].urls.length - 2 ? 0 : this.state.subIndex + 1;
-            this.setState({
-                subIndex: subIndex
-            })
+        if (currentSection != "kontakt" && currentSection != "aktuelles" && currentSection != "vita" && currentSection != "impressum") {
+            if (e.target.className == "shortcuts") {
+                currentIndex = e.target.id.substring(currentSection.length + 10);
+                this.setState({
+                    index: currentIndex,
+                    subIndex: 0
+                })
+            } else if (e.target.className == "prev") {
+                const subIndex = this.state.subIndex < 1 ? data[currentSection][currentIndex - 1].urls.length - 1 : this.state.subIndex - 1;
+                console.log(subIndex);
+                this.setState({
+                    subIndex: subIndex
+                })
+            } else if (e.target.className == "next") {
+                const subIndex = this.state.subIndex > data[currentSection][currentIndex - 1].urls.length - 2 ? 0 : this.state.subIndex + 1;
+                this.setState({
+                    subIndex: subIndex
+                })
+            }
         }
     }
     render () {
