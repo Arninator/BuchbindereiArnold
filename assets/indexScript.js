@@ -751,6 +751,9 @@ let touchStart = null;
 class TitlePage extends React.Component {
     constructor (props) {
         super(props);
+        this.state = {
+          maxElements: 0
+        }
 
         this.handleClick = this.handleClick.bind(this);
 
@@ -760,22 +763,23 @@ class TitlePage extends React.Component {
 
         this.handleTouchStart = this.handleTouchStart.bind(this);
         this.handleTouchEnd = this.handleTouchEnd.bind(this);
-    }
-    componentWillMount() {
-      
+
+        this.handleResize = this.handleResize.bind(this);
     }
     componentDidMount() {
       $(".prev").prop('disabled', true);
+      $(window).on("resize", this.handleResize);
 
       if (tabs.indexOf(sessionStorage.getItem("currentSection")) != -1) {
         document.getElementById(sessionStorage.getItem("currentSection") + "-section").scrollIntoView();
       } else {
         sessionStorage.setItem("currentSection", "index");
       }
-
-      $(window).on("resize", function() {
-        maxElements = screen.width < 750 ? 1 : screen.width < 1200 ? 2 : 3;
-        this.forceUpdate();
+    }
+    handleResize() {
+      maxElements  = screen.width < 750 ? 1 : screen.width < 1200 ? 2 : 3;
+      this.setState({
+        maxElements: window.innerWidth < 750 ? 1 : window.innerWidth < 1200 ? 2 : 3
       });
     }
     handleTouchStart(e) {
@@ -946,6 +950,7 @@ class TitlePage extends React.Component {
         return (
           <div>
             {tabs.map(tab => {
+              console.log("INDEX? " + tab)
               return <Section id={tab} onClick={this.handleClick} onTouchStart={this.handleTouchStart} onTouchEnd={this.handleTouchEnd}/>
             })}
           </div>
