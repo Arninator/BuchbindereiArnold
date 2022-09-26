@@ -745,6 +745,9 @@ const sectionLimits = [22, 16, 8, 19, 12];
 sessionStorage.setItem("data", JSON.stringify(data));
 sessionStorage.setItem("categories", JSON.stringify(tabs));
 
+const maxElements  = screen.width < 750 ? 1 : screen.width < 1200 ? 2 : 3;
+let touchStart = null;
+
 class TitlePage extends React.Component {
     constructor (props) {
         super(props);
@@ -754,16 +757,66 @@ class TitlePage extends React.Component {
         this.minusSlides = this.minusSlides.bind(this);
         this.currentSlide = this.currentSlide.bind(this);
         this.plusSlides = this.plusSlides.bind(this);
+
+        this.handleTouchStart = this.handleTouchStart.bind(this);
+        this.handleTouchEnd = this.handleTouchEnd.bind(this);
     }
     componentDidMount() {
       $(".prev").prop('disabled', true);
-
-      // console.log(sessionStorage.getItem("currentSection"));
 
       if (tabs.indexOf(sessionStorage.getItem("currentSection")) != -1) {
         document.getElementById(sessionStorage.getItem("currentSection") + "-section").scrollIntoView();
       } else {
         sessionStorage.setItem("currentSection", "index");
+      }
+
+      $(window).on("resize", function() {
+        maxElements = screen.width < 750 ? 1 : screen.width < 1200 ? 2 : 3;
+      });
+
+      // window.addEventListener("touchstart", function(e) {
+      //   if(e.touches.length === 1){
+      //     start = e.touches.item(0).clientX;
+      //   }else{
+      //     start = null;
+      //   }
+      // })
+      // window.addEventListener("touchend", function(e) {
+      //   if (start) {
+      //     let end = e.changedTouches.item(0).clientX;
+
+      //     if (end > start + 100) {
+      //       let objectID = e.target.id;
+      //       let minusObjectID = objectID.substring(0, objectID.indexOf("-")) + "-button-" + (parseInt(objectID.substring(objectID.lastIndexOf("-") + 1)) - 1);
+      //       this.minusSlides(objectID.substring(0, objectID.indexOf("-")));
+      //       this.currentSlide(document.getElementById(minusObjectID));
+      //     } else if (end < start - 100) {
+      //       let object = e.target.id;
+
+      //     }
+      //   }
+      // })
+    }
+    handleTouchStart(e) {
+      if(e.touches.length === 1){
+        touchStart = e.touches.item(0).clientX;
+      }else{
+        touchStart = null;
+      }
+    }
+    handleTouchEnd(e) {
+      if (touchStart) {
+        let end = e.changedTouches.item(0).clientX;
+
+        if (end > touchStart + 100) {
+          let objectID = e.target.id;
+          let minusObjectID = objectID.substring(0, objectID.indexOf("-")) + "-button-" + (parseInt(objectID.substring(objectID.lastIndexOf("-") + 1)) - 1);
+          this.minusSlides(objectID.substring(0, objectID.indexOf("-")));
+          this.currentSlide(document.getElementById(minusObjectID));
+        } else if (end < start - 100) {
+          let object = e.target.id;
+
+        }
       }
     }
     handleClick(e) {
@@ -785,8 +838,8 @@ class TitlePage extends React.Component {
       const section = name.substring(0, name.length-5);
       const lastIndex = parseInt($("."+ section).filter(function () {
         return $(this).css('display') != "none";
-      })[2].id.substring(section.length + 8));
-      const firstIndex = lastIndex - 3;
+      })[maxElements - 1].id.substring(section.length + 8));
+      const firstIndex = lastIndex - maxElements;
 
       if (firstIndex < 1) {
         $("#" + section + "-prev").prop('disabled', true);
@@ -817,45 +870,54 @@ class TitlePage extends React.Component {
 
       if ((index + 1) > document.getElementsByClassName(section + "-dot").length) {
         $("." + section + "-dot").removeClass("active");
-        $("#" + section + "-dot-" + index).addClass("active");
-        $("#" + section + "-dot-" + (index - 1)).addClass("active");
-        $("#" + section + "-dot-" + (index - 2)).addClass("active");
-
         $("." + section).css("display", "none");
+        $("#" + section + "-dot-" + index).addClass("active");
         $("#" + section + "-button-" + index).css("display", "block");
-        $("#" + section + "-button-" + (index - 1)).css("display", "block");
-        $("#" + section + "-button-" + (index - 2)).css("display", "block");
-
+        
+        if (maxElements > 1) {
+          $("#" + section + "-dot-" + (index - 1)).addClass("active");
+          $("#" + section + "-button-" + (index - 1)).css("display", "block");
+          if (maxElements > 2) {
+            $("#" + section + "-dot-" + (index - 2)).addClass("active");
+            $("#" + section + "-button-" + (index - 2)).css("display", "block");
+          }
+        }
         $("#" + section + "-next").prop("disabled", true);
         $("#" + section + "-prev").prop("disabled", false);
 
       } else if ((index - 1) < 1) {
 
         $("." + section + "-dot").removeClass("active");
-        $("#" + section + "-dot-" + index).addClass("active");
-        $("#" + section + "-dot-" + (index + 1)).addClass("active");
-        $("#" + section + "-dot-" + (index + 2)).addClass("active");
-
         $("." + section).css("display", "none");
         $("#" + section + "-button-" + index).css("display", "block");
-        $("#" + section + "-button-" + (index + 1)).css("display", "block");
-        $("#" + section + "-button-" + (index + 2)).css("display", "block");
-
+        $("#" + section + "-dot-" + index).addClass("active");
+        
+        if (maxElements > 1) {
+          $("#" + section + "-dot-" + (index + 1)).addClass("active");
+          $("#" + section + "-button-" + (index + 1)).css("display", "block");
+          if (maxElements > 2) {
+            $("#" + section + "-dot-" + (index + 2)).addClass("active");
+            $("#" + section + "-button-" + (index + 2)).css("display", "block");
+          }
+        }
         $("#" + section + "-prev").prop("disabled", true);
         $("#" + section + "-next").prop("disabled", false);
 
       } else {
 
         $("." + section + "-dot").removeClass("active");
-        $("#" + section + "-dot-" + index).addClass("active");
-        $("#" + section + "-dot-" + (index + 1)).addClass("active");
-        $("#" + section + "-dot-" + (index - 1)).addClass("active");
-
         $("." + section).css("display", "none");
         $("#" + section + "-button-" + index).css("display", "block");
-        $("#" + section + "-button-" + (index + 1)).css("display", "block");
-        $("#" + section + "-button-" + (index - 1)).css("display", "block");
-
+        $("#" + section + "-dot-" + index).addClass("active");
+        
+        if (maxElements > 1) {
+          $("#" + section + "-dot-" + (index + 1)).addClass("active");
+          $("#" + section + "-button-" + (index + 1)).css("display", "block");
+          if (maxElements > 2) {
+            $("#" + section + "-dot-" + (index - 1)).addClass("active");
+            $("#" + section + "-button-" + (index - 1)).css("display", "block");
+          }
+        }
         $("#" + section + "-prev").prop("disabled", false);
         $("#" + section + "-next").prop("disabled", false);
 
@@ -872,8 +934,8 @@ class TitlePage extends React.Component {
       const section = name.substring(0, name.length-5);
       const lastIndex = parseInt($("."+ section).filter(function () {
         return $(this).css('display') != "none";
-      })[2].id.substring(section.length + 8)) + 1;
-      const firstIndex = lastIndex - 3;
+      })[maxElements - 1].id.substring(section.length + 8)) + 1;
+      const firstIndex = lastIndex - maxElements;
 
       if (lastIndex > document.getElementsByClassName(section).length) {
         $("#" + section + "-next").prop('disabled', true);
@@ -904,7 +966,7 @@ class TitlePage extends React.Component {
         return (
           <div>
             {tabs.map(tab => {
-              return <Section id={tab} onClick={this.handleClick}/>
+              return <Section id={tab} onClick={this.handleClick} onTouchStart={this.handleTouchStart} onTouchEnd={this.handleTouchEnd}/>
             })}
           </div>
         )
@@ -920,7 +982,7 @@ const Section = (props) => {
       <div className="vorschau-div">
         <button id={props.id + "-prev"} className="prev" onClick={props.onClick}>&#10094;</button>
         {numbers.map(number => {
-          return <Preview id={props.id} number={number} onClick={props.onClick} />
+          return <Preview id={props.id} number={number} onClick={props.onClick} onTouchStart={props.onTouchStart} onTouchEnd={props.onTouchEnd} />
         })}
         <button id={props.id + "-next"} className="next" onClick={props.onClick}>&#10095;</button>
       </div>
@@ -934,13 +996,13 @@ const Section = (props) => {
 }
 const Preview = (props) => {
   return(
-    props.number <= 3 ? <a id={props.id + "-button-" + props.number} className={"vorschau-button " + props.id} onClick={props.onClick} href={props.id + ".html"}></a>
-    : <a id={props.id + "-button-" + props.number} className={"vorschau-button " + props.id} onClick={props.onClick}  href={props.id + ".html"} style={{display: 'none'}}></a>
+    props.number <= maxElements ? <a id={props.id + "-button-" + props.number} className={"vorschau-button " + props.id} onClick={props.onClick} href={props.id + ".html"} onTouchStart={props.onTouchStart} onTouchEnd={props.onTouchEnd}></a>
+    : <a id={props.id + "-button-" + props.number} className={"vorschau-button " + props.id} onClick={props.onClick}  href={props.id + ".html"} style={{display: 'none'}} onTouchStart={props.onTouchStart} onTouchEnd={props.onTouchEnd}></a>
   )
 }
 const Dot = (props) => {
   return(
-    props.number <= 3 ? <div id={props.id + "-dot-" + props.number} className={"dot " + props.id + "-dot active"} onClick={props.onClick}></div>
+    props.number <= maxElements ? <div id={props.id + "-dot-" + props.number} className={"dot " + props.id + "-dot active"} onClick={props.onClick}></div>
     : <div className={"dot " + props.id + "-dot"} id={props.id + "-dot-" + props.number} onClick={props.onClick}></div>
   )
 }
