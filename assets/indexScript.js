@@ -773,6 +773,7 @@ class TitlePage extends React.Component {
       if (tabs.indexOf(sessionStorage.getItem("currentSection")) != -1) {
         document.getElementById(sessionStorage.getItem("currentSection") + "-section").scrollIntoView();
       } else {
+        console.log("STRINGIFY2: " + JSON.stringify(tabs));
         sessionStorage.setItem("currentSection", "index");
       }
     }
@@ -947,11 +948,11 @@ class TitlePage extends React.Component {
     }
 
     render () {
+        console.log("STRINGIFY: " + JSON.stringify(tabs));
         return (
           <div>
             {tabs.map(tab => {
-              console.log("INDEX? " + tab)
-              return <Section id={tab} onClick={this.handleClick} onTouchStart={this.handleTouchStart} onTouchEnd={this.handleTouchEnd}/>
+              return (tab != "index" ? <Section id={tab} onClick={this.handleClick} onTouchStart={this.handleTouchStart} onTouchEnd={this.handleTouchEnd}/> : "")
             })}
           </div>
         )
