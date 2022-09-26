@@ -745,7 +745,7 @@ const sectionLimits = [22, 16, 8, 19, 12];
 sessionStorage.setItem("data", JSON.stringify(data));
 sessionStorage.setItem("categories", JSON.stringify(tabs));
 
-const maxElements  = screen.width < 750 ? 1 : screen.width < 1200 ? 2 : 3;
+let maxElements  = screen.width < 750 ? 1 : screen.width < 1200 ? 2 : 3;
 let touchStart = null;
 
 class TitlePage extends React.Component {
@@ -761,6 +761,9 @@ class TitlePage extends React.Component {
         this.handleTouchStart = this.handleTouchStart.bind(this);
         this.handleTouchEnd = this.handleTouchEnd.bind(this);
     }
+    componentWillMount() {
+      
+    }
     componentDidMount() {
       $(".prev").prop('disabled', true);
 
@@ -772,30 +775,8 @@ class TitlePage extends React.Component {
 
       $(window).on("resize", function() {
         maxElements = screen.width < 750 ? 1 : screen.width < 1200 ? 2 : 3;
+        this.forceUpdate();
       });
-
-      // window.addEventListener("touchstart", function(e) {
-      //   if(e.touches.length === 1){
-      //     start = e.touches.item(0).clientX;
-      //   }else{
-      //     start = null;
-      //   }
-      // })
-      // window.addEventListener("touchend", function(e) {
-      //   if (start) {
-      //     let end = e.changedTouches.item(0).clientX;
-
-      //     if (end > start + 100) {
-      //       let objectID = e.target.id;
-      //       let minusObjectID = objectID.substring(0, objectID.indexOf("-")) + "-button-" + (parseInt(objectID.substring(objectID.lastIndexOf("-") + 1)) - 1);
-      //       this.minusSlides(objectID.substring(0, objectID.indexOf("-")));
-      //       this.currentSlide(document.getElementById(minusObjectID));
-      //     } else if (end < start - 100) {
-      //       let object = e.target.id;
-
-      //     }
-      //   }
-      // })
     }
     handleTouchStart(e) {
       if(e.touches.length === 1){
@@ -807,15 +788,14 @@ class TitlePage extends React.Component {
     handleTouchEnd(e) {
       if (touchStart) {
         let end = e.changedTouches.item(0).clientX;
+        let objectID = e.target.id;
 
         if (end > touchStart + 100) {
-          let objectID = e.target.id;
-          let minusObjectID = objectID.substring(0, objectID.indexOf("-")) + "-button-" + (parseInt(objectID.substring(objectID.lastIndexOf("-") + 1)) - 1);
-          this.minusSlides(objectID.substring(0, objectID.indexOf("-")));
-          this.currentSlide(document.getElementById(minusObjectID));
-        } else if (end < start - 100) {
-          let object = e.target.id;
-
+          let minusObjectID = objectID.substring(0, objectID.indexOf("-")) + "-prev";
+          this.minusSlides(minusObjectID);
+        } else if (end < touchStart - 100) {
+          let plusObjectID = objectID.substring(0, objectID.indexOf("-")) + "-next";
+          this.plusSlides(plusObjectID);
         }
       }
     }
