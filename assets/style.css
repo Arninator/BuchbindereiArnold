@@ -361,14 +361,17 @@ a:hover {
   flex-direction: row;
   justify-content: space-around;
   align-items: baseline;
+
+  color: black;
 }
 
 #logo-anett-arnold {
+  color: inherit;
   font-size: 28px;
   margin-left: 2vw;
 }
-
 #logo-buchbinderei {
+  color: inherit;
   font-size: 20px;
   margin-left: 1.5vw;
 }
@@ -391,7 +394,7 @@ a:hover {
   display: none;
   color: grey;
 }
-#burger-button:hover {
+#burger-button:hover, #logo-container:hover {
   color: darkred;
   cursor: pointer;
 }

@@ -50,19 +50,21 @@ class Menu extends React.Component {
   render () {
     return (
       <header id="menu-container">
-        <Logo />
+        <Logo onClick={this.handleClick}/>
         <NavBar onClick={this.handleClick}/>
       </header>
     )
   }
 }
 
-const Logo = () => {
+const Logo = (props) => {
   return(
-    <div id="logo-container">
-      <div id="logo-anett-arnold">Anett&nbsp;Arnold</div>
-      <div id="logo-buchbinderei">Buchbinderei</div>
-    </div>
+    <a href="index.html" onClick={props.onClick}>
+      <div id="logo-container">
+        <div id="logo-anett-arnold">Anett&nbsp;Arnold</div>
+        <div id="logo-buchbinderei">Buchbinderei</div>
+      </div>
+    </a>
   )
 }
 const NavBar = (props) => {
