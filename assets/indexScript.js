@@ -740,6 +740,7 @@ const data = {
 // import data from "../assets/data.json";
 
 const tabs = ['bucheinbaende', 'restaurierungen', 'objekte', 'papiere', 'faltarbeiten'];
+console.log(tabs);
 const sectionLimits = [22, 16, 8, 19, 12];
 
 sessionStorage.setItem("data", JSON.stringify(data));
