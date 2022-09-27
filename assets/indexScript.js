@@ -743,13 +743,12 @@ const data = {
 // $.getJSON('../assets/data.json', function(d) {
 //   data = JSON.stringify(d)
 // });
-const tabs = ['bucheinbaende', 'restaurierungen', 'objekte', 'papiere', 'faltarbeiten'];
+const previewTabs = ['bucheinbaende', 'restaurierungen', 'objekte', 'papiere', 'faltarbeiten'];
 const sectionLimits = [22, 16, 8, 19, 12];
 
 sessionStorage.setItem("data", JSON.stringify(data));
-// sessionStorage.setItem("categories", tabs);
 
-let maxElements  = screen.width < 750 ? 1 : screen.width < 1200 ? 2 : 3;
+let maxElements  = screen.width < 750 ? 1 : screen.width < 1250 ? 2 : 3;
 let touchStart = null;
 
 class TitlePage extends React.Component {
@@ -771,28 +770,20 @@ class TitlePage extends React.Component {
         this.handleResize = this.handleResize.bind(this);
     }
     componentDidMount() {
-      console.log("MOUNT1: " + tabs);
-
       $(".prev").prop('disabled', true);
       $(window).on("resize", this.handleResize);
-      console.log(tabs.indexOf(sessionStorage.getItem("currentSection")))
-      if (tabs.indexOf(sessionStorage.getItem("currentSection")) != -1) {
+      console.log(previewTabs.indexOf(sessionStorage.getItem("currentSection")))
+      if (previewTabs.indexOf(sessionStorage.getItem("currentSection")) != -1) {
         document.getElementById(sessionStorage.getItem("currentSection") + "-section").scrollIntoView();
       } else {
         sessionStorage.setItem("currentSection", "index");
       }
-
-      console.log("MOUNT2: " + tabs);
-
     }
     handleResize() {
-      console.log("Resize1: " + tabs);
-
-      maxElements  = screen.width < 750 ? 1 : screen.width < 1200 ? 2 : 3;
+      maxElements  = screen.width < 750 ? 1 : screen.width < 1250 ? 2 : 3;
       this.setState({
-        maxElements: window.innerWidth < 750 ? 1 : window.innerWidth < 1200 ? 2 : 3
+        maxElements: window.innerWidth < 750 ? 1 : window.innerWidth < 1250 ? 2 : 3
       });
-      console.log("Resize2: " + tabs);
 
     }
     handleTouchStart(e) {
@@ -959,10 +950,9 @@ class TitlePage extends React.Component {
       }
     }
     render () {
-      console.log("RENDER: " + tabs);
       return (
         <div>
-          {tabs.map(tab => {
+          {previewTabs.map(tab => {
             return <Section id={tab} onClick={this.handleClick} onTouchStart={this.handleTouchStart} onTouchEnd={this.handleTouchEnd}/>
           })}
         </div>
@@ -971,9 +961,7 @@ class TitlePage extends React.Component {
 }
 
 const Section = (props) => {
-  console.log("SECTION0: " + tabs);
   const numbers = getTotalOfObjects(props.id);
-  console.log("SECTION1: " + tabs);
   return(
     <section id={props.id + "-section"} className="sections">
       <h1 className="section-header">{props.id != "bucheinbaende" ? props.id.charAt(0).toUpperCase() + props.id.substring(1) : "Bucheinbände"}</h1>
@@ -993,14 +981,12 @@ const Section = (props) => {
   )
 }
 const Preview = (props) => {
-  console.log("PREVIEW1: " + tabs);
   return(
     props.number <= maxElements ? <a id={props.id + "-button-" + props.number} className={"vorschau-button " + props.id} onClick={props.onClick} href={props.id + ".html"} onTouchStart={props.onTouchStart} onTouchEnd={props.onTouchEnd}></a>
     : <a id={props.id + "-button-" + props.number} className={"vorschau-button " + props.id} onClick={props.onClick}  href={props.id + ".html"} style={{display: 'none'}} onTouchStart={props.onTouchStart} onTouchEnd={props.onTouchEnd}></a>
   )
 }
 const Dot = (props) => {
-  console.log("DOT1: " + tabs);
   return(
     props.number <= maxElements ? <div id={props.id + "-dot-" + props.number} className={"dot " + props.id + "-dot active"} onClick={props.onClick}></div>
     : <div className={"dot " + props.id + "-dot"} id={props.id + "-dot-" + props.number} onClick={props.onClick}></div>
@@ -1012,7 +998,7 @@ const Dot = (props) => {
 //
 function getTotalOfObjects(section) {
   const numbers = [];
-  for (let i=1; i <= sectionLimits[tabs.indexOf(section)]; i++) {
+  for (let i=1; i <= sectionLimits[previewTabs.indexOf(section)]; i++) {
     numbers.push(i);
   }
   return numbers;

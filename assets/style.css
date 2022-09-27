@@ -776,3 +776,122 @@ footer ul {
 .datenschutz-links {
   margin: auto 2vw;
 }
+/* 
+
+    ...........................
+    M E D I A  -  Q U E R I E S 
+    ...........................
+
+ */
+ @media (max-width: 1255px) {
+  .prev, .vorschau {
+    padding-right: 0;
+  } .next {
+    padding-left: 0; 
+  }
+  .copyright-p, .datenschutz-links {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1200px) {
+  .vorschau-button {
+    margin-left: 0;
+    transition: 0.3s ease;
+  }
+  .list-element {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1100px) {
+  .list-element {
+    font-size: 12px;
+  }
+}
+@media (max-width: 950px) {
+  #anett-arnold-div {
+    font-size: 10px;
+  }
+  #buchbinderei-div {
+    font-size: 12px;
+  }
+}
+@media (max-width: 900px) {
+  #anett-arnold-div {
+    font-size: 8px;
+  }
+  #buchbinderei-div {
+    font-size: 10px;
+  }
+}
+@media (max-width: 850px) {
+  #logo-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    line-height: 0px;
+  }
+}
+@media (max-width: 750px) {
+  #logo-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    line-height: 0px;
+  }
+  #home-intern {
+    display: none;
+  }
+  #home-extern {
+    display: block;
+    margin: 0 10vw;
+  }
+  #menu-div {
+    justify-content: space-around;
+  }
+  #menu-list {
+    display: none;
+  }
+  #logo-div {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .fa-bars {
+    display: block;
+  }
+  .cover-div {
+    width: 95%;
+    height: auto;
+    margin-top: 20vh;
+  }
+  #cover-img {
+    width: 100%;
+    height: auto;
+  }
+  #bucheinbaende-button-3, #bucheinbaende-button-2,
+  #restaurierungen-button-3, #restaurierungen-button-2,
+  #objekte-button-3, #objekte-button-2,
+  #papiere-button-3, #papiere-button-2,
+  #faltarbeiten-button-3, #faltarbeiten-button-2,
+  .slideshow-3, .slideshow-2 {
+    display: none;
+  }
+  .slideshow-1 {
+    display: block;
+  }
+  .vorschau-div {
+    padding: 0px;
+  }
+  .prev, .next {
+    padding: 0px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 550px) {
+  footer {
+    flex-direction: column;
+  }
+  .datenschutz-div {
+    flex-direction: row;
+  }
+}
