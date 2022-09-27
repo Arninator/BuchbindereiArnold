@@ -739,8 +739,13 @@ const data = {
     };
 // import data from "../assets/data.json";
 
+// let data = {};
+// $.getJSON('../assets/data.json', function(d) {
+//   data = JSON.stringify(d)
+// });
+console.log("DTA?: " + (data));
+
 const tabs = ['bucheinbaende', 'restaurierungen', 'objekte', 'papiere', 'faltarbeiten'];
-console.log(tabs);
 const sectionLimits = [22, 16, 8, 19, 12];
 
 sessionStorage.setItem("data", JSON.stringify(data));
@@ -748,6 +753,8 @@ sessionStorage.setItem("categories", JSON.stringify(tabs));
 
 let maxElements  = screen.width < 750 ? 1 : screen.width < 1200 ? 2 : 3;
 let touchStart = null;
+
+
 
 class TitlePage extends React.Component {
     constructor (props) {
@@ -774,7 +781,6 @@ class TitlePage extends React.Component {
       if (tabs.indexOf(sessionStorage.getItem("currentSection")) != -1) {
         document.getElementById(sessionStorage.getItem("currentSection") + "-section").scrollIntoView();
       } else {
-        console.log("STRINGIFY2: " + JSON.stringify(tabs));
         sessionStorage.setItem("currentSection", "index");
       }
     }
@@ -949,7 +955,6 @@ class TitlePage extends React.Component {
     }
 
     render () {
-        console.log("STRINGIFY: " + JSON.stringify(tabs));
         return (
           <div>
             {tabs.map(tab => {
