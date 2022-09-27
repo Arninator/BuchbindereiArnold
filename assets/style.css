@@ -375,6 +375,7 @@ a:hover {
 #nav-bar {
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
 
   height: 100%;
@@ -383,8 +384,12 @@ a:hover {
 #menu-list {
   display: inherit;
   height: 100%;
+  padding-left: 0;
 }
-
+.home {
+  padding-right: 0;
+  border: 1px solid red;
+}
 .list-element {
   list-style: none;
 
@@ -777,13 +782,12 @@ footer ul {
   margin: auto 2vw;
 }
 /* 
-
     ...........................
     M E D I A  -  Q U E R I E S 
     ...........................
 
- */
- @media (max-width: 1255px) {
+*/
+@media (max-width: 1255px) {
   .prev, .vorschau {
     padding-right: 0;
   } .next {
@@ -807,6 +811,16 @@ footer ul {
     font-size: 12px;
   }
 }
+@media (max-width: 1000px) {
+  #menu-list {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
 @media (max-width: 950px) {
   #anett-arnold-div {
     font-size: 10px;

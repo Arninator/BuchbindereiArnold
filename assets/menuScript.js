@@ -1,4 +1,4 @@
-const tabs = ['index', 'bucheinbaende', 'restaurierungen', 'objekte', 'papiere', 'faltarbeiten', 'aktuelles', 'vita', 'kontakt'];
+const tabs = ['bucheinbaende', 'restaurierungen', 'objekte', 'papiere', 'faltarbeiten', 'aktuelles', 'vita', 'kontakt'];
 
 class Menu extends React.Component {
   constructor(props) {
@@ -53,6 +53,7 @@ const Logo = () => {
 const NavBar = (props) => {
   return(
     <nav id="nav-bar">
+      <div className="list-element" id="index" key="index"><a href="index.html" onClick={props.onClick}><i className="fa fa-home"></i></a></div>
       <ul id="menu-list">
         {tabs.map(tab => {
           return <ListElement id={tab} key={tab} onClick={props.onClick}/>
@@ -63,9 +64,7 @@ const NavBar = (props) => {
 }
 const ListElement = (props) => {
   return(
-    props.id == "index" ?
-      <li className="list-element" id={props.id} key={props.key}><a href={props.id + ".html"} onClick={props.onClick}><i className="fa fa-home"></i></a></li>
-    : props.id == "aktuelles" || props.id == "vita" || props.id == "kontakt" ?
+    props.id == "aktuelles" || props.id == "vita" || props.id == "kontakt" ?
       <li className="list-element" id={props.id} key={props.key}><a href={props.id + ".html"} onClick={props.onClick}>{props.id.charAt(0).toUpperCase() + props.id.substring(1)}</a></li>
     : <li className="list-element" id={props.id} key={props.key}><a href={"index.html"} onClick={props.onClick}>{props.id != "bucheinbaende" ? props.id.charAt(0).toUpperCase() + props.id.substring(1) : "Bucheinbände"}</a></li>
   );
