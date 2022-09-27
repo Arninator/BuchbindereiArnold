@@ -748,7 +748,7 @@ const sectionLimits = [22, 16, 8, 19, 12];
 
 sessionStorage.setItem("data", JSON.stringify(data));
 
-let maxElements  = screen.width < 750 ? 1 : screen.width < 1250 ? 2 : 3;
+let maxElements  = screen.width < 750 ? 1 : screen.width < 1000 ? 2 : 3;
 let touchStart = null;
 
 class TitlePage extends React.Component {
@@ -780,9 +780,9 @@ class TitlePage extends React.Component {
       }
     }
     handleResize() {
-      maxElements  = screen.width < 750 ? 1 : screen.width < 1250 ? 2 : 3;
+      maxElements  = screen.width < 750 ? 1 : screen.width < 1000 ? 2 : 3;
       this.setState({
-        maxElements: window.innerWidth < 750 ? 1 : window.innerWidth < 1250 ? 2 : 3
+        maxElements: window.innerWidth < 750 ? 1 : window.innerWidth < 1000 ? 2 : 3
       });
 
     }

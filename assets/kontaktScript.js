@@ -30,15 +30,16 @@ class Kontakt extends React.Component {
                             <p style={{color: "white"}}>_</p>
                             <p>und gerne nach Vereinbarung.</p>
                         </div>
-                    </div>
-                    <div className="zeiten">
-                        <p>geschlossen</p>
-                        <p>10:00 - 17:00</p>
-                        <p>10:00 - 17:00</p>
-                        <p>10:00 - 17:00</p>
-                        <p>10:00 - 17:00</p>
-                        <p>geschlossen</p>
-                        <p>geschlossen</p>
+
+                        <div className="zeiten">
+                            <p>geschlossen</p>
+                            <p>10:00 - 17:00</p>
+                            <p>10:00 - 17:00</p>
+                            <p>10:00 - 17:00</p>
+                            <p>10:00 - 17:00</p>
+                            <p>geschlossen</p>
+                            <p>geschlossen</p>
+                        </div>
                     </div>
                 </div>
                 <div className="map-div">
