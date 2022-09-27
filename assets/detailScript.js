@@ -76,6 +76,11 @@ const Img = (props) => {
                 })}
                 <button className="next" onClick={props.onClick} style={1 == props.src.length ? {display: 'none'} : {}}>&#10095;</button>
             </div>
+            <div className="dots-div">
+                {props.src.map((url, index) => {
+                    return props.src.length == 1 ? <div></div> : index == 0 ? <div className="dot active"></div> : <div className="dot"></div>
+                })}
+            </div>
             {props.description.map((description, index) => {
                 const subIndex = props.subIndex > props.description.length - 1 ? props.description.length - 1 : props.subIndex;
                 return(

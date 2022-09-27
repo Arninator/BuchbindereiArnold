@@ -576,6 +576,7 @@ a:hover {
   width: 10px;
   margin: 2px 4px;
 
+  background-color: darkgray;
   background-size: 300%;
   background-position: center;
   border-radius: 50%;
@@ -587,6 +588,7 @@ a:hover {
 .active, .dot:hover {
   transform: scale(1.5);
   opacity: 1;
+  background-color: lightgray;
 }
 /* 
   DETAIL_PAGES
