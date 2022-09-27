@@ -2,6 +2,8 @@ let data;
 let currentIndex;
 let currentSection;
 
+let touchStart = null;
+
 class DetailPage extends React.Component {
     constructor(props) {
         super(props);
@@ -11,6 +13,8 @@ class DetailPage extends React.Component {
         }
 
         this.handleClick = this.handleClick.bind(this);
+        this.handleTouchStart = this.handleTouchStart.bind(this);
+        this.handleTouchEnd= this.handleTouchEnd.bind(this);
     }
     componentWillMount() {
         data = JSON.parse(sessionStorage.getItem("data"));
@@ -24,6 +28,40 @@ class DetailPage extends React.Component {
     }
     componentDidMount() {
         $("." + this.state.subIndex).addClass("active");
+    }
+    handleTouchStart(e) {
+        if(e.touches.length === 1){
+          touchStart = e.touches.item(0).clientX;
+        }else{
+          touchStart = null;
+        }
+    }
+     handleTouchEnd(e) {
+        if (touchStart) {
+          let end = e.changedTouches.item(0).clientX;
+          let objectID = e.target.id;
+  
+          console.log(data[currentSection][currentIndex - 1])
+
+          if (data[currentSection][currentIndex - 1].urls.length > 1) {
+            if (end > touchStart + 100) {
+                const subIndex = this.state.subIndex < 1 ? data[currentSection][currentIndex - 1].urls.length - 1 : this.state.subIndex - 1;
+                $(".dot").removeClass("active");
+                $("." + subIndex).addClass("active");
+                this.setState({
+                    subIndex: subIndex
+                })
+            } else if (end < touchStart - 100) {
+                const subIndex = this.state.subIndex > data[currentSection][currentIndex - 1].urls.length - 2 ? 0 : this.state.subIndex + 1;
+                $(".dot").removeClass("active");
+                $("." + subIndex).addClass("active");
+                this.setState({
+                    subIndex: subIndex
+                })
+            }
+          }
+          
+        }
     }
     handleClick(e) {
         if (e.target.className == "shortcuts") {
@@ -68,7 +106,7 @@ class DetailPage extends React.Component {
                 </div>
                 <div className="grossansicht-div">
                     {data[currentSection].map(obj => {
-                        return <Img id={obj.name} src={obj.urls} description={obj.description} title={obj.title} subtitle={obj.subtitle} foto={obj.foto} onClick={this.handleClick} subIndex={this.state.subIndex}/>
+                        return <Img id={obj.name} src={obj.urls} description={obj.description} title={obj.title} subtitle={obj.subtitle} foto={obj.foto} onClick={this.handleClick} subIndex={this.state.subIndex} onTouchStart={this.handleTouchStart} onTouchEnd={this.handleTouchEnd}/>
                     })}
                 </div>
             </section>
@@ -88,7 +126,7 @@ const Img = (props) => {
             <div className="image-div">
                 <button className="prev" onClick={props.onClick} style={1 == props.src.length ? {display: 'none'} : {}}>&#10094;</button>
                 {props.src.map((url, index) => {
-                    return <img id={props.id} src={url} alt={props.description[index]} style={index != props.subIndex ? {display: 'none'} : {}} />
+                    return <img id={props.id} src={url} alt={props.description[index]} style={index != props.subIndex ? {display: 'none'} : {}} onTouchStart={props.onTouchStart} onTouchEnd={props.onTouchEnd}/>
                 })}
                 <button className="next" onClick={props.onClick} style={1 == props.src.length ? {display: 'none'} : {}}>&#10095;</button>
             </div>
