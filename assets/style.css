@@ -691,7 +691,6 @@ img {
   margin: auto;
 }
 figcaption {
-  /* align-self: flex-start; */
   margin: auto 20vw;
   font-size: 16px;
 }
@@ -809,11 +808,23 @@ footer ul {
     ...........................
 
 */
+@media (max-width: 1500px) {
+  figcaption {
+    margin: auto 10vw;
+  }
+}
 @media (max-width: 1255px) {
   .prev, .vorschau {
     padding-right: 0;
   } .next {
     padding-left: 0; 
+  }
+  figcaption {
+    margin: auto 5vw;
+    font-size: 12px;
+  }
+  .title, .subtitle {
+    font-size: 14px;
   }
   .copyright-p, .datenschutz-links {
     font-size: 12px;
@@ -827,6 +838,9 @@ footer ul {
   .list-element {
     font-size: 14px;
   }
+  figcaption {
+    font-size: 12px;
+  }
 }
 @media (max-width: 1100px) {
   .list-element {
@@ -839,6 +853,18 @@ footer ul {
   }
   #logo-buchbinderei {
     font-size: 14px;
+  }
+}
+@media (max-width: 900px) {
+  .detail-section {
+    flex-direction: column;
+  }
+  .shortcuts-div {
+    flex-direction: row;
+  }
+  .detail-section {
+    height: auto;
+    max-height: none;
   }
 }
 @media (max-width: 850px) {
