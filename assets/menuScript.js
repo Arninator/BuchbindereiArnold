@@ -5,9 +5,11 @@ class Menu extends React.Component {
     super(props);
 
     this.handleClick = this.handleClick.bind(this);
+    this.handleWindowClick = this.handleWindowClick.bind(this);
   }
   componentDidMount() {
     let activeTab = window.location.pathname.includes(sessionStorage.getItem("currentSection")) ? sessionStorage.getItem("currentSection") : window.location.pathname.substring(window.location.pathname.lastIndexOf("/") + 1 , window.location.pathname.length - 5);
+    $(window).on("click", this.handleWindowClick);
 
     if (activeTab != "index" && activeTab != "datenschutz" && activeTab != "impressum" && !window.location.pathname.includes("index.html")) {
 
@@ -18,19 +20,32 @@ class Menu extends React.Component {
       tab.firstChild.style.color = "darkred";
 
     } else if (window.location.pathname.includes("index.html")) {
-      tabs.slice(1,6).map(section => {
+      tabs.slice(0,5).map(section => {
         document.getElementById(section).children[0].setAttribute("href", "#" + section + "-section");
       })
     }
   }
   handleClick(e) {
 
-    if (window.location.pathname.includes("index.html") && tabs.slice(1, 6).indexOf(e.target.parentElement.id) != -1) {
+    if (window.location.pathname.includes("index.html") && tabs.slice(0, 5).indexOf(e.target.parentElement.id) != -1) {
       document.getElementById(e.target.parentElement.id + "-section").scrollIntoView();
       sessionStorage.setItem("currentSection", "index");
     } else {
       sessionStorage.setItem("currentSection", e.target.parentElement.id);
     }
+  }
+  handleWindowClick(e) {
+    if (e.target.parentElement.id == "burger-button") {
+      $(".menu-list").addClass("menu-list-burger");
+      $(".menu-list").children().addClass("list-element-burger");
+      $(".menu-list").css("display", "block");
+      $(".menu-list").remove("menu-list");      
+    } else {
+      $(".menu-list-burger").addClass("menu-list");
+      $(".menu-list-burger").children().removeClass("list-element-burger");
+      $(".menu-list-burger").css("display", "none");
+      $(".menu-list-burger").remove("menu-list-burger");
+    }    
   }
   render () {
     return (
@@ -54,7 +69,8 @@ const NavBar = (props) => {
   return(
     <nav id="nav-bar">
       <div className="list-element" id="index" key="index"><a href="index.html" onClick={props.onClick}><i className="fa fa-home"></i></a></div>
-      <ul id="menu-list">
+      <div id="burger-button" className="list-element" onClick={props.onClick}><i className="fa fa-bars"></i></div>
+      <ul className="menu-list">
         {tabs.map(tab => {
           return <ListElement id={tab} key={tab} onClick={props.onClick}/>
         })}
