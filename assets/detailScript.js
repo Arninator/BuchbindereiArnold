@@ -22,25 +22,41 @@ class DetailPage extends React.Component {
             subIndex: 0
         })
     }
+    componentDidMount() {
+        $("." + this.state.subIndex).addClass("active");
+    }
     handleClick(e) {
         if (e.target.className == "shortcuts") {
             currentIndex = e.target.id.substring(currentSection.length + 10);
+            $(".dot").removeClass("active");
+            $(".0").addClass("active");
             this.setState({
                 index: currentIndex,
                 subIndex: 0
             })
         } else if (e.target.className == "prev") {
             const subIndex = this.state.subIndex < 1 ? data[currentSection][currentIndex - 1].urls.length - 1 : this.state.subIndex - 1;
-            console.log(subIndex);
+            $(".dot").removeClass("active");
+            $("." + subIndex).addClass("active");
             this.setState({
                 subIndex: subIndex
             })
         } else if (e.target.className == "next") {
             const subIndex = this.state.subIndex > data[currentSection][currentIndex - 1].urls.length - 2 ? 0 : this.state.subIndex + 1;
+            $(".dot").removeClass("active");
+            $("." + subIndex).addClass("active");
             this.setState({
                 subIndex: subIndex
             })
-        }    
+        } else if (e.target.className.includes("dot")) {
+            const subIndex = parseInt(e.target.className.substring(4));
+            console.log(subIndex)
+            $(".dot").removeClass("active");
+            $("." + subIndex).addClass("active");
+            this.setState({
+                subIndex: subIndex
+            })
+        }
     }
     render () {
         return(
@@ -78,7 +94,7 @@ const Img = (props) => {
             </div>
             <div className="dots-div">
                 {props.src.map((url, index) => {
-                    return props.src.length == 1 ? <div></div> : index == 0 ? <div className="dot active"></div> : <div className="dot"></div>
+                    return props.src.length == 1 ? <div></div> : <div className={"dot " + index} onClick={props.onClick}></div>
                 })}
             </div>
             {props.description.map((description, index) => {
