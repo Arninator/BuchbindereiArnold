@@ -256,7 +256,7 @@ const data = {
       },
       {
       name: "restaurierungen-4", 
-      urls: ["/imgs../restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
+      urls: ["../imgs/restaurierungen/Anett_Arnold_Historische_Karten_Restaurierung.jpg"],
       title: ["Reise-Falt-Landkarten"],
       subtitle: ["Ungarn, Böhmen, Schlesien, Mähren, Östereich, Bayern"],
       description: ["Gestochen von JOHANN&nbsp;GEORG&nbsp;SCHREIBERN, Leipzig, 1676-1750, gefaltet in einem Reiseetui"],
