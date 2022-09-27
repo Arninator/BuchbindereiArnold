@@ -396,13 +396,15 @@ a:hover {
   cursor: pointer;
 }
 .menu-list-burger {
-  display: block;
   position: fixed;
+  display: flex;
+  
   top: 60px;
-  margin-top: 0;
-  background-color: white;
-  align-items: end;
   height: auto;
+  margin-top: 0;
+
+  background-color: white;
+
   border: 1px solid grey;
   border-top: 0;
   border-right: 0;
@@ -420,7 +422,9 @@ a:hover {
 }
 .list-element-burger {
   height: auto;
-  margin: 2vh 2vw;
+  margin: 3vh 2vw;
+  
+  text-align: end;
 }
 
 /*  */
@@ -450,10 +454,6 @@ a:hover {
   font-weight: 100;
   text-align: center;
 }
-
-/* .slideshow-2, .slideshow-1 {
-  display: none;
-} */
 
 .vorschau-div {
   display: flex;
@@ -691,6 +691,7 @@ img {
   margin: auto;
 }
 figcaption {
+  /* align-self: flex-start; */
   margin: auto 20vw;
   font-size: 16px;
 }
@@ -833,6 +834,20 @@ footer ul {
   }
 }
 @media (max-width: 1000px) {
+  #logo-anett-arnold {
+    font-size: 20px;
+  }
+  #logo-buchbinderei {
+    font-size: 14px;
+  }
+}
+@media (max-width: 850px) {
+  #logo-container {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+@media (max-width: 750px) {
   .menu-list {
     display: none;
   }
@@ -843,97 +858,53 @@ footer ul {
   .list-element {
     font-size: 16px;
   }
-}
-
-
-
-
-
-@media (max-width: 950px) {
-  #anett-arnold-div {
-    font-size: 10px;
-  }
-  #buchbinderei-div {
-    font-size: 12px;
-  }
-}
-@media (max-width: 900px) {
-  #anett-arnold-div {
-    font-size: 8px;
-  }
-  #buchbinderei-div {
-    font-size: 10px;
-  }
-}
-@media (max-width: 850px) {
-  #logo-div {
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    line-height: 0px;
-  }
-}
-@media (max-width: 750px) {
-  #logo-div {
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    line-height: 0px;
-  }
-  #home-intern {
-    display: none;
-  }
-  #home-extern {
-    display: block;
-    margin: 0 10vw;
-  }
-  #menu-div {
-    justify-content: space-around;
-  }
-  #menu-list {
-    display: none;
-  }
-  #logo-div {
+  #logo-container {
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .fa-bars {
-    display: block;
-  }
-  .cover-div {
-    width: 95%;
-    height: auto;
-    margin-top: 20vh;
-  }
-  #cover-img {
-    width: 100%;
-    height: auto;
-  }
-  #bucheinbaende-button-3, #bucheinbaende-button-2,
-  #restaurierungen-button-3, #restaurierungen-button-2,
-  #objekte-button-3, #objekte-button-2,
-  #papiere-button-3, #papiere-button-2,
-  #faltarbeiten-button-3, #faltarbeiten-button-2,
-  .slideshow-3, .slideshow-2 {
-    display: none;
-  }
-  .slideshow-1 {
-    display: block;
-  }
-  .vorschau-div {
-    padding: 0px;
-  }
-  .prev, .next {
-    padding: 0px;
-    font-size: 14px;
+    align-items: baseline;
+    margin-left: 10vw;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 650px) {
   footer {
     flex-direction: column;
   }
-  .datenschutz-div {
+  footer ul {
     flex-direction: row;
+  }
+  .datenschutz-links {
+    margin: auto;
+  }
+}
+@media (max-width: 450px) {
+  .section-header {
+    font-size: 24px;
+  }
+  .prev {
+    padding: none;
+    padding-right: 1vw;
+  }
+  .dots-div {
+    flex-wrap: wrap;
+  }
+  .sections {
+    padding: 3vh 1vw;
+  }
+}
+@media (max-width: 380px) {
+  #menu-container {
+    justify-content: space-around;
+  }
+  #logo-container {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 1vw;
+  }
+  .vorschau-div {
+    padding: none;
+  }
+  .vorschau-button {
+    min-width: none;
+    width: 66vw;
+    height: 66vw; 
   }
 }
