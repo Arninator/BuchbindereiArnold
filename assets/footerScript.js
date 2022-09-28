@@ -12,7 +12,7 @@ class Footer extends React.Component {
     render () {
         return(
             <footer>
-                <p className="copyright-p">Copyright © 2013-2022 Buchbinderei Anett Arnold</p>
+                <p className="copyright-p">Copyright © 2013-2022&emsp;Buchbinderei Anett Arnold</p>
                 <ul>
                     {links.map(link => {
                         return <ListElement name={link} key={link} onClick={this.handleClick}/>
