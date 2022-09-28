@@ -782,6 +782,9 @@ span {
 .extras-div p {
   margin: 0;
 }
+#vita-div .nonbreaking {
+  font-weight: 400;
+}
 .break{
   margin: 2vh auto;
 }
@@ -818,6 +821,7 @@ footer {
   align-items: center;
 
   margin-top: 2vh;
+  margin-left: 6vw;
 }
 footer ul {
   display: inherit;
