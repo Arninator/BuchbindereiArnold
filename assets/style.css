@@ -10,6 +10,7 @@
        url('../fonts/libre-franklin-v13-latin-100.woff') format('woff'), /* Modern Browsers */
        url('../fonts/libre-franklin-v13-latin-100.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/libre-franklin-v13-latin-100.svg#LibreFranklin') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 /* libre-franklin-200 - latin */
 @font-face {
@@ -23,6 +24,7 @@
        url('../fonts/libre-franklin-v13-latin-200.woff') format('woff'), /* Modern Browsers */
        url('../fonts/libre-franklin-v13-latin-200.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/libre-franklin-v13-latin-200.svg#LibreFranklin') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 /* libre-franklin-300 - latin */
 @font-face {
@@ -36,6 +38,7 @@
        url('../fonts/libre-franklin-v13-latin-300.woff') format('woff'), /* Modern Browsers */
        url('../fonts/libre-franklin-v13-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/libre-franklin-v13-latin-300.svg#LibreFranklin') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 /* libre-franklin-regular - latin */
 @font-face {
@@ -49,6 +52,7 @@
        url('../fonts/libre-franklin-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
        url('../fonts/libre-franklin-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/libre-franklin-v13-latin-regular.svg#LibreFranklin') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 /* libre-franklin-500 - latin */
 @font-face {
@@ -62,6 +66,7 @@
        url('../fonts/libre-franklin-v13-latin-500.woff') format('woff'), /* Modern Browsers */
        url('../fonts/libre-franklin-v13-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/libre-franklin-v13-latin-500.svg#LibreFranklin') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 /* libre-franklin-700 - latin */
 @font-face {
@@ -75,6 +80,7 @@
        url('../fonts/libre-franklin-v13-latin-700.woff') format('woff'), /* Modern Browsers */
        url('../fonts/libre-franklin-v13-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/libre-franklin-v13-latin-700.svg#LibreFranklin') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 /* libre-franklin-600 - latin */
 @font-face {
@@ -88,6 +94,7 @@
        url('../fonts/libre-franklin-v13-latin-600.woff') format('woff'), /* Modern Browsers */
        url('../fonts/libre-franklin-v13-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/libre-franklin-v13-latin-600.svg#LibreFranklin') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 /* libre-franklin-800 - latin */
 @font-face {
@@ -101,6 +108,7 @@
        url('../fonts/libre-franklin-v13-latin-800.woff') format('woff'), /* Modern Browsers */
        url('../fonts/libre-franklin-v13-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/libre-franklin-v13-latin-800.svg#LibreFranklin') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 /* libre-franklin-900 - latin */
 @font-face {
@@ -114,6 +122,7 @@
        url('../fonts/libre-franklin-v13-latin-900.woff') format('woff'), /* Modern Browsers */
        url('../fonts/libre-franklin-v13-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/libre-franklin-v13-latin-900.svg#LibreFranklin') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 /* libre-franklin-100italic - latin */
 @font-face {
@@ -127,6 +136,7 @@
        url('../fonts/libre-franklin-v13-latin-100italic.woff') format('woff'), /* Modern Browsers */
        url('../fonts/libre-franklin-v13-latin-100italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/libre-franklin-v13-latin-100italic.svg#LibreFranklin') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 /* libre-franklin-200italic - latin */
 @font-face {
@@ -140,6 +150,7 @@
        url('../fonts/libre-franklin-v13-latin-200italic.woff') format('woff'), /* Modern Browsers */
        url('../fonts/libre-franklin-v13-latin-200italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/libre-franklin-v13-latin-200italic.svg#LibreFranklin') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 /* libre-franklin-300italic - latin */
 @font-face {
@@ -153,6 +164,7 @@
        url('../fonts/libre-franklin-v13-latin-300italic.woff') format('woff'), /* Modern Browsers */
        url('../fonts/libre-franklin-v13-latin-300italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/libre-franklin-v13-latin-300italic.svg#LibreFranklin') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 /* libre-franklin-italic - latin */
 @font-face {
@@ -166,6 +178,7 @@
        url('../fonts/libre-franklin-v13-latin-italic.woff') format('woff'), /* Modern Browsers */
        url('../fonts/libre-franklin-v13-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/libre-franklin-v13-latin-italic.svg#LibreFranklin') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 /* libre-franklin-500italic - latin */
 @font-face {
@@ -179,6 +192,7 @@
        url('../fonts/libre-franklin-v13-latin-500italic.woff') format('woff'), /* Modern Browsers */
        url('../fonts/libre-franklin-v13-latin-500italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/libre-franklin-v13-latin-500italic.svg#LibreFranklin') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 /* libre-franklin-600italic - latin */
 @font-face {
@@ -192,6 +206,7 @@
        url('../fonts/libre-franklin-v13-latin-600italic.woff') format('woff'), /* Modern Browsers */
        url('../fonts/libre-franklin-v13-latin-600italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/libre-franklin-v13-latin-600italic.svg#LibreFranklin') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 /* libre-franklin-700italic - latin */
 @font-face {
@@ -205,6 +220,7 @@
        url('../fonts/libre-franklin-v13-latin-700italic.woff') format('woff'), /* Modern Browsers */
        url('../fonts/libre-franklin-v13-latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/libre-franklin-v13-latin-700italic.svg#LibreFranklin') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 /* libre-franklin-800italic - latin */
 @font-face {
@@ -218,6 +234,7 @@
        url('../fonts/libre-franklin-v13-latin-800italic.woff') format('woff'), /* Modern Browsers */
        url('../fonts/libre-franklin-v13-latin-800italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/libre-franklin-v13-latin-800italic.svg#LibreFranklin') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 /* libre-franklin-900italic - latin */
 @font-face {
@@ -231,6 +248,7 @@
        url('../fonts/libre-franklin-v13-latin-900italic.woff') format('woff'), /* Modern Browsers */
        url('../fonts/libre-franklin-v13-latin-900italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/libre-franklin-v13-latin-900italic.svg#LibreFranklin') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 
 :root {
@@ -852,6 +870,12 @@ footer ul {
     font-size: 12px;
   }
   img {
+    width: 75vw;
+  }
+  .impressum_datenschutz {
+    flex-direction: column;
+  }
+  .impressum, .datenschutz {
     width: 75vw;
   }
 }
