@@ -960,6 +960,9 @@ footer ul {
   .sections {
     padding: 3vh 1vw;
   }
+  .oeffnungszeiten-div {
+    font-size: smaller;
+  }
 }
 @media (max-width: 380px) {
   #menu-container {
@@ -977,5 +980,10 @@ footer ul {
     min-width: none;
     width: 66vw;
     height: 66vw; 
+  }
+}
+@media (max-width: 320px) {
+  .oeffnungszeiten-div {
+    font-size: 12px;
   }
 }
