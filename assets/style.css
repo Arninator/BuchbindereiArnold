@@ -465,29 +465,26 @@ a:hover {
   /* display: flex;
   flex-direction: column; */
   position: absolute; 
-  top: 10%; 
+  margin-top: 60px;
+  top: 5%; 
   left: 66%;
 
   width: 32.7%;
-  height: 16%;
-
-  /* border: 1px solid red; */
 }
 .banner {
   border-bottom: 1px solid darkslategray; 
-  /* border-top: 1px solid darkslategray; */
-  /* display: block;  */
+  background-color: white;
   
   font-size: 2.5vh;
   font-weight: 100;
   padding: 1% 2% 1% 2%;
 
   margin-bottom: 2vh;
-  
-  position: absolute;
-  left: 110%;
 
   width: 100%;
+
+  position: absolute;
+  left: 110%;
 
   animation-name: banner-animation;
   animation-fill-mode: forwards;
@@ -497,28 +494,27 @@ a:hover {
   text-transform: capitalize;
   margin-bottom: 1.5vh;
   font-weight: 300;
-  /* font-size: 2vh; */
-
-  top: 0%;
 
   animation-duration: 2s;
   animation-delay: 1s;
 }
 #news-banner {
-  top: 28%;
-
   animation-duration: 2s;
   animation-delay: 1.5s;
 }
 #news-banner-2 {
-  top: 85%;
-
   animation-duration: 2s;
   animation-delay: 1.7s;
 }
 @keyframes banner-animation {
-  0% {left: 100%;}
-  100% {left: 0%;}
+  0% {
+    position: absolute;
+    left: 110%;
+  }
+  100% {
+    position: absolute;
+    left: 0%;
+  }
 }
 .banner a {
   cursor: pointer;
