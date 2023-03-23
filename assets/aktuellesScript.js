@@ -7,6 +7,16 @@ class Aktuelles extends React.Component {
             <section className="extras-section">
                 <div className="extras-div">
                     <h1>Aktuelles</h1>
+                    <div className="break">
+                        <h6>16. Juni - 18. Juni 2023</h6>
+                        <p>Ausstellung auf der Stuttgarter Antiquariatsmesse in Ludwigsburg</p>
+                        <p>&uarr; <a class="link" href="https://www.antiquariatsmesse-stuttgart.de/de/start" target="new">Antiquariatsmesse Stuttgart</a></p>
+                    </div>
+                    <div className="break">
+                        <h6>31. März - 02. April 2023</h6>
+                        <p>Ausstellung auf der BuchDruckKunst im Museum der Arbeit in Hamburg</p>
+                        <p>&uarr; <a class="link" href="https://www.buchdruckkunst.com" target="new">BuchDruckKunst</a></p>
+                    </div>
                     <div>
                         <h6>Video-Beitrag zur Nominierung des Hamburger Handwerkspreises 2015</h6>
                         <iframe id="iframe-video" width="890" height="500" src="https://www.youtube.com/embed/3UDDbn4itDE"
