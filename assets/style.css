@@ -462,25 +462,14 @@ a:hover {
   border-color: lightgrey;
 }
 #banner-container {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   position: absolute; 
   top: 10%; 
-  left: 166%;
+  left: 66%;
 
   width: 34%;
-
-  animation-name: banner-animation;
-  animation-duration: 2s;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
-}
-#banner-header {
-  border: none;
-  text-transform: capitalize;
-  margin-bottom: 1.5vh;
-  font-weight: 300;
-  /* font-size: 2vh; */
+  height: 33%;
 }
 .banner {
   border-bottom: 1px solid darkslategray; 
@@ -493,14 +482,46 @@ a:hover {
 
   margin-bottom: 2vh;
   
+  width: 100%;
 
+  animation-name: banner-animation;
+  animation-fill-mode: forwards;
+}
+#banner-header {
+  border: none;
+  text-transform: capitalize;
+  margin-bottom: 1.5vh;
+  font-weight: 300;
+  /* font-size: 2vh; */
 
+  position: absolute;
+  left: 100%;
+  top: 0%;
+
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+#news-banner {
+  position: absolute;
+  left: 100%;
+  top: 18%;
+
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+}
+#news-banner-2 {
+  position: absolute;
+  left: 100%;
+  top: 45%;
+
+  animation-duration: 2s;
+  animation-delay: 1.7s;
 }
 @keyframes banner-animation {
-  0% {left: 133%;}
-  100% {left: 66%;}
+  0% {left: 100%;}
+  100% {left: 0%;}
 }
-.news-banner a {
+.banner a {
   cursor: pointer;
 }
 
