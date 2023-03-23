@@ -17,6 +17,15 @@ class Aktuelles extends React.Component {
                         <p>Ausstellung auf der BuchDruckKunst im Museum der Arbeit in Hamburg</p>
                         <p>&uarr; <a class="link" href="https://www.buchdruckkunst.com" target="new">BuchDruckKunst</a></p>
                     </div>
+                    <div className="break">
+                        <h6>"Eine Buchbinderin ist Hamburgs beste Handwerkerin"</h6>
+                        <p>&rarr; Artikel aus dem &uarr; <a class="link" href="https://www.abendblatt.de/hamburg/article205949621/Eine-Buchbinderin-ist-Hamburgs-beste-Handwerkerin.html" target="new">Hamburger Abendblatt</a></p>
+                    </div>
+                    <div className="break">
+                        <h6>Buchbinderin und Metallbildner gewinnen Hamburger Handwerkspreis 2015</h6>
+                        <p>&rarr; <a class="link" href="aktuelles/Pressemitteilung_Handwerkspreis2015.pdf" target="new">Pressemitteilung Handwerkskammer Hamburg</a> (pdf)</p>
+                        <p>&uarr; <a class="link" href="https://www.hwk-hamburg.de/artikel/haspa-und-handwerkskammer-suchen-handwerkerin-des-jahres-93,0,313.html" target="new">Hamburger Handwerkspreis</a></p>
+                    </div>
                     <div>
                         <h6>Video-Beitrag zur Nominierung des Hamburger Handwerkspreises 2015</h6>
                         <iframe id="iframe-video" width="890" height="500" src="https://www.youtube.com/embed/3UDDbn4itDE"
@@ -24,11 +33,6 @@ class Aktuelles extends React.Component {
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                         </iframe>
                     <p>Video: Kai Peuckert, Hamburg 1 Fernsehen</p>
-                    </div>
-                    <div className="break">
-                        <h6>Buchbinderin und Metallbildner gewinnen Hamburger Handwerkspreis 2015</h6>
-                        <p>&rarr; <a class="link" href="aktuelles/Pressemitteilung_Handwerkspreis2015.pdf" target="new">Pressemitteilung Handwerkskammer Hamburg</a> (pdf)</p>
-                        <p>&uarr; <a class="link" href="https://www.hwk-hamburg.de/artikel/haspa-und-handwerkskammer-suchen-handwerkerin-des-jahres-93,0,313.html" target="new">Hamburger Handwerkspreis</a></p>
                     </div>
                     <div className="break">
                         <h6>Was machen die da?</h6>
