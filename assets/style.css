@@ -461,6 +461,55 @@ a:hover {
   border-bottom: 1px solid;
   border-color: lightgrey;
 }
+#banner-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute; 
+  top: 10%; 
+  left: 166%;
+
+  width: 34%;
+
+  animation-name: banner-animation;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+#banner-header {
+  border: none;
+  text-transform: capitalize;
+  margin-bottom: 1.5vh;
+  font-weight: 300;
+  /* font-size: 2vh; */
+}
+.banner {
+  border-bottom: 1px solid darkslategray; 
+  /* border-top: 1px solid darkslategray; */
+  /* display: block;  */
+  
+  font-size: 2.5vh;
+  font-weight: 100;
+  padding: 1% 2% 1% 2%;
+
+  margin-bottom: 2vh;
+  
+
+
+}
+@keyframes banner-animation {
+  0% {left: 133%;}
+  100% {left: 66%;}
+}
+.news-banner a {
+  cursor: pointer;
+}
+
+.banner-date {
+  color: red;
+  font-size: 2vh;
+  font-style: italic;
+  margin-bottom: 1vh;
+}
 
 /*  */
 /* SECTIONS */
