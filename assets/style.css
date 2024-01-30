@@ -470,6 +470,8 @@ a:hover {
   left: 66%;
 
   width: 32.7%;
+
+  overflow: hidden;
 }
 .banner {
   border-bottom: 1px solid darkslategray; 
